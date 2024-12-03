@@ -29,6 +29,7 @@ export const Sidebar = () => {
     },
   ];
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onNavigate = (url: string, pro: boolean) => {
     // TODO: logic for pro routes
     return router.push(url);
