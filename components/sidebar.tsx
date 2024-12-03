@@ -30,6 +30,7 @@ export const Sidebar = () => {
   ];
 
   const onNavigate = (url: string, pro: boolean) => {
+    // TODO: logic for pro routes
     return router.push(url);
   };
 
