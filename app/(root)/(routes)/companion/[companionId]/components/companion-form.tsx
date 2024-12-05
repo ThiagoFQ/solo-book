@@ -1,6 +1,6 @@
 "use client";
 
-import { ImageUpload } from "@/components/image-upload";
+import ImageUpload from "@/components/image-upload";
 import {
   Form,
   FormControl,
@@ -94,7 +94,7 @@ export const CompanionForm = ({
           <FormField
             name="src"
             render={({ field }) => (
-              <FormItem className="flex- felx-col items-center justify-center space-y-4">
+              <FormItem className="flex felx-col items-center justify-center space-y-4">
                 <FormControl>
                   <ImageUpload
                     disabled={isLoading}

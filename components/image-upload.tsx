@@ -10,11 +10,7 @@ interface ImageUploadProps {
   disabled?: boolean;
 }
 
-export const ImageUpload = ({
-  value,
-  onChange,
-  disabled,
-}: ImageUploadProps) => {
+const ImageUpload = ({ value, onChange, disabled }: ImageUploadProps) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -62,3 +58,5 @@ export const ImageUpload = ({
     </div>
   );
 };
+
+export default ImageUpload;
