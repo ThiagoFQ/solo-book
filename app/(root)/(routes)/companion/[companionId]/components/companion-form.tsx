@@ -11,6 +11,8 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Category, Companion } from "@prisma/client";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -36,6 +38,8 @@ export const CompanionForm = ({
   categories,
   initialData,
 }: CompanionFormProps) => {
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: initialData || {
@@ -51,7 +55,24 @@ export const CompanionForm = ({
   const isLoading = form.formState.isSubmitting;
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    try {
+      if (initialData) {
+        await axios.patch(`/api/companion/${initialData.id}`, values);
+      } else {
+        await axios.post("/api/companion", values);
+      }
+      /*toast({
+        description: "Success",
+      });*/
+
+      router.push("/");
+      router.refresh();
+    } catch (error) {
+      /*toast({
+        variant: "destructive",
+        description: "Something went Wrong",
+      });*/
+    }
   };
 
   return (

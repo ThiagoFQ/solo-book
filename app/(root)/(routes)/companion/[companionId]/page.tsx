@@ -8,19 +8,18 @@ interface CompanionIdPageProps {
 }
 
 const CompanionIdPage = async ({ params }: CompanionIdPageProps) => {
+  const { companionId } = await params;
   // TODO: Check subscription
 
   const companion = await prismadb.companion.findUnique({
     where: {
-      id: params?.companionId,
+      id: companionId,
     },
   });
 
   const categories = await prismadb.category.findMany();
 
-  return (
-    <CompanionForm initialData={companion || null} categories={categories} />
-  );
+  return <CompanionForm initialData={companion} categories={categories} />;
 };
 
 export default CompanionIdPage;
