@@ -1,6 +1,6 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { PineconeStore } from "@langchain/pinecone";
-import { Pinecone as PineconeClient } from "@pinecone-database/pinecone";
+import { Pinecone } from "@pinecone-database/pinecone";
 import { Redis } from "@upstash/redis";
 
 export type CompanionKey = {
@@ -12,13 +12,15 @@ export type CompanionKey = {
 export class MemoryManager {
   private static instance: MemoryManager;
   private history: Redis;
-  private vectorDBClient: PineconeClient;
+  private vectorDBClient: Pinecone;
 
   public constructor() {
     this.history = Redis.fromEnv();
-    this.vectorDBClient = new PineconeClient({
+
+    this.vectorDBClient = new Pinecone({
       apiKey: process.env.PINECONE_API_KEY!,
-      environment: process.env.PINECONE_ENVIRONMENT!,
+      controllerHostUrl:
+        "https://companion-ar8jpo5.svc.aped-4627-b74a.pinecone.io",
     });
   }
 
@@ -26,11 +28,8 @@ export class MemoryManager {
     recentChatHistory: string,
     companionFileName: string
   ) {
-    const pineconeClient = <PineconeClient>this.vectorDBClient;
-
-    const pineconeIndex = pineconeClient.Index(
-      process.env.PINECONE_INDEX! || ""
-    );
+    const pineconeClient = this.vectorDBClient;
+    const pineconeIndex = pineconeClient.Index(process.env.PINECONE_INDEX!);
 
     const vectorStore = await PineconeStore.fromExistingIndex(
       new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
@@ -42,6 +41,7 @@ export class MemoryManager {
       .catch((err) => {
         console.log("WARNING: failed to get vector search results.", err);
       });
+
     return similarDocs;
   }
 
@@ -61,7 +61,7 @@ export class MemoryManager {
   }
 
   public async writeToHistory(text: string, companionKey: CompanionKey) {
-    if (!companionKey || typeof companionKey.userId == "undefined") {
+    if (!companionKey || typeof companionKey.userId === "undefined") {
       console.log("Companion key set incorrectly");
       return "";
     }
@@ -76,7 +76,7 @@ export class MemoryManager {
   }
 
   public async readLatestHistory(companionKey: CompanionKey): Promise<string> {
-    if (!companionKey || typeof companionKey.userId == "undefined") {
+    if (!companionKey || typeof companionKey.userId === "undefined") {
       console.log("Companion key set incorrectly");
       return "";
     }
