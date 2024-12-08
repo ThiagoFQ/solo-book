@@ -3,8 +3,8 @@ import prismadb from "@/lib/prismadb";
 import { rateLimit } from "@/lib/rate-limit";
 import { currentUser } from "@clerk/nextjs";
 import { Replicate } from "@langchain/community/llms/replicate";
+import { CallbackManager } from "@langchain/core/callbacks/manager";
 import { LangChainStream, StreamingTextResponse } from "ai";
-import { CallbackManager } from "langchain/callbacks";
 import { NextResponse } from "next/server";
 
 export async function POST(
@@ -34,7 +34,7 @@ export async function POST(
         messages: {
           create: {
             content: prompt,
-            role: "user",
+            role: "userId",
             userId: user.id,
           },
         },
@@ -98,15 +98,15 @@ export async function POST(
     const response = await model
       .call(
         `
-                  ONLY generate plain sentences without prefix of who is speaking. DO NOT use ${companion.name}: prefix. 
+          ONLY generate plain sentences without prefix of who is speaking. DO NOT use ${companion.name}: prefix. 
 
-                 ${companion.instructions}
+          ${companion.instructions}
 
-                  Below are relevant details about ${companion.name}'s past and the conversation you are in.
-                  ${relevantHistory}
+          Below are relevant details about ${companion.name}'s past and the conversation you are in.
+          ${relevantHistory}
 
 
-                  ${recentChatHistory}\n${companion.name}:`
+          ${recentChatHistory}\n${companion.name}:`
       )
       .catch(console.error);
 
