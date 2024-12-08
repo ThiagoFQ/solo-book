@@ -4,11 +4,10 @@ import { ChatForm } from "@/components/chat-form";
 import { ChatHeader } from "@/components/chat-header";
 import { ChatMessageProps } from "@/components/chat-message";
 import { ChatMessages } from "@/components/chat-messages";
-import { Companion } from "@prisma/client";
+import { Companion, Message } from "@prisma/client";
 import { useCompletion } from "ai/react";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
-import { Message } from "react-hook-form";
 
 interface ChatClientProps {
   companion: Companion & {
@@ -21,12 +20,7 @@ interface ChatClientProps {
 
 export const ChatClient = ({ companion }: ChatClientProps) => {
   const router = useRouter();
-  const [messages, setMessages] = useState<ChatMessageProps[]>(
-    companion.messages.map((message) => ({
-      role: "system", // or another appropriate role
-      content: message,
-    }))
-  );
+  const [messages, setMessages] = useState<ChatMessageProps[]>(companion.messages);
 
   const { input, isLoading, handleInputChange, handleSubmit, setInput } =
     useCompletion({

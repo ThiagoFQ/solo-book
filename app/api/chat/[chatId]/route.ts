@@ -34,7 +34,7 @@ export async function POST(
         messages: {
           create: {
             content: prompt,
-            role: "userId",
+            role: "user",
             userId: user.id,
           },
         },
