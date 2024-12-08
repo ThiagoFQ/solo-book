@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useToast } from "@/hooks/use-toast";
 import { useUser } from "@clerk/nextjs";
-import { Companion } from "@prisma/client";
+import { Companion, Message } from "@prisma/client";
 import axios from "axios";
 import {
   ChevronLeft,
@@ -20,7 +20,6 @@ import {
   Trash,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { Message } from "react-hook-form";
 
 interface ChatHeaderProps {
   companion: Companion & {

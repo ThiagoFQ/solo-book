@@ -95,6 +95,7 @@ export const CompanionForm = ({
 
       toast({
         description: "Success.",
+        duration: 3000
       });
 
       router.refresh();
@@ -103,6 +104,7 @@ export const CompanionForm = ({
       toast({
         variant: "destructive",
         description: "Something went wrong",
+        duration: 3000,
       });
     }
   };
