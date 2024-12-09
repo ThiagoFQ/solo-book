@@ -16,33 +16,43 @@ export class MemoryManager {
 
   public constructor() {
     this.history = Redis.fromEnv();
-
+  
     this.vectorDBClient = new Pinecone({
       apiKey: process.env.PINECONE_API_KEY!,
-      controllerHostUrl:
-        "https://companion-ar8jpo5.svc.aped-4627-b74a.pinecone.io",
     });
+
   }
 
-  public async vectorSearch(
-    recentChatHistory: string,
-    companionFileName: string
-  ) {
-    const pineconeClient = this.vectorDBClient;
-    const pineconeIndex = pineconeClient.Index(process.env.PINECONE_INDEX!);
+  public async insertToVectorStore(data: { pageContent: string; metadata: any }[]) {
+    try {
+      const pineconeIndex = this.vectorDBClient.Index(process.env.PINECONE_INDEX!);
+      const vectorStore = await PineconeStore.fromExistingIndex(
+        new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
+        { pineconeIndex }
+      );
+  
+      await vectorStore.addDocuments(data);
+      console.log("Dados inseridos com sucesso no Pinecone");
+    } catch (err) {
+      console.error("Erro ao inserir no Pinecone:", err);
+    }
+  }
 
-    const vectorStore = await PineconeStore.fromExistingIndex(
-      new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
-      { pineconeIndex }
-    );
-
-    const similarDocs = await vectorStore
-      .similaritySearch(recentChatHistory, 3, { fileName: companionFileName })
-      .catch((err) => {
-        console.log("WARNING: failed to get vector search results.", err);
-      });
-
-    return similarDocs;
+  public async searchVectors(query: string, topK: number, metadata?: any) {
+    try {
+      const pineconeIndex = this.vectorDBClient.Index(process.env.PINECONE_INDEX!);
+      const vectorStore = await PineconeStore.fromExistingIndex(
+        new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
+        { pineconeIndex }
+      );
+  
+      const results = await vectorStore.similaritySearch(query, topK, metadata);
+      console.log("Resultados da busca:", results);
+      return results;
+    } catch (err) {
+      console.error("Erro na busca de similaridade:", err);
+      return null;
+    }
   }
 
   public static async getInstance(): Promise<MemoryManager> {
@@ -52,12 +62,8 @@ export class MemoryManager {
     return MemoryManager.instance;
   }
 
-  private generateRedisCompanionKey({
-    companionName,
-    modelName,
-    userId,
-  }: CompanionKey): string {
-    return `${companionName}-${modelName}-${userId}`;
+  private generateRedisCompanionKey(companionKey: CompanionKey): string {
+    return `${companionKey.companionName}-${companionKey.modelName}-${companionKey.userId}`;
   }
 
   public async writeToHistory(text: string, companionKey: CompanionKey) {

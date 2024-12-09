@@ -68,14 +68,20 @@ export async function POST(
       companionKey
     );
 
-    const similarDocs = await memoryManager.vectorSearch(
+    // Insert data Pinecone
+    await memoryManager.insertToVectorStore([
+      { pageContent: recentChatHistory, metadata: { source: companion_file_name } }
+    ]);
+
+    const similarDocs = await memoryManager.searchVectors(
       recentChatHistory,
-      companion_file_name
+      3,
+      { source: companion_file_name }
     );
 
     let relevantHistory = "";
 
-    if (similarDocs && similarDocs.length !== 0) {
+    if (!!similarDocs && similarDocs.length !== 0) {
       relevantHistory = similarDocs.map((doc) => doc.pageContent).join("\n");
     }
 
