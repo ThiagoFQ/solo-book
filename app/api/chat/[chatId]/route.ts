@@ -104,31 +104,33 @@ export async function POST(
     const response = await model
       .call(
         `
-          ONLY generate plain sentences without prefix of who is speaking. DO NOT use ${companion.name}: prefix. 
+        ONLY generate plain sentences without prefix of who is speaking. DO NOT use ${companion.name}: prefix. 
 
-          ${companion.instructions}
+        ${companion.instructions}
 
-          Below are relevant details about ${companion.name}'s past and the conversation you are in.
-          ${relevantHistory}
+        Below are relevant details about ${companion.name}'s past and the conversation you are in.
+        ${relevantHistory}
 
 
-          ${recentChatHistory}\n${companion.name}:`
-      )
+        ${recentChatHistory}\n${companion.name}:`
+        )
       .catch(console.error);
 
     const cleaned = response?.replaceAll(",", "");
     const chunks = cleaned?.split("\n");
     const responseBody = chunks?.[0];
+    
     await memoryManager.writeToHistory("" + responseBody?.trim(), companionKey);
-    const Readable = require("stream").Readable;
+    var Readable = require("stream").Readable;
 
-    const s = new Readable();
+    let s = new Readable();
     s.push(responseBody);
     s.push(null);
 
-    if (responseBody && responseBody.length > 1) {
-      await memoryManager.writeToHistory(
-        `${responseBody.trim()}`,
+    if (responseBody !== undefined && responseBody.length > 1) {
+    
+      memoryManager.writeToHistory(
+        "" + responseBody.trim(),
         companionKey
       );
 
