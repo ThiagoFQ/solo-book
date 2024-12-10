@@ -1,8 +1,7 @@
 import { authMiddleware } from "@clerk/nextjs";
 
-// Protects all routes including api/trpc routes
 export default authMiddleware({
-  publicRoutes: ["/api/webhook", "/"],
+  publicRoutes: ["/api/webhook"],
 });
 
 export const config = {

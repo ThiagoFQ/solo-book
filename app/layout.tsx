@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ProModal } from "@/components/pro-modal";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
           )}
         >
           <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+            <ProModal />
             {children}
             <Toaster />
           </ThemeProvider>
