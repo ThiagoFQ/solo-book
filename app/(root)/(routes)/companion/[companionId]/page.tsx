@@ -1,8 +1,8 @@
 import prismadb from "@/lib/prismadb";
-import { auth, redirectToSignIn } from "@clerk/nextjs";
-import { CompanionForm } from "./components/companion-form";
 import { checkSubscription } from "@/lib/subscription";
+import { auth, redirectToSignIn } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
+import { CompanionForm } from "./components/companion-form";
 
 interface CompanionIdPageProps {
   params: {

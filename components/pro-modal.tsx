@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog"
-import { useProModal } from "@/hooks/use-pro-modal";
-import { Button } from "@/components/ui/button";
+} from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
+import { useProModal } from "@/hooks/use-pro-modal";
 import { useToast } from "@/hooks/use-toast";
 
 export const ProModal = () => {
