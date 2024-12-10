@@ -1,3 +1,4 @@
+import { ProModal } from "@/components/pro-modal";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
@@ -5,7 +6,6 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ProModal } from "@/components/pro-modal";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

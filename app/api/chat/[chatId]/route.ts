@@ -70,7 +70,10 @@ export async function POST(
 
     // Insert data Pinecone
     await memoryManager.insertToVectorStore([
-      { pageContent: recentChatHistory, metadata: { source: companion_file_name } }
+      {
+        pageContent: recentChatHistory,
+        metadata: { source: companion_file_name },
+      },
     ]);
 
     const similarDocs = await memoryManager.searchVectors(
@@ -113,13 +116,13 @@ export async function POST(
 
 
         ${recentChatHistory}\n${companion.name}:`
-        )
+      )
       .catch(console.error);
 
     const cleaned = response?.replaceAll(",", "");
     const chunks = cleaned?.split("\n");
     const responseBody = chunks?.[0];
-    
+
     await memoryManager.writeToHistory("" + responseBody?.trim(), companionKey);
     var Readable = require("stream").Readable;
 
@@ -128,11 +131,7 @@ export async function POST(
     s.push(null);
 
     if (responseBody !== undefined && responseBody.length > 1) {
-    
-      memoryManager.writeToHistory(
-        "" + responseBody.trim(),
-        companionKey
-      );
+      memoryManager.writeToHistory("" + responseBody.trim(), companionKey);
 
       await prismadb.companion.update({
         where: {

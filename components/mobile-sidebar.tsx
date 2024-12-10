@@ -5,12 +5,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { checkSubscription } from "@/lib/subscription";
 import { Menu } from "lucide-react";
 
-export const MobileSidebar = async () => {
-  const isPro = await checkSubscription();
-
+export const MobileSidebar = ({ isPro }: { isPro: boolean }) => {
   return (
     <Sheet>
       <SheetTrigger className="md:hidden pr-4">

@@ -7,11 +7,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 
-export const SubscriptionButton = ({
-  isPro = false
-}: {
-  isPro: boolean;
-}) => {
+export const SubscriptionButton = ({ isPro = false }: { isPro: boolean }) => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
 
@@ -33,9 +29,14 @@ export const SubscriptionButton = ({
   };
 
   return (
-    <Button size="sm" variant={isPro ? "default" : "premium"} disabled={loading} onClick={onClick} >
+    <Button
+      size="sm"
+      variant={isPro ? "default" : "premium"}
+      disabled={loading}
+      onClick={onClick}
+    >
       {isPro ? "Manage Subscription" : "Upgrade"}
       {!isPro && <Sparkles className="w-4 h-4 ml-2 fill-white" />}
     </Button>
-  )
+  );
 };

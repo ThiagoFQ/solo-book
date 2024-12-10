@@ -9,7 +9,7 @@ interface SidebarProps {
   isPro: boolean;
 }
 
-export const Sidebar = ({isPro}: SidebarProps) => {
+export const Sidebar = ({ isPro }: SidebarProps) => {
   const pathname = usePathname();
   const router = useRouter();
   const proModal = useProModal();

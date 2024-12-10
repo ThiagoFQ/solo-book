@@ -39,7 +39,7 @@ export const ProModal = () => {
     } finally {
       setLoading(false);
     }
-  }
+  };
 
   if (!isMounted) {
     return null;
@@ -49,9 +49,7 @@ export const ProModal = () => {
     <Dialog open={proModal.isOpen} onOpenChange={proModal.onClose}>
       <DialogContent>
         <DialogHeader className="space-y-4">
-          <DialogTitle className="text-center">
-            Upgrade to Pro
-          </DialogTitle>
+          <DialogTitle className="text-center">Upgrade to Pro</DialogTitle>
           <DialogDescription className="text-center space-y-2">
             Create
             <span className="text-sky-500 mx-1 font-medium">Custom AI</span>

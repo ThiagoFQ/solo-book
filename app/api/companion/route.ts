@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
     if (!isPro) {
       return new NextResponse("Pro subscription required", {
-        status: 403
+        status: 403,
       });
     }
 

@@ -16,21 +16,24 @@ export class MemoryManager {
 
   public constructor() {
     this.history = Redis.fromEnv();
-  
+
     this.vectorDBClient = new Pinecone({
       apiKey: process.env.PINECONE_API_KEY!,
     });
-
   }
 
-  public async insertToVectorStore(data: { pageContent: string; metadata: any }[]) {
+  public async insertToVectorStore(
+    data: { pageContent: string; metadata: any }[]
+  ) {
     try {
-      const pineconeIndex = this.vectorDBClient.Index(process.env.PINECONE_INDEX!);
+      const pineconeIndex = this.vectorDBClient.Index(
+        process.env.PINECONE_INDEX!
+      );
       const vectorStore = await PineconeStore.fromExistingIndex(
         new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
         { pineconeIndex }
       );
-  
+
       await vectorStore.addDocuments(data);
       console.log("Dados inseridos com sucesso no Pinecone");
     } catch (err) {
@@ -40,12 +43,14 @@ export class MemoryManager {
 
   public async searchVectors(query: string, topK: number, metadata?: any) {
     try {
-      const pineconeIndex = this.vectorDBClient.Index(process.env.PINECONE_INDEX!);
+      const pineconeIndex = this.vectorDBClient.Index(
+        process.env.PINECONE_INDEX!
+      );
       const vectorStore = await PineconeStore.fromExistingIndex(
         new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
         { pineconeIndex }
       );
-  
+
       const results = await vectorStore.similaritySearch(query, topK, metadata);
       console.log("Resultados da busca:", results);
       return results;

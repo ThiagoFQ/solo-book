@@ -35,7 +35,7 @@ export async function PATCH(
 
     if (!isPro) {
       return new NextResponse("Pro subscription required", {
-        status: 403
+        status: 403,
       });
     }
 
