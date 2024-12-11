@@ -30,7 +30,7 @@ export const Categories = ({ data }: ICategoriesProps) => {
   return (
     <div className="w-full overflow-x-auto space-x-2 flex p-1">
       <button
-        onClick={() => onClick(undefined)}
+        onClick={() => onClick("characters")}
         className={cn(
           `
           flex
@@ -47,7 +47,7 @@ export const Categories = ({ data }: ICategoriesProps) => {
           hover:opacity-75
           transition
           `,
-          !categoryId ? "bg-primary/25" : "bg-primary/10"
+          categoryId === "characters" ? "bg-primary/25" : "bg-primary/10"
         )}
       >
         {t("character.label")}
@@ -76,7 +76,7 @@ export const Categories = ({ data }: ICategoriesProps) => {
         {t("book.newest")}
       </button>
       <button
-        onClick={() => onClick(undefined)}
+        onClick={() => onClick("popular")}
         className={cn(
           `
           flex
@@ -93,7 +93,7 @@ export const Categories = ({ data }: ICategoriesProps) => {
           hover:opacity-75
           transition
           `,
-          !categoryId ? "bg-primary/25" : "bg-primary/10"
+          categoryId === "popular" ? "bg-primary/25" : "bg-primary/10"
         )}
       >
         {t("book.mostPopular")}

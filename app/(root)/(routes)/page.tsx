@@ -1,5 +1,5 @@
+import { Books } from "@/components/books";
 import { Categories } from "@/components/categories";
-import { Companions } from "@/components/companios";
 import { SearchInput } from "@/components/search-input";
 import prismadb from "@/lib/prismadb";
 
@@ -36,7 +36,8 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
     <div className="h-full p-4 space-y-2">
       <SearchInput />
       <Categories data={categories} />
-      <Companions data={data} />
+      <Books data={data} />
+      {/*<Companions data={data} />*/}
     </div>
   );
 };
