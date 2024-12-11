@@ -23,7 +23,7 @@ const CompanionIdPage = async ({ params }: CompanionIdPageProps) => {
     return redirect("/");
   }
 
-  const companion = await prismadb.companion.findUnique({
+  const companion = await prismadb.book.findUnique({
     where: {
       id: params.companionId,
       userId,

@@ -11,10 +11,10 @@ interface RootPageProps {
 }
 
 const RootPage = async ({ searchParams }: RootPageProps) => {
-  const data = await prismadb.companion.findMany({
+  const data = await prismadb.book.findMany({
     where: {
       categoryId: searchParams.categoryId,
-      name: {
+      title: {
         search: searchParams.name,
       },
     },

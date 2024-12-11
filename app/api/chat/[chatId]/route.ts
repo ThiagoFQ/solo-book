@@ -26,7 +26,7 @@ export async function POST(
       return new NextResponse("Rate limit exceeded", { status: 429 });
     }
 
-    const companion = await prismadb.companion.update({
+    const companion = await prismadb.book.update({
       where: {
         id: params.chatId,
       },
@@ -56,10 +56,10 @@ export async function POST(
     const memoryManager = await MemoryManager.getInstance();
 
     const records = await memoryManager.readLatestHistory(companionKey);
-
+    /*
     if (records.length === 0) {
-      await memoryManager.seedChatHistory(companion.seed, "\n\n", companionKey);
-    }
+      await memoryManager.seedChatHistory(companion, "\n\n", companionKey);
+    }*/
 
     await memoryManager.writeToHistory(`User: ${prompt}\n`, companionKey);
 
@@ -107,15 +107,15 @@ export async function POST(
     const response = await model
       .call(
         `
-        ONLY generate plain sentences without prefix of who is speaking. DO NOT use ${companion.name}: prefix. 
+        ONLY generate plain sentences without prefix of who is speaking. DO NOT use ${companion.title}: prefix. 
 
         ${companion.instructions}
 
-        Below are relevant details about ${companion.name}'s past and the conversation you are in.
+        Below are relevant details about ${companion.title}'s past and the conversation you are in.
         ${relevantHistory}
 
 
-        ${recentChatHistory}\n${companion.name}:`
+        ${recentChatHistory}\n${companion.title}:`
       )
       .catch(console.error);
 
@@ -133,7 +133,7 @@ export async function POST(
     if (responseBody !== undefined && responseBody.length > 1) {
       memoryManager.writeToHistory("" + responseBody.trim(), companionKey);
 
-      await prismadb.companion.update({
+      await prismadb.book.update({
         where: {
           id: params.chatId,
         },

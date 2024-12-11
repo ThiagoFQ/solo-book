@@ -39,20 +39,19 @@ export async function PATCH(
       });
     }
 
-    const companion = await prismadb.companion.update({
+    const companion = await prismadb.book.update({
       where: {
         id: params.companionId,
         userId: user.id,
       },
       data: {
+        title: name,
         categoryId,
         userId: user.id,
         userName: user.firstName,
         src,
-        name,
         description,
         instructions,
-        seed,
       },
     });
 
@@ -74,7 +73,7 @@ export async function DELETE(
       return new NextResponse("Unauthorized", { status: 401 });
     }
 
-    const companion = await prismadb.companion.delete({
+    const companion = await prismadb.book.delete({
       where: {
         userId,
         id: params.companionId,

@@ -32,16 +32,15 @@ export async function POST(req: Request) {
       });
     }
 
-    const companion = await prismadb.companion.create({
+    const companion = await prismadb.book.create({
       data: {
+        title: name,
         categoryId,
         userId: user.id,
         userName: user.firstName,
         src,
-        name,
         description,
         instructions,
-        seed,
       },
     });
 
