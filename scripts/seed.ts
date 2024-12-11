@@ -1,5 +1,5 @@
 const { PrismaClient } = require("@prisma/client");
-const translations = require("./lib/locales/en/common.json");
+const translations = require("../lib/locales/en/common.json");
 
 const db = new PrismaClient();
 

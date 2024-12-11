@@ -2,13 +2,28 @@
   "button": {
     "levelUp": "Subir de nível"
   },
+  "book": {
+    "newest": "Mais Recentes",
+    "mostPopular": "Mais Populares",
+    "title": "Título do Livro",
+    "author": "Autor",
+    "releaseDate": "Data de Lançamento",
+    "rating": "Avaliação",
+    "price": "Preço",
+    "description": "Descrição",
+    "buy": "Comprar"
+  },
   "categories": {
     "fantasyAdventure": "Fantasia e Aventura",
     "horrorSuspense": "Terror e Suspense",
     "sciFi": "Ficção Científica",
-    "crimeInvestigation": "Crime e Investigação",
-    "newest": "Mais Recentes",
-    "mostPopular": "Mais Populares"
+    "crimeInvestigation": "Crime e Investigação"
+  },
+  "character": {
+    "label": "Personagens",
+    "name": "Nome do Personagem",
+    "level": "Nível",
+    "class": "Classe"
   },
   "theme": {
     "light": "Claro",

@@ -2,13 +2,28 @@
   "button": {
     "levelUp": "Level Up"
   },
+  "book": {
+    "newest": "Newest",
+    "mostPopular": "Most Popular",
+    "title": "Book Title",
+    "author": "Author",
+    "releaseDate": "Release Date",
+    "rating": "Rating",
+    "price": "Price",
+    "description": "Description",
+    "buy": "Buy"
+  },
   "categories": {
     "fantasyAdventure": "Fantasy & Adventure",
     "horrorSuspense": "Horror & Suspense",
     "sciFi": "Science Fiction",
-    "crimeInvestigation": "Crime & Investigation",
-    "newest": "Newest",
-    "mostPopular": "Most Popular"
+    "crimeInvestigation": "Crime & Investigation"
+  },
+  "character": {
+    "label": "Characters",
+    "name": "Character Name",
+    "level": "Level",
+    "class": "Class"
   },
   "theme": {
     "light": "Light",

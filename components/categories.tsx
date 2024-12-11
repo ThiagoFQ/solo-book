@@ -50,7 +50,53 @@ export const Categories = ({ data }: ICategoriesProps) => {
           !categoryId ? "bg-primary/25" : "bg-primary/10"
         )}
       >
-        {t("categories.newest")}
+        {t("character.label")}
+      </button>
+      <button
+        onClick={() => onClick(undefined)}
+        className={cn(
+          `
+          flex
+          items-center
+          text-center
+          text-xs
+          md:text-sm
+          px-2
+          md:px-4
+          py-2
+          md:py-3
+          rounded-md
+          bg-primary/10
+          hover:opacity-75
+          transition
+          `,
+          !categoryId ? "bg-primary/25" : "bg-primary/10"
+        )}
+      >
+        {t("book.newest")}
+      </button>
+      <button
+        onClick={() => onClick(undefined)}
+        className={cn(
+          `
+          flex
+          items-center
+          text-center
+          text-xs
+          md:text-sm
+          px-2
+          md:px-4
+          py-2
+          md:py-3
+          rounded-md
+          bg-primary/10
+          hover:opacity-75
+          transition
+          `,
+          !categoryId ? "bg-primary/25" : "bg-primary/10"
+        )}
+      >
+        {t("book.mostPopular")}
       </button>
       {data.map((item) => (
         <button
@@ -75,7 +121,7 @@ export const Categories = ({ data }: ICategoriesProps) => {
             item.id === categoryId ? "bg-primary/25" : "bg-primary/10"
           )}
         >
-          {item.name}
+          {t(`categories.${item.key}`)}
         </button>
       ))}
     </div>
