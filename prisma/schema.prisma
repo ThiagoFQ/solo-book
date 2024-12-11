@@ -11,19 +11,20 @@ datasource db {
 
 model Category {
   id            String @id @default(uuid())
+  key           String @unique
   name          String
-  companions    Companion[]
+  books         Book[]
+  characters    Character[]
 }
 
-model Companion {
+model Book {
   id            String @id @default(uuid())
   userId        String
   userName      String
   src           String
-  name          String @db.Text
+  title         String @db.Text
   description   String
   instructions  String @db.Text
-  seed          String @db.Text
 
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
@@ -31,9 +32,24 @@ model Companion {
   category      Category @relation(fields: [categoryId], references: [id])
   categoryId    String
 
+  chapters      Chapter[]
   messages      Message[]
 
   @@index([categoryId])
+}
+
+model Chapter {
+  id          String   @id @default(uuid())
+  title       String   @db.Text
+  content     String   @db.Text
+  order       Int
+  book        Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  bookId      String
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([bookId])
 }
 
 enum Role {
@@ -48,12 +64,24 @@ model Message {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  companionId String
+  book        Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  bookId      String
   userId      String
 
-  companion   Companion @relation(fields: [companionId], references: [id], onDelete: Cascade)
+  @@index([bookId])
+}
 
-  @@index([companionId])
+model Character {
+  id          String    @id @default(uuid())
+  name        String    @db.Text
+  description String    @db.Text
+  category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  categoryId  String
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([categoryId])
 }
 
 model UserSubscription {

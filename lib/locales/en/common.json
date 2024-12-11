@@ -2,6 +2,14 @@
   "button": {
     "levelUp": "Level Up"
   },
+  "categories": {
+    "fantasyAdventure": "Fantasy & Adventure",
+    "horrorSuspense": "Horror & Suspense",
+    "sciFi": "Science Fiction",
+    "crimeInvestigation": "Crime & Investigation",
+    "newest": "Newest",
+    "mostPopular": "Most Popular"
+  },
   "theme": {
     "light": "Light",
     "dark": "Dark",

@@ -2,7 +2,7 @@
 
 import { useProModal } from "@/hooks/use-pro-modal";
 import { cn } from "@/lib/utils";
-import { IEpic } from "@/types/components";
+import { IEpic } from "@/types/components.types";
 import { Home, Plus, Settings } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 

@@ -1,17 +1,15 @@
 "use client";
 
+import { useLanguage } from "@/context/language-provider.context";
 import { cn } from "@/lib/utils";
-import { Category } from "@prisma/client";
+import { ICategoriesProps } from "@/types/components.types";
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 
-interface CategoriesProps {
-  data: Category[];
-}
-
-export const Categories = ({ data }: CategoriesProps) => {
+export const Categories = ({ data }: ICategoriesProps) => {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { t } = useLanguage();
 
   const categoryId = searchParams.get("categoryId");
 
@@ -52,7 +50,7 @@ export const Categories = ({ data }: CategoriesProps) => {
           !categoryId ? "bg-primary/25" : "bg-primary/10"
         )}
       >
-        Newest
+        {t("categories.newest")}
       </button>
       {data.map((item) => (
         <button

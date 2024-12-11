@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/language-provider.context";
 import { useProModal } from "@/hooks/use-pro-modal";
 import { cn } from "@/lib/utils";
-import { IEpic } from "@/types/components";
+import { IEpic } from "@/types/components.types";
 import { UserButton } from "@clerk/nextjs";
 import { Sparkles } from "lucide-react";
 import { Poppins } from "next/font/google";

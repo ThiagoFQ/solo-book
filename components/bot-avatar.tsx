@@ -1,8 +1,5 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-
-interface BotAvatarProps {
-  src: string;
-}
+import { BotAvatarProps } from "@/types/components.types";
 
 export const BotAvatar = ({ src }: BotAvatarProps) => {
   return (
