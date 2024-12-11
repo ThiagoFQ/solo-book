@@ -1,0 +1,23 @@
+{
+  "button": {
+    "levelUp": "Subir de nível"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema",
+    "toggle": "Alternar tema"
+  },
+  "screens": {
+    "accountManagement": {
+      "quickActions": {
+        "cardBlock": {
+          "modal": {
+            "title": "Título do Modal de Bloqueio de Cartão",
+            "description": "Descrição do Modal de Bloqueio de Cartão"
+          }
+        }
+      }
+    }
+  }
+}

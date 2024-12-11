@@ -1,3 +1,5 @@
+const { i18n } = require("./next-i18next.config");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -8,16 +10,7 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
-    // Warning ignore for replicate
-    config.ignoreWarnings = config.ignoreWarnings || [];
-    config.ignoreWarnings.push({
-      module: /replicate/,
-      message: /require function is used in a way/,
-    });
-    
-    return config;
-  },
+  i18n,
 };
 
 module.exports = nextConfig;

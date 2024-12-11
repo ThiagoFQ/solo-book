@@ -1,0 +1,23 @@
+{
+  "button": {
+    "levelUp": "Level Up"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme"
+  },
+  "screens": {
+    "accountManagement": {
+      "quickActions": {
+        "cardBlock": {
+          "modal": {
+            "title": "Card Block Modal Title",
+            "description": "Card Block Modal Description"
+          }
+        }
+      }
+    }
+  }
+}

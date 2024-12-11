@@ -2,14 +2,11 @@
 
 import { useProModal } from "@/hooks/use-pro-modal";
 import { cn } from "@/lib/utils";
+import { IEpic } from "@/types/components";
 import { Home, Plus, Settings } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
-interface SidebarProps {
-  isPro: boolean;
-}
-
-export const Sidebar = ({ isPro }: SidebarProps) => {
+export const Sidebar = ({ isPro }: IEpic) => {
   const pathname = usePathname();
   const router = useRouter();
   const proModal = useProModal();
