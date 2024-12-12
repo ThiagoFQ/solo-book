@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useToast } from "@/hooks/use-toast";
 import { useUser } from "@clerk/nextjs";
-import { Companion, Message } from "@prisma/client";
 import axios from "axios";
 import {
   ChevronLeft,
@@ -22,22 +21,34 @@ import {
 import { useRouter } from "next/navigation";
 
 interface ChatHeaderProps {
-  companion: Companion & {
-    messages: Message[];
-    _count: {
-      messages: number;
-    };
+  book: {
+    id: string;
+    userId: string;
+    userName: string;
+    src: string;
+    title: string;
+    chapters: {
+      id: string;
+      messages: {
+        id: string;
+      }[];
+    }[];
   };
 }
 
-export const ChatHeader = ({ companion }: ChatHeaderProps) => {
+export const ChatHeader = ({ book }: ChatHeaderProps) => {
   const router = useRouter();
   const { user } = useUser();
   const { toast } = useToast();
 
+  const totalMessages = book.chapters.reduce(
+    (acc, chapter) => acc + chapter.messages.length,
+    0
+  );
+
   const onDelete = async () => {
     try {
-      await axios.delete(`/api/companion/${companion.id}`);
+      await axios.delete(`/api/book/${book.id}`);
 
       toast({
         description: "Success.",
@@ -59,21 +70,21 @@ export const ChatHeader = ({ companion }: ChatHeaderProps) => {
         <Button onClick={() => router.back()} size="icon" variant="ghost">
           <ChevronLeft className="h-8 w-8" />
         </Button>
-        <BotAvatar src={companion.src} />
+        <BotAvatar src={book.src} />
         <div className="flex flex-col gap-y-1">
           <div className="flex items-center gap-x-2">
-            <p className="font-bold">{companion.name}</p>
+            <p className="font-bold">{book.title}</p>
             <div className="flex items-center text-xs text-muted-foreground">
               <MessagesSquare className="w-3 h-3 mr-1" />
-              {companion._count.messages}
+              {totalMessages}
             </div>
           </div>
           <p className="text-xs text-muted-foreground">
-            Created by {companion.userName}
+            Created by {book.userName}
           </p>
         </div>
       </div>
-      {user?.id === companion.userId && (
+      {user?.id === book.userId && (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="secondary" size="icon">
@@ -81,9 +92,7 @@ export const ChatHeader = ({ companion }: ChatHeaderProps) => {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem
-              onClick={() => router.push(`/companion/${companion.id}`)}
-            >
+            <DropdownMenuItem onClick={() => router.push(`/book/${book.id}`)}>
               <Edit className="w-4 h-4 me-2" />
               Edit
             </DropdownMenuItem>

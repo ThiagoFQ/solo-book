@@ -16,32 +16,29 @@ const ChatIdPage = async ({ params }: ChatIdPageProps) => {
     return redirectToSignIn();
   }
 
-  const companion = await prismadb.book.findUnique({
+  const book = await prismadb.book.findUnique({
     where: {
       id: params.chatId,
     },
     include: {
-      messages: {
-        orderBy: {
-          createdAt: "asc",
-        },
-        where: {
-          userId,
+      chapters: {
+        include: {
+          messages: true,
         },
       },
       _count: {
         select: {
-          messages: true,
+          chapters: true,
         },
       },
     },
   });
 
-  if (!companion) {
+  if (!book) {
     return redirect("/");
   }
 
-  return <ChatClient companion={companion} />;
+  return <ChatClient book={book} />;
 };
 
 export default ChatIdPage;
