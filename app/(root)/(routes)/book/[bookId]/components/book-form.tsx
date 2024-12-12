@@ -1,5 +1,6 @@
 "use client";
 
+import { Chapters } from "@/components/chapters";
 import ImageUpload from "@/components/image-upload";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,7 +23,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Book, Category } from "@prisma/client";
+import { Book, Category, Chapter } from "@prisma/client";
 import axios from "axios";
 import { Wand2 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -30,8 +31,10 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 interface BookFormProps {
-  initialData: Book | null;
+  initialData: (Book & { chapters: Chapter[] }) | null;
   categories: Category[];
+  bookId?: string;
+  chapterMax?: number;
 }
 
 const formSchema = z.object({
@@ -47,7 +50,12 @@ const formSchema = z.object({
     .max(10, { message: "Cannot have more than 10 chapters" }),
 });
 
-export const BookForm = ({ categories, initialData }: BookFormProps) => {
+export const BookForm = ({
+  categories,
+  initialData,
+  bookId,
+  chapterMax,
+}: BookFormProps) => {
   const { toast } = useToast();
   const router = useRouter();
 
@@ -95,15 +103,12 @@ export const BookForm = ({ categories, initialData }: BookFormProps) => {
   return (
     <div className="h-full p-4 space-y-2 max-w-3xl mx-auto">
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-8 pb-10"
-        >
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pb-4">
           <div className="space-y-2 w-full">
             <div className="text-lg font-medium">
               <h3>General Information</h3>
               <p className="text-sm text-muted-foreground">
-                General information about your Book
+                General information about your book
               </p>
             </div>
             <Separator className="bg-primary/10" />
@@ -303,12 +308,31 @@ export const BookForm = ({ categories, initialData }: BookFormProps) => {
           </div>
           <div className="w-full flex justify-center">
             <Button size="lg" disabled={isLoading}>
-              {initialData ? "Edit your book" : "Create your book"}
+              {initialData ? "Edit General Information" : "Create your book"}
               <Wand2 className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </form>
       </Form>
+
+      {initialData && chapterMax && (
+        <div className="w-full space-y-4 max-w-3xl mx-auto pb-10">
+          <div className="space-y-2 w-full">
+            <div className="text-lg font-medium">
+              <h3>Manage Chapters</h3>
+              <p className="text-sm text-muted-foreground">
+                Manage the chapters of your book
+              </p>
+            </div>
+            <Separator className="bg-primary/10" />
+          </div>
+          <Chapters
+            bookId={bookId!}
+            chapters={initialData.chapters || []}
+            chapterMax={chapterMax}
+          />
+        </div>
+      )}
     </div>
   );
 };

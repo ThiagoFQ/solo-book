@@ -12,22 +12,23 @@ const BookIdPage = async ({ params }: BookIdPageProps) => {
     where: {
       id: params.bookId,
     },
-  });
-
-  const chapter = await prismadb.chapter.findUnique({
-    where: {
-      id: params.bookId,
+    include: {
+      chapters: true,
     },
   });
 
-  const books = await prismadb.book.findMany();
+  const isNewBook = !params.bookId;
+
   const categories = await prismadb.category.findMany();
 
   return (
     <>
-      <BookForm initialData={book} categories={categories} />
-      {/*<Separator className="bg-primary/10" />
-      <ChapterForm initialData={chapter} books={books} />*/}
+      <BookForm
+        initialData={book}
+        categories={categories}
+        bookId={params.bookId}
+        chapterMax={book?.chapterMax ?? 0}
+      />
     </>
   );
 };
