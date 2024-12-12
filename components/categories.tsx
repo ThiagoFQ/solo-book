@@ -1,8 +1,10 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/language-provider.context";
 import { cn } from "@/lib/utils";
 import { ICategoriesProps } from "@/types/components.types";
+import { BookIcon, StarIcon, TimerIcon, UserIcon } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 
@@ -29,8 +31,10 @@ export const Categories = ({ data }: ICategoriesProps) => {
 
   return (
     <div className="w-full overflow-x-auto space-x-2 flex p-1">
-      <button
+      <Button
         onClick={() => onClick("characters")}
+        variant={"secondary"}
+        size={"icon"}
         className={cn(
           `
           flex
@@ -50,10 +54,11 @@ export const Categories = ({ data }: ICategoriesProps) => {
           categoryId === "characters" ? "bg-primary/25" : "bg-primary/10"
         )}
       >
-        {t("character.label")}
-      </button>
-      <button
+        <UserIcon className="w-4 h-4" />
+      </Button>
+      <Button
         onClick={() => onClick(undefined)}
+        variant={"secondary"}
         className={cn(
           `
           flex
@@ -73,10 +78,12 @@ export const Categories = ({ data }: ICategoriesProps) => {
           !categoryId ? "bg-primary/25" : "bg-primary/10"
         )}
       >
+        <TimerIcon className="w-4 h-4 mr-1" />
         {t("book.newest")}
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={() => onClick("popular")}
+        variant={"secondary"}
         className={cn(
           `
           flex
@@ -96,11 +103,13 @@ export const Categories = ({ data }: ICategoriesProps) => {
           categoryId === "popular" ? "bg-primary/25" : "bg-primary/10"
         )}
       >
+        <StarIcon className="w-4 h-4 mr-1" />
         {t("book.mostPopular")}
-      </button>
+      </Button>
       {data.map((item) => (
-        <button
+        <Button
           onClick={() => onClick(item.id)}
+          variant={"secondary"}
           key={item.id}
           className={cn(
             `
@@ -121,8 +130,9 @@ export const Categories = ({ data }: ICategoriesProps) => {
             item.id === categoryId ? "bg-primary/25" : "bg-primary/10"
           )}
         >
+          <BookIcon className="w-4 h-4 mr-1" />
           {t(`categories.${item.key}`)}
-        </button>
+        </Button>
       ))}
     </div>
   );
