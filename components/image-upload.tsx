@@ -22,19 +22,18 @@ const ImageUpload = ({ value, onChange, disabled }: ImageUploadProps) => {
   }
 
   return (
-    <div className="space-y-4 w-full flex flex-col justify-center items-center">
+    <div className="space-y-4 w-full flex flex-col">
       <CldUploadButton
         onUpload={(result: any) => onChange(result.info.secure_url)}
         options={{
           maxFiles: 1,
         }}
-        uploadPreset="nyk3nkf0"
+        uploadPreset="ar9j09f1"
       >
         <div
           className="
             p-4
             border-4
-            dorder-dashed
             border-primary/10
             rounded-lg
             hover:opacity-75
@@ -42,10 +41,9 @@ const ImageUpload = ({ value, onChange, disabled }: ImageUploadProps) => {
             flex
             flex-col
             space-y-2
-            items-center
-            justify-center"
+            "
         >
-          <div className="relative h-40 w-40">
+          <div className="relative w-full h-60 md:h-48">
             <Image
               fill
               alt="Upload"

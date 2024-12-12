@@ -24,7 +24,8 @@ model Book {
   src           String
   title         String @db.Text
   description   String
-  instructions  String @db.Text
+  levelMin      String @db.Text
+  levelMax      String @db.Text
 
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
@@ -33,7 +34,7 @@ model Book {
   categoryId    String
 
   chapters      Chapter[]
-  messages      Message[]
+  chapterMax    Int
 
   @@index([categoryId])
 }
@@ -41,10 +42,14 @@ model Book {
 model Chapter {
   id          String   @id @default(uuid())
   title       String   @db.Text
-  content     String   @db.Text
-  order       Int
+  content     String
+  src         String
+  order       String
+
   book        Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
   bookId      String
+
+  messages    Message[]
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
@@ -58,23 +63,41 @@ enum Role {
 }
 
 model Message {
-  id          String @id @default(uuid())
+  id          String    @id @default(uuid())
   role        Role
-  content     String @db.Text
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  book        Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
-  bookId      String
+  content     String
   userId      String
 
-  @@index([bookId])
+  chapter     Chapter   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  chapterId   String
+
+  actions    Action[]
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([chapterId])
+}
+
+model Action {
+  id            String    @id @default(uuid())
+  type          String
+  description   String
+
+  message       Message   @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  messageId     String
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([messageId])
 }
 
 model Character {
   id          String    @id @default(uuid())
   name        String    @db.Text
   description String    @db.Text
+
   category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
   categoryId  String
 

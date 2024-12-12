@@ -1,18 +1,25 @@
 import prismadb from "@/lib/prismadb";
-import { checkSubscription } from "@/lib/subscription";
 import { auth, currentUser } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
 export async function PATCH(
   req: Request,
-  { params }: { params: { companionId: string } }
+  { params }: { params: { bookId: string } }
 ) {
   try {
     const body = await req.json();
     const user = await currentUser();
-    const { src, name, description, instructions, seed, categoryId } = body;
+    const {
+      src,
+      title,
+      description,
+      chapterMax,
+      levelMin,
+      levelMax,
+      categoryId,
+    } = body;
 
-    if (!params.companionId) {
+    if (!params.bookId) {
       return new NextResponse("Companion ID is required", { status: 401 });
     }
 
@@ -22,15 +29,16 @@ export async function PATCH(
 
     if (
       !src ||
-      !name ||
+      !title ||
       !description ||
-      !instructions ||
-      !seed ||
+      !chapterMax ||
+      !levelMin ||
+      !levelMax ||
       !categoryId
     ) {
       return new NextResponse("Missing required fields", { status: 400 });
     }
-
+    /*
     const isPro = await checkSubscription();
 
     if (!isPro) {
@@ -38,32 +46,35 @@ export async function PATCH(
         status: 403,
       });
     }
-
-    const companion = await prismadb.book.update({
+*/
+    const book = await prismadb.book.update({
       where: {
-        id: params.companionId,
+        id: params.bookId,
         userId: user.id,
       },
       data: {
-        title: name,
+        title: title,
         categoryId,
         userId: user.id,
         userName: user.firstName,
         src,
         description,
+        chapterMax,
+        levelMin,
+        levelMax,
       },
     });
 
-    return NextResponse.json(companion);
+    return NextResponse.json(book);
   } catch (error) {
-    console.log("[COMPANION_PATCH]", error);
+    console.log("[BOOK_PATCH]", error);
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { companionId: string } }
+  { params }: { params: { bookId: string } }
 ) {
   try {
     const { userId } = auth();
@@ -72,16 +83,16 @@ export async function DELETE(
       return new NextResponse("Unauthorized", { status: 401 });
     }
 
-    const companion = await prismadb.book.delete({
+    const book = await prismadb.book.delete({
       where: {
         userId,
-        id: params.companionId,
+        id: params.bookId,
       },
     });
 
-    return NextResponse.json(companion);
+    return NextResponse.json(book);
   } catch (error) {
-    console.log("[COMPANION_DELETE]", error);
+    console.log("[BOOK_DELETE]", error);
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
