@@ -23,7 +23,7 @@ export const Chapters = ({ bookId, chapters, chapterMax }: ChaptersProps) => {
           key={chapter.id}
           className="bg-primary/10 rounded-xl cursor-pointer hover:opacity-75 transition border-0"
         >
-          <Link href={`/book/${bookId}/chapters/${chapter.id}`}>
+          <Link href={`/book/${bookId}/chapter/${chapter.id}`}>
             <CardHeader className="flex items-center justify-center text-center text-muted-foreground">
               <div className="relative w-32 h-32">
                 <Image
@@ -57,9 +57,7 @@ export const Chapters = ({ bookId, chapters, chapterMax }: ChaptersProps) => {
           key={placeholder.id}
           className="bg-muted/10 rounded-xl cursor-pointer hover:opacity-75 transition border-dashed"
         >
-          <Link
-            href={`/book/${bookId}/chapters/new?order=${placeholder.order}`}
-          >
+          <Link href={`/book/${bookId}/chapter/new?order=${placeholder.order}`}>
             <CardHeader className="flex flex-col items-center justify-center text-center text-muted-foreground space-y-2">
               <div className="relative w-32 h-32 flex items-center justify-center">
                 <Image

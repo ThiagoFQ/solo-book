@@ -17,8 +17,6 @@ const BookIdPage = async ({ params }: BookIdPageProps) => {
     },
   });
 
-  const isNewBook = !params.bookId;
-
   const categories = await prismadb.category.findMany();
 
   return (
