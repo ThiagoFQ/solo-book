@@ -35,7 +35,7 @@ export const ChatHeader = ({ book }: ChatHeaderProps) => {
   const { user } = useUser();
   const { toast } = useToast();
 
-  const totalMessages = book.messages.length;
+  const totalMessages = book._count.messages;
 
   const onDelete = async () => {
     try {

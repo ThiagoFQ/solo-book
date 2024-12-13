@@ -4,10 +4,11 @@ import { ChatForm } from "@/components/chat-form";
 import { ChatHeader } from "@/components/chat-header";
 import { ChatMessageProps } from "@/components/chat-message";
 import { ChatMessages } from "@/components/chat-messages";
+import { ChapterProvider } from "@/context/chapter-provider.context";
 import { Book, Chapter, Message } from "@prisma/client";
-import { useCompletion } from "ai/react";
-import { useRouter } from "next/navigation";
-import { FormEvent, useState } from "react";
+import axios from "axios";
+import Image from "next/image";
+import { useState } from "react";
 
 interface ChatClientProps {
   book: Book & {
@@ -20,57 +21,72 @@ interface ChatClientProps {
 }
 
 export const ChatClient = ({ book }: ChatClientProps) => {
-  const router = useRouter();
-  const [messages, setMessages] = useState<ChatMessageProps[]>(
-    book.messages.flatMap((message): ChatMessageProps[] =>
-      messages.map(
-        (message): ChatMessageProps => ({
-          role: message.role,
-          content: message.content,
-        })
-      )
-    )
-  );
+  const [messages, setMessages] = useState<ChatMessageProps[]>(book.messages);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const { input, isLoading, handleInputChange, handleSubmit, setInput } =
-    useCompletion({
-      api: `/api/chat/${book.id}`,
-      onFinish(_prompt, completion) {
-        const systemMessage: ChatMessageProps = {
-          role: "system",
-          content: completion,
-        };
+  const addSystemMessage = async (content: string) => {
+    setIsLoading(true);
 
-        setMessages((current) => [...current, systemMessage]);
-        setInput("");
-
-        router.refresh();
-      },
-    });
-
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const userMessage: ChatMessageProps = {
-      role: "user",
-      content: input,
+    const systemMessage = {
+      role: "system",
+      content,
     };
 
-    setMessages((current) => [...current, userMessage]);
+    setTimeout(async () => {
+      try {
+        const { data: savedMessage } = await axios.post(
+          `/api/book/${book.id}/message`,
+          systemMessage
+        );
+        setMessages((current) => [...current, savedMessage]);
+      } catch (error) {
+        console.error("Failed to save system message:", error);
+      }
 
-    handleSubmit(e);
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  const userMessage: ChatMessageProps = {
+    role: "user",
+    content: "",
+  };
+
+  const handleInventoryClick = () => {
+    userMessage.content = "You opened your inventory. [List your items here]";
+    setMessages((current) => [...current, userMessage]);
+  };
+
+  const handleCharacterSheetClick = () => {
+    userMessage.content =
+      "You opened your character sheet. [Display character details here]";
+    setMessages((current) => [...current, userMessage]);
+  };
+
+  const handleMapClick = () => {
+    userMessage.content = "You opened the map. [Display map here]";
+    setMessages((current) => [...current, userMessage]);
   };
 
   return (
-    <div className="flex flex-col h-full p-4 space-y-2">
-      <ChatHeader book={book} />
-      <ChatMessages book={book} isLoading={isLoading} messages={messages} />
-      <ChatForm
-        isLoading={isLoading}
-        input={input}
-        handleInputChange={handleInputChange}
-        onSubmit={onSubmit}
-      />
-    </div>
+    <ChapterProvider bookId={book.id}>
+      <div className="flex flex-col h-full p-4 space-y-2">
+        <ChatHeader book={book} />
+        <div className="relative w-full h-60">
+          <Image
+            src={book.src}
+            alt={book.title}
+            fill
+            className="rounded-xl object-cover"
+          />
+        </div>
+        <ChatMessages book={book} isLoading={isLoading} messages={messages} />
+        <ChatForm
+          onInventoryClick={handleInventoryClick}
+          onCharacterSheetClick={handleCharacterSheetClick}
+          onMapClick={handleMapClick}
+        />
+      </div>
+    </ChapterProvider>
   );
 };

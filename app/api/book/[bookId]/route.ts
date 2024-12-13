@@ -114,6 +114,7 @@ export async function DELETE(
 
     const basePath = path.join(
       process.cwd(),
+      "public",
       "locales",
       "books",
       params.bookId
