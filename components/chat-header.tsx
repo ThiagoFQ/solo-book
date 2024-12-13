@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useToast } from "@/hooks/use-toast";
 import { useUser } from "@clerk/nextjs";
+import { Book, Message } from "@prisma/client";
 import axios from "axios";
 import {
   ChevronLeft,
@@ -21,18 +22,11 @@ import {
 import { useRouter } from "next/navigation";
 
 interface ChatHeaderProps {
-  book: {
-    id: string;
-    userId: string;
-    userName: string;
-    src: string;
-    title: string;
-    chapters: {
-      id: string;
-      messages: {
-        id: string;
-      }[];
-    }[];
+  book: Book & {
+    messages: Message[];
+    _count: {
+      messages: number;
+    };
   };
 }
 
@@ -41,10 +35,7 @@ export const ChatHeader = ({ book }: ChatHeaderProps) => {
   const { user } = useUser();
   const { toast } = useToast();
 
-  const totalMessages = book.chapters.reduce(
-    (acc, chapter) => acc + chapter.messages.length,
-    0
-  );
+  const totalMessages = book.messages.length;
 
   const onDelete = async () => {
     try {
@@ -70,7 +61,7 @@ export const ChatHeader = ({ book }: ChatHeaderProps) => {
         <Button onClick={() => router.back()} size="icon" variant="ghost">
           <ChevronLeft className="h-8 w-8" />
         </Button>
-        <BotAvatar src={book.src} />
+        <BotAvatar srcBot={undefined} />
         <div className="flex flex-col gap-y-1">
           <div className="flex items-center gap-x-2">
             <p className="font-bold">{book.title}</p>

@@ -11,7 +11,8 @@ export interface IEpic {
 }
 
 export interface BotAvatarProps {
-  src: string;
+  src?: string;
+  srcBot?: string;
 }
 
 export interface ICategoriesProps {

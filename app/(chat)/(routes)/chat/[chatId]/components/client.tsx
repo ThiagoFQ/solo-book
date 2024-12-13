@@ -4,29 +4,17 @@ import { ChatForm } from "@/components/chat-form";
 import { ChatHeader } from "@/components/chat-header";
 import { ChatMessageProps } from "@/components/chat-message";
 import { ChatMessages } from "@/components/chat-messages";
-import { Book } from "@prisma/client";
+import { Book, Chapter, Message } from "@prisma/client";
 import { useCompletion } from "ai/react";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 
 interface ChatClientProps {
   book: Book & {
-    chapters: {
-      id: string;
-      title: string;
-      order: string;
-      messages: {
-        id: string;
-        userId: string;
-        createdAt: Date;
-        updatedAt: Date;
-        role: "user" | "system";
-        content: string;
-        chapterId: string;
-      }[];
-    }[];
+    chapters: Chapter[];
+    messages: Message[];
     _count: {
-      chapters: number;
+      messages: number;
     };
   };
 }
@@ -34,11 +22,13 @@ interface ChatClientProps {
 export const ChatClient = ({ book }: ChatClientProps) => {
   const router = useRouter();
   const [messages, setMessages] = useState<ChatMessageProps[]>(
-    book.chapters.flatMap((chapter) =>
-      chapter.messages.map((message) => ({
-        role: message.role,
-        content: message.content,
-      }))
+    book.messages.flatMap((message): ChatMessageProps[] =>
+      messages.map(
+        (message): ChatMessageProps => ({
+          role: message.role,
+          content: message.content,
+        })
+      )
     )
   );
 

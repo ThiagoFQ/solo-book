@@ -41,6 +41,8 @@ model Book {
   chapters      Chapter[]
   chapterMax    Int
 
+  messages      Message[]
+
   @@index([categoryId])
 }
 
@@ -55,8 +57,6 @@ model Chapter {
   book        Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
   bookId      String
 
-  messages    Message[]
-
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
@@ -70,13 +70,13 @@ model Message {
   userId      String
   fragmentId  String
 
-  chapter     Chapter   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
-  chapterId   String
+  book        Book   @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  bookId      String
 
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
-  @@index([chapterId])
+  @@index([bookId])
 }
 
 model Character {

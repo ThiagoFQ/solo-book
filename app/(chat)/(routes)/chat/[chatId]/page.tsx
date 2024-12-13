@@ -21,16 +21,20 @@ const ChatIdPage = async ({ params }: ChatIdPageProps) => {
       id: params.chatId,
     },
     include: {
-      chapters: {
-        include: {
-          messages: true,
+      messages: {
+        orderBy: {
+          createdAt: "asc",
+        },
+        where: {
+          userId,
         },
       },
       _count: {
         select: {
-          chapters: true,
+          messages: true,
         },
       },
+      chapters: true,
     },
   });
 

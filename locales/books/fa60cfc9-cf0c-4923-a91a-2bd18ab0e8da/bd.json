@@ -1,0 +1,698 @@
+{
+  "chapter": "1",
+  "fragments": [
+    {
+      "fragmentId": "0",
+      "textKey": "chapter1.fragment0.text",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Perception",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "23",
+              "descriptionKey": "chapter1.fragment0.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "11",
+              "descriptionKey": "chapter1.fragment0.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "1",
+      "textKey": "chapter1.fragment1.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment1.choice.callOut",
+              "nextFragmentId": "27"
+            },
+            {
+              "labelKey": "chapter1.fragment1.choice.follow",
+              "nextFragmentId": "3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "2",
+      "textKey": "chapter1.fragment2.text",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment2.choice.next",
+              "nextFragmentId": "44"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "3",
+      "textKey": "chapter1.fragment3.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment3.choice.followInn",
+              "nextFragmentId": "34"
+            },
+            {
+              "labelKey": "chapter1.fragment3.choice.lookWindow",
+              "nextFragmentId": "19"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "4",
+      "textKey": "chapter1.fragment4.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment4.choice.next",
+              "nextFragmentId": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "5",
+      "textKey": "chapter1.fragment5.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment5.choice.reconsider",
+              "nextFragmentId": "48"
+            },
+            {
+              "labelKey": "chapter1.fragment5.choice.leaveTown",
+              "nextFragmentId": "8"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "6",
+      "textKey": "chapter1.fragment6.text",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Animal Handling",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "22",
+              "descriptionKey": "chapter1.fragment6.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "47",
+              "descriptionKey": "chapter1.fragment6.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "7",
+      "textKey": "chapter1.fragment7.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment7.choice.next",
+              "nextFragmentId": "25"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "8",
+      "textKey": "chapter1.fragment8.text",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "9",
+      "textKey": "chapter1.fragment9.text",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment9.choice.next",
+              "nextFragmentId": "13"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "10",
+      "textKey": "chapter1.fragment10.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment10.choice.next",
+              "nextFragmentId": "39"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "11",
+      "textKey": "chapter1.fragment11.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment11.choice.next",
+              "nextFragmentId": "33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "12",
+      "textKey": "chapter1.fragment12.text",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Investigation",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "9",
+              "descriptionKey": "chapter1.fragment12.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "18",
+              "descriptionKey": "chapter1.fragment12.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "13",
+      "textKey": "chapter1.fragment13.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment13.choice.arcana",
+              "nextFragmentId": "38"
+            },
+            {
+              "labelKey": "chapter1.fragment13.choice.perception",
+              "nextFragmentId": "14"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "14",
+      "textKey": "chapter1.fragment14.text",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Perception",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "42",
+              "descriptionKey": "chapter1.fragment14.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "10",
+              "descriptionKey": "chapter1.fragment14.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "15",
+      "textKey": "chapter1.fragment15.text",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment15.choice.next",
+              "nextFragmentId": "44"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "16",
+      "textKey": "chapter1.fragment16.text",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment16.choice.next",
+              "nextFragmentId": "25"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "17",
+      "textKey": "chapter1.fragment17.text",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment17.choice.next",
+              "nextFragmentId": "30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "18",
+      "textKey": "chapter1.fragment18.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment18.choice.next",
+              "nextFragmentId": "13"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "19",
+      "textKey": "chapter1.fragment19.text",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "labelKey": "chapter1.fragment19.choice.next",
+              "nextFragmentId": "34"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "20",
+      "textKey": "chapter1.fragment20.text",
+      "actions": {
+        "roll": {
+          "stat": "Charisma",
+          "skill": "Intimidation",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "15",
+              "descriptionKey": "chapter1.fragment20.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "36",
+              "descriptionKey": "chapter1.fragment20.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "21",
+      "textKey": "chapter1.fragment21.text",
+      "actions": {
+        "choice": {
+          "acceptJob": "48",
+          "rejectJob": "5"
+        }
+      }
+    },
+    {
+      "fragmentId": "22",
+      "textKey": "chapter1.fragment22.text",
+      "actions": {
+        "choice": {
+          "next": "30"
+        }
+      }
+    },
+    {
+      "fragmentId": "23",
+      "textKey": "chapter1.fragment23.text",
+      "actions": {
+        "choice": {
+          "fightWolves": "33",
+          "runForTown": "40"
+        }
+      }
+    },
+    {
+      "fragmentId": "24",
+      "textKey": "chapter1.fragment24.text",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Religion",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "16",
+              "descriptionKey": "chapter1.fragment24.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "7",
+              "descriptionKey": "chapter1.fragment24.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "25",
+      "textKey": "chapter1.fragment25.text",
+      "actions": {
+        "choice": {
+          "historyCheck": "37",
+          "animalHandlingCheck": "6"
+        }
+      }
+    },
+    {
+      "fragmentId": "26",
+      "textKey": "chapter1.fragment26.text",
+      "actions": {
+        "rest": "longRest",
+        "choice": {
+          "greetMayor": "21",
+          "petDog": "35"
+        }
+      }
+    },
+    {
+      "fragmentId": "27",
+      "textKey": "chapter1.fragment27.text",
+      "actions": {
+        "choice": {
+          "enterTavern": "34",
+          "lookWindow": "19"
+        }
+      }
+    },
+    {
+      "fragmentId": "28",
+      "textKey": "chapter1.fragment28.text",
+      "actions": {
+        "choice": {
+          "next": "32"
+        }
+      }
+    },
+    {
+      "fragmentId": "29",
+      "textKey": "chapter1.fragment29.text",
+      "actions": {
+        "inspiration": "gainInspiration",
+        "choice": {
+          "next": "13"
+        }
+      }
+    },
+    {
+      "fragmentId": "30",
+      "textKey": "chapter1.fragment30.text",
+      "actions": {
+        "choice": {
+          "next": "26"
+        }
+      }
+    },
+    {
+      "fragmentId": "31",
+      "textKey": "chapter1.fragment31.text",
+      "actions": {
+        "inspiration": "gainInspiration",
+        "choice": {
+          "next": "39"
+        }
+      }
+    },
+    {
+      "fragmentId": "32",
+      "textKey": "chapter1.fragment32.text",
+      "actions": {
+        "choice": {
+          "investigationCheck": "12",
+          "insightCheck": "46"
+        }
+      }
+    },
+    {
+      "fragmentId": "33",
+      "textKey": "chapter1.fragment33.text",
+      "actions": {
+        "combat": "wolves",
+        "choice": {
+          "next": "4"
+        }
+      }
+    },
+    {
+      "fragmentId": "34",
+      "textKey": "chapter1.fragment34.text",
+      "actions": {
+        "choice": {
+          "persuade": "41",
+          "intimidate": "20"
+        }
+      }
+    },
+    {
+      "fragmentId": "35",
+      "textKey": "chapter1.fragment35.text",
+      "actions": {
+        "choice": {
+          "next": "21"
+        }
+      }
+    },
+    {
+      "fragmentId": "36",
+      "textKey": "chapter1.fragment36.text",
+      "actions": {
+        "choice": {
+          "next": "44"
+        }
+      }
+    },
+    {
+      "fragmentId": "37",
+      "textKey": "chapter1.fragment37.text",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "History",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "17",
+              "descriptionKey": "chapter1.fragment37.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "47",
+              "descriptionKey": "chapter1.fragment37.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "38",
+      "textKey": "chapter1.fragment38.text",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Arcana",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "31",
+              "descriptionKey": "chapter1.fragment38.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "10",
+              "descriptionKey": "chapter1.fragment38.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "39",
+      "textKey": "chapter1.fragment39.text",
+      "actions": {
+        "choice": {
+          "religionCheck": "24",
+          "insightCheck": "43"
+        }
+      }
+    },
+    {
+      "fragmentId": "40",
+      "textKey": "chapter1.fragment40.text",
+      "actions": {
+        "choice": {
+          "next": "4"
+        }
+      }
+    },
+    {
+      "fragmentId": "41",
+      "textKey": "chapter1.fragment41.text",
+      "actions": {
+        "roll": {
+          "stat": "Charisma",
+          "skill": "Persuasion",
+          "threshold": 12,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "2",
+              "descriptionKey": "chapter1.fragment41.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "36",
+              "descriptionKey": "chapter1.fragment41.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "42",
+      "textKey": "chapter1.fragment42.text",
+      "actions": {
+        "inspiration": "gainInspiration",
+        "choice": {
+          "next": "39"
+        }
+      }
+    },
+    {
+      "fragmentId": "43",
+      "textKey": "chapter1.fragment43.text",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Insight",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "45",
+              "descriptionKey": "chapter1.fragment43.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "7",
+              "descriptionKey": "chapter1.fragment43.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "44",
+      "textKey": "chapter1.fragment44.text",
+      "actions": {
+        "choice": {
+          "next": "28"
+        }
+      }
+    },
+    {
+      "fragmentId": "45",
+      "textKey": "chapter1.fragment45.text",
+      "actions": {
+        "choice": {
+          "next": "25"
+        }
+      }
+    },
+    {
+      "fragmentId": "46",
+      "textKey": "chapter1.fragment46.text",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Insight",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "29",
+              "descriptionKey": "chapter1.fragment46.outcome.success"
+            },
+            "failure": {
+              "nextFragmentId": "18",
+              "descriptionKey": "chapter1.fragment46.outcome.failure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "47",
+      "textKey": "chapter1.fragment47.text",
+      "actions": {
+        "choice": {
+          "next": "30"
+        }
+      }
+    },
+    {
+      "fragmentId": "48",
+      "textKey": "chapter1.fragment48.text",
+      "actions": {
+        "inventory": {
+          "type": "add",
+          "item": "gold",
+          "quantity": 20
+        },
+        "choice": {
+          "next": "49"
+        }
+      }
+    }
+  ]
+}

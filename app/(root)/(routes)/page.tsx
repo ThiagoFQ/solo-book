@@ -6,7 +6,7 @@ import prismadb from "@/lib/prismadb";
 interface RootPageProps {
   searchParams: {
     categoryId: string;
-    name: string;
+    title: string;
   };
 }
 
@@ -15,33 +15,19 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
     where: {
       categoryId: searchParams.categoryId,
       title: {
-        search: searchParams.name,
+        search: searchParams.title,
       },
     },
     orderBy: {
       createdAt: "desc",
     },
     include: {
-      chapters: {
-        include: {
+      _count: {
+        select: {
           messages: true,
         },
       },
     },
-  });
-
-  const booksWithMessageCounts = data.map((book) => {
-    const totalMessages = book.chapters.reduce(
-      (acc, chapter) => acc + chapter.messages.length,
-      0
-    );
-
-    return {
-      ...book,
-      _count: {
-        messages: totalMessages,
-      },
-    };
   });
 
   const categories = await prismadb.category.findMany();
@@ -50,7 +36,7 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
     <div className="h-full p-4 space-y-2">
       <SearchInput />
       <Categories data={categories} />
-      <Books data={booksWithMessageCounts} />
+      <Books data={data} />
       {/*<Companions data={data} />*/}
     </div>
   );
