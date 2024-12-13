@@ -64,6 +64,7 @@ export async function POST(
     // Criar um novo capítulo
     const chapter = await prismadb.chapter.create({
       data: {
+        userId: user.id,
         bookId: params.bookId,
         content,
         title,

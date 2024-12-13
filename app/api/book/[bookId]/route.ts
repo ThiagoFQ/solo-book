@@ -1,6 +1,8 @@
 import prismadb from "@/lib/prismadb";
 import { auth, currentUser } from "@clerk/nextjs";
+import fs from "fs";
 import { NextResponse } from "next/server";
+import path from "path";
 
 export async function PATCH(
   req: Request,
@@ -65,6 +67,26 @@ export async function PATCH(
       },
     });
 
+    const basePath = path.join(
+      process.cwd(),
+      "locales",
+      "books",
+      params.bookId
+    );
+    const languages = ["en", "pt"];
+
+    for (const lang of languages) {
+      const filePath = path.join(basePath, lang, "book.json");
+
+      if (fs.existsSync(filePath)) {
+        const bookData = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        bookData.title = title;
+        bookData.description = description;
+
+        fs.writeFileSync(filePath, JSON.stringify(bookData, null, 2), "utf8");
+      }
+    }
+
     return NextResponse.json(book);
   } catch (error) {
     console.log("[BOOK_PATCH]", error);
@@ -89,6 +111,18 @@ export async function DELETE(
         id: params.bookId,
       },
     });
+
+    const basePath = path.join(
+      process.cwd(),
+      "locales",
+      "books",
+      params.bookId
+    );
+
+    if (fs.existsSync(basePath)) {
+      fs.rmSync(basePath, { recursive: true, force: true });
+      console.log(`Deleted directory for bookId: ${params.bookId}`);
+    }
 
     return NextResponse.json(book);
   } catch (error) {

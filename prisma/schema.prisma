@@ -9,6 +9,11 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
+enum Role {
+  user
+  system
+}
+
 model Category {
   id            String @id @default(uuid())
   key           String @unique
@@ -41,6 +46,7 @@ model Book {
 
 model Chapter {
   id          String   @id @default(uuid())
+  userId      String
   title       String   @db.Text
   content     String
   src         String
@@ -57,40 +63,20 @@ model Chapter {
   @@index([bookId])
 }
 
-enum Role {
-  user
-  system
-}
-
 model Message {
   id          String    @id @default(uuid())
   role        Role
   content     String
   userId      String
+  fragmentId  String
 
   chapter     Chapter   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
   chapterId   String
-
-  actions    Action[]
 
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
   @@index([chapterId])
-}
-
-model Action {
-  id            String    @id @default(uuid())
-  type          String
-  description   String
-
-  message       Message   @relation(fields: [messageId], references: [id], onDelete: Cascade)
-  messageId     String
-
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-
-  @@index([messageId])
 }
 
 model Character {

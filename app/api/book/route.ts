@@ -1,4 +1,5 @@
 import prismadb from "@/lib/prismadb";
+import { createBookDirectories } from "@/utils/createDirectories";
 import { currentUser } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
@@ -54,6 +55,7 @@ export async function POST(req: Request) {
       },
     });
 
+    await createBookDirectories({ bookId: book.id, languages: ["en", "pt"] });
     return NextResponse.json(book);
   } catch (error) {
     console.log("[BOOK_POST]", error);

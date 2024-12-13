@@ -33,7 +33,7 @@ export const Chapters = ({ bookId, chapters, chapterMax }: ChaptersProps) => {
                   alt={`Chapter ${chapter.title}`}
                 />
               </div>
-              <p className="font-bold truncate">{chapter.title}</p>
+              <p className="font-bold">{chapter.title}</p>
             </CardHeader>
             <CardFooter className="flex items-center justify-between text-xs text-muted-foreground">
               <div className="flex items-center">
