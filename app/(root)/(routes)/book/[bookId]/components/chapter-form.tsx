@@ -37,8 +37,7 @@ interface ChapterFormProps {
 const formSchema = z.object({
   title: z.string().min(1, "Title is required"),
   content: z.string().min(1, "Content is required"),
-  src: z.string().optional(),
-  order: z.number().min(1, "Order must be at least 1"),
+  src: z.string().min(1, { message: "Image is required" }),
 });
 
 export const ChapterForm = ({
@@ -58,7 +57,6 @@ export const ChapterForm = ({
       title: "",
       content: "",
       src: "",
-      order: Number(order),
     },
   });
 
@@ -142,11 +140,11 @@ export const ChapterForm = ({
               control={form.control}
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>Initial Content or Synopsis</FormLabel>
+                  <FormLabel>Chapter text in JSON format</FormLabel>
                   <FormControl>
                     <Textarea
                       className="bg-background resize-none"
-                      rows={7}
+                      rows={30}
                       disabled={isLoading}
                       placeholder="Deaths and mystery in a remote village."
                       {...field}
@@ -154,8 +152,7 @@ export const ChapterForm = ({
                   </FormControl>
                   <FormMessage />
                   <FormDescription>
-                    Write a brief synopsis or the initial content for your
-                    chapter.
+                    JSON format for your chapter content.
                   </FormDescription>
                 </FormItem>
               )}

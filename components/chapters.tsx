@@ -34,18 +34,15 @@ export const Chapters = ({ bookId, chapters, chapterMax }: ChaptersProps) => {
                 />
               </div>
               <p className="font-bold truncate">{chapter.title}</p>
-              <p className="text-xs truncate">
-                {chapter.content?.slice(0, 50)}...
-              </p>
             </CardHeader>
             <CardFooter className="flex items-center justify-between text-xs text-muted-foreground">
               <div className="flex items-center">
                 <Bookmark className="w-3 h-3 mr-1" />
-                Order: {chapter.order || "N/A"}
+                {chapter.order || "N/A"}
               </div>
               <div className="flex items-center">
                 <FileText className="w-3 h-3 mr-1" />
-                {chapter.content?.length || 0} chars
+                {JSON.parse(chapter.content).fragments.length || 0}
               </div>
             </CardFooter>
           </Link>
