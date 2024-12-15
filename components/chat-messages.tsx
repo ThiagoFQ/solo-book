@@ -14,8 +14,9 @@ interface ChatMessagesProps {
 export const ChatMessages = ({
   book,
   isLoading,
-  messages = [],
+  messages: initialMessages,
 }: ChatMessagesProps) => {
+  const [messages, setMessages] = useState<ChatMessageProps[]>(initialMessages);
   const scrollRef = useRef<ElementRef<"div">>(null);
   const [fakeLoading, setFakeLoading] = useState(
     messages.length === 0 ? true : false
@@ -43,8 +44,67 @@ export const ChatMessages = ({
   }, []);
 
   useEffect(() => {
+    // Adicionar o fragmento inicial às mensagens apenas uma vez
+    if (
+      firstFragment &&
+      !messages.some((msg) => msg.fragmentId === firstFragment.fragmentId)
+    ) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "system",
+          content: firstFragment.text,
+          fragmentId: firstFragment.fragmentId,
+        },
+      ]);
+    }
+  }, [firstFragment, messages]);
+
+  useEffect(() => {
     scrollRef?.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages.length]);
+
+  const handleNextFragment = (nextFragmentId: string, label: string) => {
+    if (!currentChapter) return;
+
+    const nextFragment = currentChapter.content.fragments.find(
+      (fragment: any) => fragment.fragmentId === nextFragmentId
+    );
+
+    if (nextFragment) {
+      setMessages((prev) => [
+        // Atualiza mensagens existentes para esconder actions
+        ...prev.map((msg) =>
+          msg.role === "system" ? { ...msg, isHidden: true } : msg
+        ),
+        {
+          role: "user",
+          content: `${label} (Go to ${nextFragmentId})`, // Mensagem do usuário
+        },
+        {
+          role: "system",
+          content: nextFragment.text,
+          fragmentId: nextFragmentId,
+          isHidden: false, // Actions visíveis apenas na nova mensagem
+        },
+      ]);
+    }
+  };
+
+  const handleRollResult = (
+    result: number,
+    outcome: { description: string; nextFragmentId: string }
+  ) => {
+    setMessages((prev) => [
+      ...prev,
+      {
+        role: "system",
+        content: `Roll Result: ${result} (${outcome.description})`,
+      },
+    ]);
+
+    handleNextFragment(outcome.nextFragmentId, outcome.description);
+  };
 
   return (
     <div className="flex-1 overflow-y-auto pr-2">
@@ -56,18 +116,12 @@ export const ChatMessages = ({
           </h2>
         </div>
       )}
-      <ChatMessage
-        isLoading={fakeLoading}
-        src={book.src}
-        role="system"
-        content={firstFragment?.text}
-      />
-      {messages.map((message) => (
+      {messages.map((message, index) => (
         <ChatMessage
-          key={message.content}
-          role={message.role}
-          content={message.content}
-          src={book.src}
+          key={index}
+          {...message}
+          onNextFragment={handleNextFragment}
+          onRollResult={handleRollResult}
         />
       ))}
       {isLoading && <ChatMessage role="system" src={book.src} isLoading />}

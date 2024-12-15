@@ -25,7 +25,32 @@ interface Content {
 interface Fragment {
   fragmentId: string;
   text: string;
-  actions: string;
+  actions?: {
+    choice?: {
+      options: {
+        label: string;
+        nextFragmentId: string;
+      }[];
+    };
+    roll?: {
+      stat: string;
+      skill: string;
+      outcomes: {
+        success: {
+          description: string;
+          nextFragmentId: string;
+        };
+        failure: {
+          description: string;
+          nextFragmentId: string;
+        };
+      };
+      threshold: number;
+    };
+    inspiration?: {
+      type: string;
+    };
+  };
 }
 
 interface ChapterContextType {

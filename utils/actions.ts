@@ -1,4 +1,5 @@
 import { toast } from "@/hooks/use-toast";
+import { ChoiceAction, RollAction } from "@/types/actions.types";
 
 // Copiar texto
 export const copyText = (content: string) => {
@@ -40,4 +41,29 @@ export const showActions = (content: string, currentChapter: any) => {
   toast({
     description: `Available actions: ${actionKeys.join(", ")}`,
   });
+};
+
+export const handleChoice = (
+  action: ChoiceAction,
+  onNextFragment: (nextFragmentId: string, label: string) => void
+) => {
+  action.options.forEach((option) => {
+    onNextFragment(option.nextFragmentId, option.label);
+  });
+};
+
+export const handleRoll = (
+  action: RollAction,
+  onRollResult: (
+    result: number,
+    outcome: { description: string; nextFragmentId: string }
+  ) => void
+) => {
+  const rollResult = Math.floor(Math.random() * 20) + 1; // Simular o d20
+  const outcome =
+    rollResult >= action.threshold
+      ? action.outcomes.success
+      : action.outcomes.failure;
+
+  onRollResult(rollResult, outcome);
 };

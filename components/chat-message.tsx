@@ -1,5 +1,7 @@
 "use client";
 
+import { BotAvatar } from "@/components/bot-avatar";
+import { FragmentActions } from "@/components/fragments/fragment-actions";
 import { Button } from "@/components/ui/button";
 import { UserAvatar } from "@/components/user-avatar";
 import { useChapter } from "@/context/chapter-provider.context";
@@ -8,14 +10,19 @@ import { copyText, rollDice, showActions } from "@/utils/actions";
 import { Copy, Dice5, List } from "lucide-react";
 import { useTheme } from "next-themes";
 import { BeatLoader } from "react-spinners";
-import { BotAvatar } from "./bot-avatar";
 
 export interface ChatMessageProps {
   role: "user" | "system";
   content?: string;
   isLoading?: boolean;
   src?: string;
-  actions?: string[];
+  fragmentId?: string;
+  onNextFragment?: (nextFragmentId: string, label: string) => void;
+  onRollResult?: (
+    result: number,
+    outcome: { description: string; nextFragmentId: string }
+  ) => void;
+  isHidden?: boolean;
 }
 
 export const ChatMessage = ({
@@ -23,7 +30,10 @@ export const ChatMessage = ({
   content,
   isLoading,
   src,
-  actions = [],
+  fragmentId,
+  onNextFragment,
+  onRollResult = () => {},
+  isHidden = false,
 }: ChatMessageProps) => {
   const { theme } = useTheme();
   const chapterContext = useChapter();
@@ -46,6 +56,13 @@ export const ChatMessage = ({
               {paragraph}
             </p>
           ))
+        )}
+        {role === "system" && fragmentId && onNextFragment && !isHidden && (
+          <FragmentActions
+            fragmentId={fragmentId}
+            onNextFragment={onNextFragment}
+            onRollResult={onRollResult}
+          />
         )}
       </div>
       {role === "user" && <UserAvatar />}
