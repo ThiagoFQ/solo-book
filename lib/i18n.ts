@@ -23,28 +23,4 @@ export const changeLanguage = (language: string) => {
   localStorage.setItem("language", language);
 };
 
-// Função para carregar traduções de livros dinamicamente
-export const loadBookTranslations = async (
-  bookId: string,
-  language: string
-) => {
-  try {
-    const response = await fetch(
-      `/locales/books/${bookId}/${language}/book.json`
-    );
-    if (!response.ok) {
-      throw new Error("Failed to load book translations");
-    }
-    const bookTranslations = await response.json();
-    i18n.store({ [language]: { [bookId]: bookTranslations } });
-    return bookTranslations;
-  } catch (error) {
-    console.error(
-      `Error loading translations for bookId: ${bookId}, language: ${language}`,
-      error
-    );
-    return null;
-  }
-};
-
 export default i18n;

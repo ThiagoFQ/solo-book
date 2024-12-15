@@ -50,7 +50,7 @@ model Chapter {
   id          String   @id @default(uuid())
   userId      String
   title       String   @db.Text
-  content     String
+  content     Json
   src         String
   order       String
 

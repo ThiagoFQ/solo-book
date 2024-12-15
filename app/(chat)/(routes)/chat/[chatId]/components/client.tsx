@@ -7,7 +7,6 @@ import { ChatMessages } from "@/components/chat-messages";
 import { ChapterProvider } from "@/context/chapter-provider.context";
 import { Book, Chapter, Message } from "@prisma/client";
 import axios from "axios";
-import Image from "next/image";
 import { useState } from "react";
 
 interface ChatClientProps {
@@ -72,14 +71,6 @@ export const ChatClient = ({ book }: ChatClientProps) => {
     <ChapterProvider bookId={book.id}>
       <div className="flex flex-col h-full p-4 space-y-2">
         <ChatHeader book={book} />
-        <div className="relative w-full h-60">
-          <Image
-            src={book.src}
-            alt={book.title}
-            fill
-            className="rounded-xl object-cover"
-          />
-        </div>
         <ChatMessages book={book} isLoading={isLoading} messages={messages} />
         <ChatForm
           onInventoryClick={handleInventoryClick}

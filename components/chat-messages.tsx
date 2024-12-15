@@ -2,7 +2,6 @@
 
 import { ChatMessage, ChatMessageProps } from "@/components/chat-message";
 import { useChapter } from "@/context/chapter-provider.context";
-import i18n, { loadBookTranslations } from "@/lib/i18n";
 import { Book } from "@prisma/client";
 import { ElementRef, useEffect, useRef, useState } from "react";
 
@@ -21,21 +20,17 @@ export const ChatMessages = ({
   const [fakeLoading, setFakeLoading] = useState(
     messages.length === 0 ? true : false
   );
-  const [translationsLoaded, setTranslationsLoaded] = useState(false);
 
   const chapterContext = useChapter();
-  const currentChapter = chapterContext ? chapterContext.currentChapter : null;
+  const currentChapter = chapterContext?.currentChapter;
+  const goToNextChapter = chapterContext?.goToNextChapter;
 
-  // Carregar traduções do livro
-  useEffect(() => {
-    const loadTranslations = async () => {
-      const translations = await loadBookTranslations(book.id, i18n.locale);
-      if (translations) {
-        setTranslationsLoaded(true);
-      }
-    };
-    loadTranslations();
-  }, [book.id, i18n.locale]);
+  const firstFragment =
+    currentChapter?.content?.fragments?.find(
+      (fragment) => fragment.fragmentId === "0"
+    ) || null;
+
+  console.log("AQUI", firstFragment);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -51,26 +46,21 @@ export const ChatMessages = ({
     scrollRef?.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages.length]);
 
-  const pathMessage = currentChapter?.content
-    ? JSON.parse(currentChapter.content).fragments.find(
-        (fragment: { fragmentId: string }) => fragment.fragmentId === "0"
-      )?.textKey
-    : null;
-
-  let initialMessage = "Loading translations...";
-  if (translationsLoaded && pathMessage) {
-    initialMessage = i18n.t(`${book.id}.${pathMessage}`, {
-      defaultValue: "Translation not found",
-    });
-  }
-
   return (
-    <div className="flex-1 overflow-y-auto pr-4">
+    <div className="flex-1 overflow-y-auto pr-2">
+      {currentChapter && (
+        <div className="mb-4 p-4 border-b border-gray-300">
+          <h2 className="text-m font-bold flex justify-between items-center">
+            <span>{currentChapter.title}</span>
+            <span>{`Chapter ${currentChapter.order}`}</span>
+          </h2>
+        </div>
+      )}
       <ChatMessage
         isLoading={fakeLoading}
         src={book.src}
         role="system"
-        content={initialMessage}
+        content={firstFragment?.text}
       />
       {messages.map((message) => (
         <ChatMessage

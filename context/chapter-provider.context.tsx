@@ -6,8 +6,30 @@ import {
   useState,
 } from "react";
 
+interface Chapter {
+  id: string;
+  userId: string;
+  title: string;
+  content: Content;
+  src: string;
+  order: string;
+  bookId: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface Content {
+  fragments: Fragment[];
+}
+
+interface Fragment {
+  fragmentId: string;
+  text: string;
+  actions: string;
+}
+
 interface ChapterContextType {
-  currentChapter: any;
+  currentChapter: Chapter | null;
   currentOrder: number;
   goToNextChapter: () => void;
 }
@@ -23,10 +45,8 @@ export const ChapterProvider = ({
   bookId: string;
   children: ReactNode;
 }) => {
-  const [chapters, setChapters] = useState<{ order: string }[]>([]);
-  const [currentChapter, setCurrentChapter] = useState<{
-    order: string;
-  } | null>(null);
+  const [chapters, setChapters] = useState<Chapter[]>([]);
+  const [currentChapter, setCurrentChapter] = useState<Chapter | null>(null);
   const [currentOrder, setCurrentOrder] = useState(1);
 
   useEffect(() => {
@@ -36,11 +56,20 @@ export const ChapterProvider = ({
         if (!response.ok) {
           throw new Error("Failed to load chapters.");
         }
-        const chaptersData = await response.json();
-        setChapters(chaptersData);
-        setCurrentChapter(
-          chaptersData.find((ch: { order: string }) => ch.order === "1")
+
+        const chaptersData: Chapter[] = await response.json();
+
+        // Ordenar os capítulos por `order`
+        const sortedChapters = chaptersData.sort(
+          (a, b) => Number(a.order) - Number(b.order)
         );
+
+        setChapters(sortedChapters);
+
+        // Definir o capítulo inicial (order === "1")
+        const initialChapter =
+          sortedChapters.find((ch) => ch.order === "1") || sortedChapters[0]; // Caso o order === "1" não exista
+        setCurrentChapter(initialChapter || null);
       } catch (error) {
         console.error("Error fetching chapters:", error);
       }

@@ -64,10 +64,23 @@ export const ChapterForm = ({
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
+      // Validar se o campo content é um JSON válido
+      let parsedContent;
+      try {
+        parsedContent = JSON.parse(data.content); // Parse para verificar o formato
+      } catch (error) {
+        throw new Error("Invalid JSON format in content.");
+      }
+
+      const payload = {
+        ...data,
+        content: parsedContent, // Enviar o JSON já parseado
+      };
+
       if (chapter) {
-        await axios.patch(`/api/book/${bookId}/chapter/${chapter.id}`, data);
+        await axios.patch(`/api/book/${bookId}/chapter/${chapter.id}`, payload);
       } else {
-        await axios.post(`/api/book/${bookId}/chapter/new`, data);
+        await axios.post(`/api/book/${bookId}/chapter/new`, payload);
       }
 
       toast({

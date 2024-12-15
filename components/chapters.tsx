@@ -4,9 +4,21 @@ import { Bookmark, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+interface ChapterContent {
+  fragments: Array<{
+    text: string;
+    actions: any;
+    fragmentId: string;
+  }>;
+}
+
+interface CustomChapter extends Omit<Chapter, "content"> {
+  content: ChapterContent;
+}
+
 interface ChaptersProps {
   bookId: string;
-  chapters: Chapter[];
+  chapters: CustomChapter[];
   chapterMax: number;
 }
 
@@ -42,7 +54,7 @@ export const Chapters = ({ bookId, chapters, chapterMax }: ChaptersProps) => {
               </div>
               <div className="flex items-center">
                 <FileText className="w-3 h-3 mr-1" />
-                {JSON.parse(chapter.content).fragments.length || 0}
+                {chapter.content.fragments.length}
               </div>
             </CardFooter>
           </Link>
