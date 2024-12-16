@@ -15,13 +15,15 @@ export const ChatForm = ({
   onMapClick,
 }: ChatFormProps) => {
   return (
-    <div className="border-t border-primary/10 py-4 flex items-center justify-around gap-x-4">
+    <div className="border-t border-primary/10 py-4 flex items-center justify-around gap-x-6 mr-1">
       <Button
         variant="ghost"
         onClick={onCharacterSheetClick}
         className="flex flex-col items-center"
       >
-        <User className="w-12 h-12" />
+        <div className="flex items-center justify-center w-12 h-12">
+          <User className="w-10 h-10" />
+        </div>
         <span className="text-xs mt-1">Character</span>
       </Button>
       <Button
@@ -29,7 +31,9 @@ export const ChatForm = ({
         onClick={onInventoryClick}
         className="flex flex-col items-center"
       >
-        <Backpack className="w-12 h-12" />
+        <div className="flex items-center justify-center w-12 h-12">
+          <Backpack className="w-10 h-10" />
+        </div>
         <span className="text-xs mt-1">Inventory</span>
       </Button>
       <Button
@@ -37,7 +41,9 @@ export const ChatForm = ({
         onClick={onMapClick}
         className="flex flex-col items-center"
       >
-        <Map className="w-12 h-12" />
+        <div className="flex items-center justify-center w-12 h-12">
+          <Map className="w-10 h-10" />
+        </div>
         <span className="text-xs mt-1">Map</span>
       </Button>
     </div>

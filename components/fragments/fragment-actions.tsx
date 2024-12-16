@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useChapter } from "@/context/chapter-provider.context";
-import { handleChoice, handleRoll } from "@/utils/actions";
+import { handleRoll } from "@/utils/actions";
 
 interface FragmentActionsProps {
   fragmentId: string;
@@ -33,15 +33,18 @@ export const FragmentActions = ({
     <div className="flex flex-col gap-2 mt-2">
       {fragment.actions.choice && (
         <div>
-          <h3>Make a Choice:</h3>
+          {fragment.actions.choice.options.length > 1 && (
+            <h3>Make a Choice:</h3>
+          )}
           {fragment.actions.choice.options.map((option) => (
             <Button
               key={option.nextFragmentId}
               size="sm"
               variant="outline"
               onClick={() =>
-                handleChoice(fragment?.actions?.choice!, onNextFragment)
+                onNextFragment(option.nextFragmentId, option.label)
               }
+              className="flex flex-col mt-2"
             >
               {option.label}
             </Button>

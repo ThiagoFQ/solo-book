@@ -4,6 +4,7 @@ import { ChatMessage, ChatMessageProps } from "@/components/chat-message";
 import { useChapter } from "@/context/chapter-provider.context";
 import { Book } from "@prisma/client";
 import { ElementRef, useEffect, useRef, useState } from "react";
+import { ScrollToBottomButton } from "./chat/scroll-button";
 
 interface ChatMessagesProps {
   messages: ChatMessageProps[];
@@ -17,10 +18,8 @@ export const ChatMessages = ({
   messages: initialMessages,
 }: ChatMessagesProps) => {
   const [messages, setMessages] = useState<ChatMessageProps[]>(initialMessages);
-  const scrollRef = useRef<ElementRef<"div">>(null);
-  const [fakeLoading, setFakeLoading] = useState(
-    messages.length === 0 ? true : false
-  );
+  const containerRef = useRef<ElementRef<"div">>(null);
+  const nextMessageRef = useRef<HTMLDivElement | null>(null);
 
   const chapterContext = useChapter();
   const currentChapter = chapterContext?.currentChapter;
@@ -31,20 +30,7 @@ export const ChatMessages = ({
       (fragment) => fragment.fragmentId === "0"
     ) || null;
 
-  console.log("AQUI", firstFragment);
-
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setFakeLoading(false);
-    }, 1000);
-
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Adicionar o fragmento inicial às mensagens apenas uma vez
     if (
       firstFragment &&
       !messages.some((msg) => msg.fragmentId === firstFragment.fragmentId)
@@ -58,11 +44,17 @@ export const ChatMessages = ({
         },
       ]);
     }
-  }, [firstFragment, messages]);
+  }, [firstFragment, messages, currentChapter]);
 
   useEffect(() => {
-    scrollRef?.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages.length]);
+    if (nextMessageRef.current) {
+      nextMessageRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      nextMessageRef.current = null;
+    }
+  }, [messages]);
 
   const handleNextFragment = (nextFragmentId: string, label: string) => {
     if (!currentChapter) return;
@@ -72,22 +64,35 @@ export const ChatMessages = ({
     );
 
     if (nextFragment) {
-      setMessages((prev) => [
-        // Atualiza mensagens existentes para esconder actions
-        ...prev.map((msg) =>
-          msg.role === "system" ? { ...msg, isHidden: true } : msg
-        ),
-        {
-          role: "user",
-          content: `${label} (Go to ${nextFragmentId})`, // Mensagem do usuário
-        },
-        {
-          role: "system",
-          content: nextFragment.text,
-          fragmentId: nextFragmentId,
-          isHidden: false, // Actions visíveis apenas na nova mensagem
-        },
-      ]);
+      setMessages((prev) => {
+        const updatedMessages: ChatMessageProps[] = [
+          ...prev.map((msg) =>
+            msg.role === "system" ? { ...msg, isHidden: true } : msg
+          ),
+          /*
+          {
+            role: "user",
+            content: `${label} (Go to ${nextFragmentId})`,
+            fragmentId: undefined,
+            isHidden: undefined,
+          },
+          */
+          {
+            role: "system",
+            content: nextFragment.text,
+            fragmentId: nextFragmentId,
+            isHidden: false,
+          },
+        ];
+
+        setTimeout(() => {
+          nextMessageRef.current = document.querySelector(
+            `[data-message-index="${updatedMessages.length - 1}"]`
+          );
+        }, 0);
+
+        return updatedMessages;
+      });
     }
   };
 
@@ -98,8 +103,8 @@ export const ChatMessages = ({
     setMessages((prev) => [
       ...prev,
       {
-        role: "system",
-        content: `Roll Result: ${result} (${outcome.description})`,
+        role: "user",
+        content: `Roll Result: ${result}.\n(${outcome.description})`,
       },
     ]);
 
@@ -107,7 +112,7 @@ export const ChatMessages = ({
   };
 
   return (
-    <div className="flex-1 overflow-y-auto pr-2">
+    <div ref={containerRef} className="flex-1 overflow-y-auto pr-1 relative">
       {currentChapter && (
         <div className="mb-4 p-4 border-b border-gray-300">
           <h2 className="text-m font-bold flex justify-between items-center">
@@ -117,15 +122,20 @@ export const ChatMessages = ({
         </div>
       )}
       {messages.map((message, index) => (
-        <ChatMessage
+        <div
           key={index}
-          {...message}
-          onNextFragment={handleNextFragment}
-          onRollResult={handleRollResult}
-        />
+          data-message-index={index}
+          ref={index === messages.length - 1 ? nextMessageRef : null}
+        >
+          <ChatMessage
+            {...message}
+            onNextFragment={handleNextFragment}
+            onRollResult={handleRollResult}
+          />
+        </div>
       ))}
       {isLoading && <ChatMessage role="system" src={book.src} isLoading />}
-      <div ref={scrollRef} />
+      <ScrollToBottomButton targetRef={containerRef} />
     </div>
   );
 };

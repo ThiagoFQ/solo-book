@@ -52,7 +52,7 @@ export const ChatMessage = ({
           <BeatLoader size={5} color={theme === "light" ? "black" : "white"} />
         ) : (
           content?.split("\n").map((paragraph, index) => (
-            <p key={index} className="mb-4 text-justify">
+            <p key={index} className="mb-4">
               {paragraph}
             </p>
           ))

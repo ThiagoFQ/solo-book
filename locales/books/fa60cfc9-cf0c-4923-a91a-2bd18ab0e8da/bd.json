@@ -23,7 +23,7 @@
     },
     {
       "fragmentId": "1",
-      "text": "Your hopes for a meal and friendly conversation are dashed with what you find in the marketplace. More specifically, you’re disappointed with what you don’t find.\nIt’s empty, filled only with a mournful hush. Street vendors are closed, windows are shuttered. Lamplighters have still passed through to fill the square with warm pools of light, but everything feels muted under the weight of an oppressive sadness.\nYou’re looking around for someone – anyone – when a solitary figure in a white robe bustles out from a side street, nearly dropping a sheaf of papers. The robe’s hood is down, so you can see that it’s a young human woman with light blond hair. Her robes bear sunburst motifs around the neck and collar and a similar symbol made of gold hangs from around her neck. This appears to be a sun cleric.\nCall out to the cleric (go to 27) or follow her down the empty streets (go to 3).",
+      "text": "Your hopes for a meal and friendly conversation are dashed with what you find in the marketplace. More specifically, you’re disappointed with what you don’t find.\nIt’s empty, filled only with a mournful hush. Street vendors are closed, windows are shuttered. Lamplighters have still passed through to fill the square with warm pools of light, but everything feels muted under the weight of an oppressive sadness.\nYou’re looking around for someone - anyone - when a solitary figure in a white robe bustles out from a side street, nearly dropping a sheaf of papers. The robe’s hood is down, so you can see that it’s a young human woman with light blond hair. Her robes bear sunburst motifs around the neck and collar and a similar symbol made of gold hangs from around her neck. This appears to be a sun cleric.\nCall out to the cleric (go to 27) or follow her down the empty streets (go to 3).",
       "actions": {
         "choice": {
           "options": [
@@ -41,7 +41,7 @@
     },
     {
       "fragmentId": "2",
-      "text": "The man calms and walks away muttering about adventurers being up to no good. But he picks up a cup of wine from a tray and busies himself with drinking that instead of fighting you. Gain Inspiration. As your would-be attacker walks off, you see that the half-orc who was speaking to him is staring at you. She approaches you (go to 44).",
+      "text": "The man calms and walks away muttering about adventurers being up to no good. But he picks up a cup of wine from a tray and busies himself with drinking that instead of fighting you.\nGain Inspiration.\nAs your would-be attacker walks off, you see that the half-orc who was speaking to him is staring at you. She approaches you (go to 44).",
       "actions": {
         "inspiration": {
           "type": "gainInspiration"
@@ -108,7 +108,7 @@
     },
     {
       "fragmentId": "6",
-      "text": "Mayor Anathram’s dog is incredibly impressive in its training. Roll a Wisdom (Animal Handling) check. If you get 10 or more, go to 22. If you get less than 10, go to 47.",
+      "text": "Mayor Anathram’s dog is incredibly impressive in its training. \nRoll a Wisdom (Animal Handling) check. If you get 10 or more, go to 22. If you get less than 10, go to 47.",
       "actions": {
         "roll": {
           "stat": "Wisdom",
@@ -148,7 +148,7 @@
     },
     {
       "fragmentId": "9",
-      "text": "Gain Inspiration. As Tomlin spoke, several young and even a few middle-aged women smiled and whispered to one another. Though no one seems happy about the passing of this Maybelline, it seems that the attractive young women are less sad than others. It’s clear that Tomlin is known for more than tinctures and decoctions here in Langston.\nHe steps aside to allow a red-bearded dwarf the floor to address the crowd (go to 13).",
+      "text": "Gain Inspiration.\nAs Tomlin spoke, several young and even a few middle-aged women smiled and whispered to one another. Though no one seems happy about the passing of this Maybelline, it seems that the attractive young women are less sad than others.\nIt’s clear that Tomlin is known for more than tinctures and decoctions here in Langston.\nHe steps aside to allow a red-bearded dwarf the floor to address the crowd (go to 13).",
       "actions": {
         "inspiration": {
           "type": "gainInspiration"
@@ -179,7 +179,7 @@
     },
     {
       "fragmentId": "11",
-      "text": "You continue down the road, a growing sense of dread in the pit of your stomach. Looking around you, you see nothing in the trees or undergrowth on either side of the road even though you feel like you should.\nYou stop walking, pausing to listen to the dark woods around you. Without the sound of your footsteps, you can now hear a low rumbling growl and excited panting coming from around you. All around you.\nA large but scruffy wolf pads into the road in front of you, moonlight shining in its gray fur. Half a dozen more of the beasts step into view, sizing you up. You’re surrounded by a pack of hungry wolves.\nYour odds aren’t good, but at least you can go down fighting (go to 33).",
+      "text": "You continue down the road, a growing sense of dread in the pit of your stomach. Looking around you, you see nothing in the trees or undergrowth on either side of the road even though you feel like you should.\nYou stop walking, pausing to listen to the dark woods around you. Without the sound of your footsteps, you can now hear a low rumbling growl and excited panting coming from around you.\nAll around you.\nA large but scruffy wolf pads into the road in front of you, moonlight shining in its gray fur. Half a dozen more of the beasts step into view, sizing you up.\nYou’re surrounded by a pack of hungry wolves. Your odds aren’t good, but at least you can go down fighting (go to 33).",
       "actions": {
         "choice": {
           "options": [
@@ -270,7 +270,7 @@
     },
     {
       "fragmentId": "16",
-      "text": "Gain Inspiration. The Rathkananar Book of Funerary Rites is a standard text taught in many religions as a manual outlining the burial rituals of the common people. However, it does not include any prayers or hymns but instead describes the processes.\nYou don’t recognize the specific hymn Solaine uses, but it could come from the Radiant Order. This sun-worshipping sect is small and keeps its knowledge to itself.\nThe mayor positions herself behind Solaine and waits for the cleric to notice her. After a moment the cleric sees the mayor and cedes the floor to her (go to 25).",
+      "text": "Gain Inspiration.\nThe Rathkananar Book of Funerary Rites is a standard text taught in many religions as a manual outlining the burial rituals of the common people. However, it does not include any prayers or hymns but instead describes the processes.\nYou don’t recognize the specific hymn Solaine uses, but it could come from the Radiant Order. This sun worshipping sect is small and keeps its knowledge to itself.\nThe mayor positions herself behind Solaine and waits for the cleric to notice her. After a moment the cleric sees the mayor and cedes the floor to her (go to 25).",
       "actions": {
         "inspiration": {
           "type": "gainInspiration"
@@ -287,7 +287,7 @@
     },
     {
       "fragmentId": "17",
-      "text": "Gain Inspiration. The mayor made some glaring mistakes in her account of the battle she said she participated in. The Battle of Three Rivers was a coup by a neighboring kingdom, not barbarian hordes. And it was won by guerilla tactics from the local peasantry, who were the aggressors, not the victims.\nBut it’s unclear if she’s lying or just wrong, so this probably isn’t the best conversation starter as the mayor approaches (go to 30).",
+      "text": "Gain Inspiration.\nThe mayor made some glaring mistakes in her account of the battle she said she participated in.\nThe Battle of Three Rivers was a coup by a neighboring kingdom, not barbarian hordes. And it was won by guerilla tactics from the local peasantry, who were the aggressors, not the victims.\nBut it’s unclear if she’s lying or just wrong, so this probably isn’t the best conversation starter as the mayor approaches (go to 30).",
       "actions": {
         "inspiration": {
           "type": "gainInspiration"
@@ -353,7 +353,7 @@
     },
     {
       "fragmentId": "21",
-      "text": "You politely greet the mayor and the dog lays its massive head back down on its paws. It continues to watch you closely, however. “I am grateful for your service,” she says. You assume she is being genuine, but it’s impossible to tell for sure with her stony delivery.\nShe outlines the problem she’s having: a gruesome murder about a week ago. The town militia is fine against bandits or sheep rustlers, but this requires someone different. The poor girl was mangled as if by a wild beast, but she was found within town. Besides, Roi keeps the woods free of monsters and supernatural hazards.\n“And besides,” she explains, “you’re an outsider and therefore expendable. It’s the mayor’s role to protect the town, not every drifter that wanders in.”\nThe town will pay 320 gold pieces to eliminate the threat. That fee is not negotiable, and Mayor Anathram gives you the impression it would be bad for your health to try.\nIf you accept the job, go to 48. If you reject the job, go to 5.",
+      "text": "You politely greet the mayor and the dog lays its massive head back down on its paws. It continues to watch you closely, however.\n“I am grateful for your service,” she says. You assume she is being genuine, but it’s impossible to tell for sure with her stony delivery.\nShe outlines the problem she’s having: a gruesome murder about a week ago. The town militia is fine against bandits or sheep rustlers, but this requires someone different. The poor girl was mangled as if by a wild beast, but she was found within town. Besides, Roi keeps the woods free of monsters and supernatural hazards.\n“And besides,” she explains, “you’re an outsider and therefore expendable. It’s the mayor’s role to protect the town, not every drifter that wanders in.”\nThe town will pay 320 gold pieces to eliminate the threat. That fee is not negotiable, and Mayor Anathram gives you the impression it would be bad for your health to try.\nIf you accept the job, go to 48. If you reject the job, go to 5.",
       "actions": {
         "choice": {
           "options": [
@@ -371,7 +371,7 @@
     },
     {
       "fragmentId": "22",
-      "text": "The mastiff currently at the mayor’s heels is immaculately trained as a military attack hound. In other words, the mayor’s dog is a trained killer. It’s remarkably well-trained, but in all likelihood, it has killed before. Whether or not it will kill again will depend on whether it needs to. Or is commanded to.\nYou spare the beast a glance as the mayor approaches you (go to 30).",
+      "text": "The mastiff currently at the mayor’s heels is immaculately trained as a military attack hound. In other words, the mayor’s dog is a trained killer.\nIt’s remarkably well-trained, but in all likelihood, it has killed before. Whether or not it will kill again will depend on whether or not it needs to. Or is commanded to.\nYou spare the beast a glance as the mayor approaches you (go to 30).",
       "actions": {
         "choice": {
           "options": [
@@ -424,7 +424,7 @@
     },
     {
       "fragmentId": "25",
-      "text": "As Solaine recedes into the background, the half-orc mayor stands rigid with her hands clasped behind her back. She cuts a powerful figure with broad shoulders and battle scars, but maintains an air of sophistication with a well-made suit in the noble style. An enormous mastiff pads up to her side and sits beside her, remaining equally still.\nThough her heritage stands out in the mostly human town of Langston, no one else seems to notice.\n“Sit, Buttercup,” she says to the dog in a heavy accent. The mastiff immediately sits. The mayor returns her attention to the crowd.\n“Tanya Anathram was a soldier before she was your mayor,” she begins, hand over heart. “Langston welcomed me, gave me a place to heal after the Battle of Three Rivers. There I fought to defend the people from a barbarian horde. And I will protect the people of Langston.”\nShe looks out into the crowd, moving only her eyes. Her huge dog could be a statue for all it moves.\n“There is a killer out there in the darkness,” she says, and her eyes lock on yours. “We do not know what it is, but it took one of the citizens under my protection. We will find whatever took this life and end the threat. This is my promise to you.”\nA ripple of soft applause and angry muttering sweeps the crowd. The dog’s head tracks both sounds before returning to its vigil.\nShe turns to address the family of the deceased. “I am so sorry for your loss,” she says, then steps away from the casket and starts making her way through the crowd towards you.\nAs she makes her way, you can make either a History check (go to 37) or an Animal Handling check (go to 6).",
+      "text": "As Solaine recedes into the background, the half-orc mayor stands rigid with her hands clasped behind her back. She cuts a powerful figure with her broad shoulders and battle scars, but she maintains an air of sophistication with a well-made suit in the noble style. An enormous mastiff pads up to her side and sits beside her, remaining equally still. Though her heritage stands out to you in the mostly human town of Langston, no one else seems to notice.\n“Sit, Buttercup,” she says to the dog in a heavy accent. The mastiff immediately seats itself at her side. The mayor returns her attention to the crowd of attendees.\n“Tanya Anathram was a soldier before she was your mayor,” she begins, laying a hand over her heart. “Langston welcomed me, gave me a place to heal after the Battle of Three Rivers. There I fought to defend the people from a barbarian horde. And I will protect the people of Langston.”\nShe looks out into the crowd, moving just her eyes as the rest of her remains perfectly still. Her huge dog could be a statue for all it moves.\n“There is a killer out there in the darkness,” she says, and her eyes lock on yours. “We do not know what it is, but it took one of the citizens under my protection. We will find whatever took this life and end the threat. This is my promise to you.”\nA ripple of soft applause and angry muttering sweeps through the crowd. The dog’s head tracks both sounds for a moment before glancing at the mayor returning to its vigil.\nShe turns to address the family of the deceased. “I am so sorry for your loss,” she says and then steps away from the casket and starts making her way through the crowd towards you.\nAs she makes her way to where you’re standing, you can make either a History check (go to 37) or an Animal Handling check (go to 6).",
       "actions": {
         "choice": {
           "options": [
@@ -442,7 +442,7 @@
     },
     {
       "fragmentId": "26",
-      "text": "Get the benefits of a long rest.\nYou wake up in a soft bed to a hot breakfast cooling outside your door. This is much better than camping by the road, so it’s probably time to meet your benefactor.\nThe inn’s common room is bustling with quiet activity as townspeople load funeral flowers into a wagon out front. The body of the deceased is already gone. After weaving through the workers, you find yourself outside where passersby deliberately ignore the wagonful of blossoms. With some locals’ help, you make your way to the town hall.\nThe town hall is a multi-story building but not much larger than the others. It’s made of sturdier stone rather than timber, likely predating the town’s growth.\nThe door stands open and an aide greets you. He leads you to the mayor’s office at the back: a large but simply appointed room with a big dark-stained desk, an unlit hearth, a couple of orderly bookshelves, and no personal effects.\nA cushion and a bowl of water sit next to the desk where the mayor’s mastiff lounges, watching you intently as you enter.\nYou can greet the mayor (go to 21) or pet the dog first (go to 35).",
+      "text": "Get the benefits of a long rest.\nYou wake up in a soft bed to a hot breakfast cooling outside your door. This is much better living than camping by the road, so it's probably time to meet your benefactor.\nThe inn’s common room is a bustle of activity as quiet townspeople load flowers from the funeral into a wagon in front of the inn. The body of the deceased is already gone. After weaving your way through the workers, you find yourself outside where passersby are deliberately ignoring the wagonful of blossoms. With the help of a few locals on the streets, you make your way to the town hall.\nThe town hall is a multi-story building but not much larger than the surrounding structures, it isn’t made of the same timber walls as the rest of the town and is instead a much sturdier stone structure, so it likely predates the town’s growth.\nThe door stands open and an aide greets you when you arrive. He shows you to the mayor in a large but simply appointed office in the back of the building. The room is dominated by a large dark-stained wood desk where Mayor Anathram is working with a quill and inkpot. There is also an unlit hearth on one wall and a couple of orderly bookshelves. There are no personal effects that you can see.\nA cushion and a bowl of water are set up next to the desk. The mayor’s mastiff is lounging there watching you intently as you enter.\nYou can greet the mayor (go to 21) or pet the dog first (go to 35).",
       "actions": {
         "rest": "longRest",
         "choice": {
@@ -461,7 +461,7 @@
     },
     {
       "fragmentId": "27",
-      "text": "The cleric jolts, turning to you, and you see a moment of fear as her hand reflexively touches her holy symbol. She looks both ways down empty streets before smiling wide and kind.\n“Hello, and welcome,” she says, her voice high and bright. “Can I help you with something, traveler?”\nYou ask where she’s going in such a hurry.\n“I am on my way to perform a young woman’s last rites,” she says. “Such a sad day.”\nYou ask if she’s going to The Pickled Hen.\n“I am,” she says, uncertain. “Did you… know the deceased?”\nYou say you do not, but Roi suggested The Pickled Hen for lodging.\n“Ah, of course,” she sighs. “A truly good dwarf, Roi. The funeral will be starting soon, and I must be on my way. But I can show you the way if you’d like.”\nShe walks beside you in silence, occasionally consulting her papers. After a few moments of awkward companionship, she shows you an inn with a sign reading The Pickled Hen.\nThe cleric absentmindedly opens the door and steps in, apparently forgetting you entirely, closing it behind her.\nGo into the tavern (go to 34) or look through the window (go to 19).",
+      "text": "The cleric jolts and turns and you see a moment of fear as her hand reflexively snaps to her holy symbol. She looks either way down empty streets before breaking out in a wide, kind smile as she approaches.\n“Hello, and welcome,” she says, her voice high and bright. “Can I help you with something, traveler?”\nYou ask her where she's going in such a hurry.\n“I am on my way to perform a young woman’s last rites,” she says, her kind smile still fixed to her lips. “Such a sad day.”\nYou ask if she is on her way to The Pickled Hen.\n“I am,” she says with growing uncertainty. “Did you… you know the deceased?”\nYou say that you do not, but someone named Roi suggested you go to The Pickled Hen for lodging.\n“Ah, of course,” she says with a sigh. “A truly good dwarf, Roi. The funeral will be starting soon and I must be on my way. But I can show you the way if you’d like.”\nShe walks beside you in silence, occasionally consulting the sheets in her hand and reading it to herself. After a few moments of awkwardly accompanying th  young cleric, she shows you to an inn whose sign says it’s The Pickled Hen.\nThe cleric absentmindedly opens the door and steps into the tavern at the ground floor. Having clearly forgotten you’re even there, she closes it behind her.\nGo into the tavern (go to 34) or look into the tavern through the window (go to 19).",
       "actions": {
         "choice": {
           "options": [
@@ -479,7 +479,7 @@
     },
     {
       "fragmentId": "28",
-      "text": "A middle-aged human couple rises and introduces themselves as Maybelline’s parents, though that seems well-known by the crowd’s sympathetic murmur.\n“Thank you so much for coming out to say goodbye to our darling girl,” the mother says. “She was a ray of sunshine in our lives. We can see she touched many of yours as well.”\nThe father’s eyes are glassy. “We are grateful to Langston. You made her life a joy, and you make her loss more bearable. But we will not be staying. Every brick and blade of grass here reminds us of what we’ve lost.”\nA murmur runs through the crowd, but he raises his hands for quiet. “We trust our capable mayor to bring the killer to justice. We will go home and keep our peace where we feel closest to our daughter’s memory. We pray you bring the killer to swift justice.”\nHeads turn to the mayor, who nods. The father’s cheeks are wet with tears, his teeth gritted in mute rage. The mother lays a gentle hand on his arm and speaks:\n“But we are not the only ones to suffer. Maybelline’s fiancé was cheated out of the rest of his life with her. Tomlin, darling, would you say a few words?”\nThey step aside, and the fiancé takes their place at the podium (go to 32).",
+      "text": "A middle-aged human couple gets up and introduces themselves as Maybelline's parents, though from the murmur of sympathy coming from the crowd that seems well known.\n“Thank you so much for coming out to say goodbye to our darling girl with us,” the mother says. “She was a ray of sunshine in our lives from the beginning. And we can see that she touched the lives of many of you as well. She was relentlessly kind, generous, and patient. We will all miss her dearly.”\nThe father of the deceased clears his throat, his eyes glassy. “We are so very grateful for the people of Langston. You made our daughter’s life a joy, and you’re making her loss more bearable. But we will not be seeing you for some time.”\nA murmur runs through the crowd, but he holds up his hands for quiet. “Every brick and blade of grass in this town reminds us of what we have lost. Every time we see your kind faces, we will only see the torn and broken body of our treasured daughter. So we will leave and trust our capable mayor to bring the killer to justice. We will keep our peace at home where we feel the closest to our daughter’s memories. But we pray you bring the killer to swift justice.”\nAs he speaks, heads in the crowd turn to the mayor, who just nods to the citizenry. When you turn your attention to the grieving parents, the father’s cheeks are wet with tears but his teeth are gritted in mute rage. Laying a gentle hand on her husband’s arm, the deceased’s mother speaks up.\n“But we are not the only ones to suffer a loss,” she says in a cracking voice. “We had Maybelline for her whole life. The love of her life was cheated out of the rest of it. Tomlin, darling, we’d love it if you could say a few words.”\nThe parents of the dead woman step aside and her fiancé takes their place at the podium (go to 32).",
       "actions": {
         "choice": {
           "options": [
@@ -493,7 +493,7 @@
     },
     {
       "fragmentId": "29",
-      "text": "Gain Inspiration.\nThough Tomlin’s grief is genuine, you sense relief, maybe even excitement beneath it. And several women whisper with fleeting smiles. Some wives share a secret, hopeful look.\nThere are layers of complexity here, but the next speaker, a familiar red-bearded dwarf, takes the stage (go to 13).",
+      "text": "Gain Inspiration.\nThough Tomlin's grief and sadness are almost certainly genuine, there's an element of relief, maybe even excitement from him.\nAnd a number of women attending the service whispered amongst each other, with genuine if fleeting smiles. And the angry wives’ shared embarrassment carried an undercurrent of something more focused, as if confirming their husband’s joke with a secret shared hope that Tomlin really would turn his attention to the bored wives of Langston.\nThough there are layers of complexity here, you will have to investigate another time as the next speaker is replacing Tomlin. This one is a familiar red-bearded dwarf. Go to 13.",
       "actions": {
         "inspiration": "gainInspiration",
         "choice": {
@@ -508,7 +508,7 @@
     },
     {
       "fragmentId": "30",
-      "text": "“You are an adventurer, yes?” the mayor asks. You confirm.\n“Then I suppose you will do. For now.”\nHer accent and deadpan delivery leave her feelings opaque. She gestures for you to follow. She stops to speak to an innkeeper: “... and the town will pay the investigator’s room and board. Acceptable?”\nThe innkeeper nods. Mayor Anathram returns with a key to your room.\nYou ask why she would hire you.\n“I know your type: Adventurer, mercenary, hero for hire. The people need someone, so I’m hiring you. If you fail, it reflects badly on no one but yourself.”\nYou start to thank her, but she stops you.\n“I do not know you,” she says. “And I may never. If this killer gets to you next, it won’t matter. As long as you investigate the murder, we pay for your stay. Come to town hall tomorrow; tonight is not the time for details. Sleep well.”\nShe nods once, then returns to reassuring the crowd.\nA figure breaks from the crowd: Tomlin, the herbalist fiancé.\n“Hello,” he says, eyes entrancingly bright. “I haven’t met you yet. How did you know Maybelline?”\nYou explain you just arrived and the mayor asked for your help.\nHe nods, approving. “Welcome. Thank you for doing this. Come to my home if you need anything. I must know what happened to my Maybelline.”\nYou bid him good night. He moves on, and you find your way to your room (go to 26).",
+      "text": "“You are an adventurer, yes?” she says to you. When you answer in the affirmative, she continues. “Then I suppose you will do. For now.”\nBetween her rumbling Orcish accent and deadpan delivery, it’s impossible to tell what she actually thinks about you. But she does make a sweeping gesture towards the bar and then starts off. This stern woman is obviously not one for pleasantries.\nAs you follow behind her, she stops to speak to an aproned balding man you can only assume is the innkeeper. “... and the town will pay the investigator’s room and board. This is acceptable?”\nThe innkeeper cuts you a glance but nods. Their business concluded, Mayor Anathram returns to you with a key to your room.\nYou ask why she would hire you.\n“I know your type. Adventurer. Mercenary. Hero for hire. It doesn’t matter what you call yourself. The people are scared and they need someone, so I am hiring you. And since you’re an outsider, if you fail it will not reflect badly on the town.”\nYou start to thank her but she cuts you off.\n“I do not yet know you,” she says as she holds up a hand. “And I may not get time to do so if this killer gets to you next. You’re here for the people and for me. As long as you are investigating this young woman’s murder, we will pay for your stay. You will come to the town hall tomorrow as tonight is not the time to discuss the details of the case. Sleep well.”\nShe nods once, though it’s unclear whether that’s a farewell or an agreement of some kind, and then returns to her duties reassuring the funeral-goers.\nYou remain standing dumbfounded for a moment as a figure breaks away from the crowd and moves towards you. It’s Tomlin, the village herbalist and fiancé of the deceased.\n“Hello,” he says. His eyes are almost entrancing up so close. “I haven’t met you yet. How did you know Maybelline?”\nYou reply that you just arrived in town today, but that the mayor has requested your help with the investigation.\nHe looks you over and nods as if you passed some sort of assessment. “Welcome then. Thank you very much for doing this for us. Please, come to my home for whatever you need. I want- No, I need to know what happened to my Maybelline.”\nYou bid the grieving man good night, and he gives you a smile that is dazzling despite its sadness. He moves on to speak to other guests and you make your way to your room (go to 26).",
       "actions": {
         "choice": {
           "options": [
@@ -522,7 +522,7 @@
     },
     {
       "fragmentId": "31",
-      "text": "Gain Inspiration.\nYou recall that druids can transform into animals, explaining the druid’s bushy hair and growling voice. It might be an involuntary response, perhaps a magical disease triggered by sneezing.\nThe next speaker approaches: a young sun cleric you recognize (go to 39).",
+      "text": "Gain Inspiration.\nYou remember that druids are able to transform into animals, which could explain the druid's moments of bushy hair and growling voice. It's odd that it would be an involuntary response, however.\nHe had the uncontrolled change while sneezing, so a magical disease perhaps?\nThe next speaker is approaching the front of the crowd, a smallish human woman in a white robe embroidered with sun motifs that you recognize from earlier (go to 39).",
       "actions": {
         "inspiration": "gainInspiration",
         "choice": {
@@ -537,7 +537,7 @@
     },
     {
       "fragmentId": "32",
-      "text": "Tomlin stands simply dressed, clutching flowers. He takes a moment, holding back tears, then speaks.\n“Thank you for coming to remember my bride-to-be. Before her, I never thought I’d marry, but now it seems like fate.”\n“Does that mean The Wolf is back on the prowl?” a man nearby whispers. “Lock up your sisters and daughters!”\n“And wives!” his friend adds.\nThey’re shushed by their wives and others glare.\n“My darling was simple,” Tomlin continues. “She loved daisies, lavender, and silk.”\nDespite his grief, those men snigger. Their wives glare at them. Tomlin closes his eyes and sighs.\n“Her death leaves a hole in my life. I’ll try to fill it by working, by giving back to all of you. I love you all; you’re always welcome at my home.”\nThe audience murmurs condolences, but something feels off.\nYou may use Investigation (go to 12) or Insight (go to 46) to figure out what’s bothering you.",
+      "text": "The man identified as Tomlin is dressed simply and he clutches a bunch of flowers tightly in one hand. He takes a moment looking out over the crowd, visibly holding back tears.\n“Thank you all so much for coming today,” he says with a sigh. “We are gathered to remember the beautiful shining light that was my bride-to-be. Before growing to love her, I never thought I was the marrying kind. Now it seems more like fate than a choice.”\n“Does that mean The Wolf is back on the prowl?” whispers one man near you to a friend. “Lock up your sisters and daughters!”\n“And wives!” the friend replies with a snigger.\nBoth are shushed by women who seem to be their wives, both women sharing embarrassed glances. Others nearby in the crowd look over at the pair of would-be comedians with glares and mouthed insults.\n“My darling wife-to-be was a simple soul,” he says. “Her favorite flowers were daisies. She liked the color lavender. Anything made of silk was the height of sophistication.”\nDespite Tomlin’s grief, the two men are still whispering lewdly and sniggering. The women seated beside the would-be comedians glare at them and exchanged exasperated looks with one another. Oblivious to what was happening in front of you, Tomlin closes his eyes to collect himself with a sigh before continuing.\n“To put it simply, Maybelline’s death has torn a hole in my life that cannot be filled, but I will try. Work will help, I’m sure. And giving back to all of you who have done so much for me, especially in these dark times. I can only try to repay your kindness. I truly love you all, and you are all welcome at my home at any time.”\nThe audience applauds respectfully and murmurs condolences. Right away, however, something seems odd about the situation.\nYou may either use an Investigation check (go to 12) or an Insight check (go to 46) to determine what’s piquing your interest.",
       "actions": {
         "choice": {
           "options": [
@@ -555,7 +555,7 @@
     },
     {
       "fragmentId": "33",
-      "text": "You square up as the wolves circle. At least ten of them, maybe more. It looks like the end, but you won’t go quietly.\nJust as you ready to fight, you hear a bellow from behind you. A bald dwarf in hides appears, fire dancing over his palms.\n“Oh no you don’t!” he yells. The wolves cower and slink off.\nYou remain poised, but the dwarf approaches with a smile, broken by a massive sneeze.\n“Sorry,” he says, sniffing. “They didn’t hurt you, did they?”\nYou assure him you’re fine.\nGo to 4.",
+      "text": "You square up to defend yourself as the pack of hungry wolves starts to circle, looking for an opening to attack. There are at least ten of them, and something tells you more are waiting in the darkness of the tree. \nIt looks like an early end to your adventuring career, but you’re determined not to give up without a fight. \nYou’re just about to unleash your attack and go down fighting when you hear a bellow behind you on the road. \nYou turn around to see a bald dwarf dressed in rough-spun clothes and animal hides pointing at you from on top of a rise in the road. Or maybe past you. Moonlight shines off the skin of his head; his face is lit by small balls of fire dancing in the air over his outstretched palms. \n“Oh no you don’t!” he yells, the flames flaring with his emotions. “Get back, you lot!” \nThe wolves immediately tuck their tails between their legs and lay their ears down flat. The apparent leader looks at you and whines. \n“Not a chance,” the dwarf scoffs. “Go on now.” \nThe wolves slink quietly back into the woods, and you realize you are still poised to attack. The dwarf doesn’t seem to notice as he approaches. He eyes you up and down, the silence between you stretches. \nUntil it breaks with a massive sneeze. \n“Sorry. You all right?” he asks with a lopsided smile and a sniffle. “Didn’t have a chance to get a piece off you, did they?” \nYou let him know that you’re all in one piece and thank him for his intervention. \nGo to 4.",
       "actions": {
         "combat": "wolves",
         "choice": {
@@ -570,7 +570,7 @@
     },
     {
       "fragmentId": "34",
-      "text": "The tavern is packed with townsfolk speaking quietly. There’s a closed casket amidst countless flowers, and a sad lyre tune in the corner. It’s a funeral.\nAn older man argues with a huge half-orc woman in a noble’s suit. Seeing you, he staggers over, reeking of ale.\n“I don’t know you,” he slurs, jabbing a finger. “Was it you? Did you do this?” He raises fists unsteadily.\nThe half-orc watches, arms crossed.\nYou can try to persuade him (go to 41) or intimidate him (go to 20).",
+      "text": "The tavern is nearly full to capacity of townspeople milling about speaking quietly to one another. The hum lacks the boisterous outbursts of laughter or shouts you normally associate with taverns this crowded, and the answer quickly becomes apparent why. \nAt one end of the common room, there is a closed casket on a table amidst what looks like hundreds of flower arrangements. A musician is strumming a lyre in a sad tune off in the corner. \nAs you are looking around, an older man is arguing with a huge half-orc woman with an impressive collection of battle scars and a suit tailored in a typical nobleman’s style. Seeing you, the man grimaces and sways over to you. He reeks of ale and spirits and his face sags in habitual sadness, but his eyes glitter with both tears and an unexpected rage. \n“I don’t know you,” he slurs, stabbing a blunt finger in the air between you. “Was it you? Did you do this? What else have you done?” \nA few heads nearby turn as he throws his hands up into a fighting stance and starts bobbing unsteadily. The half-orc crosses her arms and watches the both of you carefully. \nYou’re at a funeral in a strange town, so violence is not an option. You can try to persuade him to leave you alone (go to 41) or intimidate him into backing down (go to 20).",
       "actions": {
         "choice": {
           "options": [
@@ -588,7 +588,7 @@
     },
     {
       "fragmentId": "35",
-      "text": "The dog growls, baring teeth. The mayor suggests if you value your hand, you remove it.\nYou do so and then greet the mayor (go to 21).",
+      "text": "The dog growls, moving its considerable cheeks out of the way to bare its teeth.\nThe mayor recommends that if you like your hand attached, you would be wise to remove it from her dog's reach. You believe her - and the dog - so you pull your hand back intact.\nBetter late than never, you greet the mayor (go to 21).",
       "actions": {
         "choice": {
           "options": [
@@ -602,7 +602,7 @@
     },
     {
       "fragmentId": "36",
-      "text": "“Don’t you dare,” he snarls, swinging at you. But the half-orc catches his fist easily.\n“Enough,” she says. “Time to go.”\n“Yes, Tanya… Mayor Anathram… Bye.” He slinks out.\nYou see the half-orc’s hard stare (go to 44).",
+      "text": "“Don’t you dare take that tone with me, vagabond!” he snarls and takes a swing. \nBut the blow is intercepted by the green-skinned hand of the half-orc in the suit. Her large hand is crisscrossed with scars and easily engulf’s the man’s fist. \n“Enough,” she says. “Time to go.” \n“Yeah, sure, Tanya,” he says. “I mean Mayor Anathram. I mean… Bye.” \nThe drunk slinks unsteadily out the door and leaves the tavern. You’re about to say that you could have handled him on your own when you see the half-orc’s hard stare (go to 44).",
       "actions": {
         "choice": {
           "options": [
@@ -616,7 +616,7 @@
     },
     {
       "fragmentId": "37",
-      "text": "You recall the Battle of Three Rivers differently.\nRoll Intelligence (History) check. If 10 or higher, go to 17. If under 10, go to 47.",
+      "text": "You think you remember the events of Tanya’s story differently.\nRoll an Intelligence (History) check. If you roll 10 or higher, go to 17. If you roll under 10, go to 47.",
       "actions": {
         "roll": {
           "stat": "Intelligence",
@@ -637,7 +637,7 @@
     },
     {
       "fragmentId": "38",
-      "text": "There’s magic at work here.\nRoll Intelligence (Arcana) check. If 10 or higher, go to 31. If under 10, go to 10.",
+      "text": "There is clearly something magical at work here. You think back to what you know about the arcane arts.\nRoll an Intelligence (Arcana) check. If you get 10 or more, go to 31. If you get less than 10, go to 10.",
       "actions": {
         "roll": {
           "stat": "Intelligence",
@@ -658,7 +658,7 @@
     },
     {
       "fragmentId": "39",
-      "text": "The young sun cleric stands taller now, speaking with confidence unlike your earlier encounter.\n“Most of you know me, but I see new faces. I am Solaine, of the Radiant Order. May the light guide you.”\n“...And you,” some reply, making a sun-like gesture.\nShe praises Maybelline’s shining presence and offers comfort to Tomlin, singing a hymn from the Rathakananar Book of Funerary Rites. The crowd tries to follow.\nThe difference between this self-assured cleric and the shy woman you met is stark. You may use Religion (go to 24) or Insight (go to 43) to understand.",
+      "text": "Though you met her in the street, the young sun cleric seems like a different person behind the podium. She speaks clearer and stands up straighter. She seems possessed of a confidence you didn’t get from the same sweet - but a little scattered - young woman you met on your way to The Pickled Hen.\n“Most of you from town know me, but I see some unfamiliar faces,” she says. “I am Solaine, a member of the Radiant Order and custodian of Langston’s Eastern Temple. May the light guide you.”\nSeveral people reflexively respond with, “And you.”\nThey then make a salutation of the right hand touching the heart and then moving in an arc overhead, reminding you of a sun rising and setting overhead. Given the cleric’s youth, it’s obvious her order has a long history in this town.\n“Though we are in the dark shadows cast by our loss,” she continues. “The sun will shine forever on Maybelline as her presence was a bright shining light to all of us. I did not know Maybelline well in life, but it is clear that she has touched the lives of everyone here in this room.”\nShe looks directly at Tomlin and smiles kindly, “And my heart goes out to you especially, Tomlin. Know that my door is always open to you.”\nAnd then she leads the service in a hymn she introduces as coming from the Rathakananar Book of Funerary Rites. It seems that no one in the audience knows it, but she sings anyways in a high, sweet voice, and the crowd labors to keep up with her.\n“As we guard the light with you,\nAnd drive the shadows away,\nThe radiant sword of your heart\nThe evils of darkness slay.\nThough you’re gone from our sight,\nIn our heart of hearts remain,\nRest well in the light of the sun\nAnd the shield of our faith sustain.”\nThough the cleric appears to be earnest and sincere, the difference between the woman you met outside and the one standing before you now is stark. You may opt to roll either a Religion check (go to 24) or an Insight check (go to 43).",
       "actions": {
         "choice": {
           "options": [
@@ -676,7 +676,7 @@
     },
     {
       "fragmentId": "40",
-      "text": "You sprint towards town, wolves on your heels. Cresting a rise, you nearly collide with a bald dwarf in hides who startles and wards off the wolves with a wag of his finger.\nThe pack slinks off again (go to 4).",
+      "text": "You take off down the road at a full sprint, running towards town as quickly as you can. You doubt it will be quick enough, but it will buy you time to think. \nWhen you dash, the woods to either side of you erupt with hungry wolves that take up the chase. You power through and get up over a rise in the road. \nThen you nearly trip over a dwarf examining some roadside plant in the moonlight. The moonlight is shining off the bald top of his head and playing around the edges of his red beard. He’s dressed simply in homespun cloth and animal skins. Your entrance has clearly startled him and he throws his arms out as if to embrace you. \n“Hey, hey!” he cries out. “Watch yourself, traveler. What’s all this about?” \nSeveral wolves scramble into view but come to a skittering halt at the sight of the dwarf. \nHe wags a finger at them like a stern tutor, and in unison, the beasts whine and turn away. The whole pack slinks off into the woods again (go to 4).",
       "actions": {
         "choice": {
           "options": [
@@ -690,7 +690,7 @@
     },
     {
       "fragmentId": "41",
-      "text": "You raise your hands, calmly assuring him this is a misunderstanding. No need for violence.\nRoll Charisma (Persuasion) 12 or more: go to 2, under 12: go to 36.",
+      "text": "You raise your open hands and assure the man calmly that there has to be some kind of mistake. There’s no need to fight, and certainly no need to ruin such a somber event. \nRoll a Charisma (Persuasion) check. If you get 12 or more, go to 2. If you get under 12, go to 36.",
       "actions": {
         "roll": {
           "stat": "Charisma",
@@ -711,7 +711,7 @@
     },
     {
       "fragmentId": "42",
-      "text": "Gain Inspiration.\nThe druid’s sneezing triggered a brief, lupine shift. He seems ill, possibly a magical ailment.\nA sun cleric approaches the crowd (go to 39).",
+      "text": "Gain Inspiration.\nThe druid's face and nose seem unusually red, but the dwarf doesn't seem to be drunk.\nWith the sneezing and the hoarse voice, it seems likely that he's feeling unwell. It doesn't seem to have affected his energy level, however. Whatever’s affecting him clearly triggered some kind of change, however.\nThough it was incredibly quick, you did notice that as the druid sneezed, his ears and nose lengthened and even his build changed momentarily. To you it looks more canine - almost wolf-like - for a split second.\nBefore you can scrutinize the dwarven druid further, an adult human female in the white robes of a sun cleric and unassuming demeanor approaches the crowd (go to 39).",
       "actions": {
         "inspiration": "gainInspiration",
         "choice": {
@@ -726,7 +726,7 @@
     },
     {
       "fragmentId": "43",
-      "text": "The cleric’s confident leadership differs from the shy demeanor you saw before.\nRoll Wisdom (Insight) 10 or more: 45, under 10: 7.",
+      "text": "The cleric’s role as a spiritual leader clashes with the shy demeanor she displayed earlier, so you consider what may actually be motivating her.\nRoll a Wisdom (Insight) check. If you get 10 or more, go to 45. If you get less than 10, go to 7.",
       "actions": {
         "roll": {
           "stat": "Wisdom",
@@ -747,7 +747,7 @@
     },
     {
       "fragmentId": "44",
-      "text": "The half-orc mayor regards you carefully.\n“I am Tanya Anathram, mayor of Langston,” she says, heavily accented. “I may have use of you. Please stay for the funeral. I will speak to you after.”\nShe walks away as the ceremony begins (go to 28).",
+      "text": "The female half-orc in the tailored suit looks at you, eyes scanning up and down. \n“I am Tanya Anathram, mayor of Langston,” she says with a nod, her Common heavily accented with a guttural Orcish twang. “I may have use of you. Please stay for the funeral. I will speak to you after.” \nYou try to reply, but she is already walking away as the ceremony begins (go to 28).",
       "actions": {
         "choice": {
           "options": [
@@ -761,7 +761,7 @@
     },
     {
       "fragmentId": "45",
-      "text": "Solaine seems distracted, especially regarding Tomlin. There’s more beneath her veneer of spiritual leadership.\nThe mayor looms behind Solaine, prompting her to retreat (go to 25).",
+      "text": "Solaine seems distracted as she delivers her prayers. Her gaze drifts towards Tomlin as she speaks, often lingering longer than on any of the others in the crowd. And at least once, when she addresses him directly, the handsome herbalist’s face registers warmth, familiarity, and… something else you can’t quite figure out in that fleeting moment.\nThere is a lot more to unpack in how she's speaking and acting - especially as it relates to the aggrieved fiancé - but it's only the slightest hint of what she might be going through beneath the veneer of a spiritual leader.\nThe mayor looms behind Solaine for a moment before the cleric notices and retreats from the front of the crowd (go to 25).",
       "actions": {
         "choice": {
           "options": [
@@ -775,7 +775,7 @@
     },
     {
       "fragmentId": "46",
-      "text": "People act oddly, but you’re not sure why.\nRoll Wisdom (Insight) 10 or more: 29, under 10: 18.",
+      "text": "People are behaving oddly, but you’re not quite sure what is odd about them.\nRoll a Wisdom (Insight) check. If you get 10 or more, go to 29. If you get less than 10, go to 18.",
       "actions": {
         "roll": {
           "stat": "Wisdom",
@@ -796,7 +796,7 @@
     },
     {
       "fragmentId": "47",
-      "text": "Tanya’s stoicism suggests she’s hiding something, but you can’t say what.\nShe’ll arrive soon (go to 30).",
+      "text": "Tanya is just a little too stoic, a little too tightly controlled, making you think she is holding something back or hiding something. Her dog is also seriously impressive, but that doesn’t help much either.\nMaybe you can get more from her when she arrives in a moment (go to 30).",
       "actions": {
         "choice": {
           "options": [
@@ -810,7 +810,7 @@
     },
     {
       "fragmentId": "48",
-      "text": "“Excellent,” says Mayor Anathram. “Please speak to Maybelline’s fiancé, the herbalist on the west edge of town.”\nYou thank her, but she raises a hand.\n“I have arranged with the general store to supply you at a discount. Take this advance.”\nAdd 20 gp to your inventory.\nGo see Tomlin (go to 49).",
+      "text": "“Excellent,” Mayor Anathram says in a gravelly tone you can only assume means she’s pleased. “Let us begin. Please speak to Maybelline’s fiancé. He is an herbalist who lives on the western edge of town where he tends his garden and makes medicines for the townsfolk.”\nYou thank the mayor and prepare to leave, but she holds up a hand.\n“I have also made an arrangement with our general store. You may go to resupply anytime you may need to do so. It does not have as many goods as a big city, but it will likely have whatever you need.\nMuch at a discount. And here is an advance to make whatever purchases you may need.”\nAdd 20 gp to your inventory.\nYou thank the mayor for her kind gesture, and she grunts in response before returning to the paperwork on the table.\nGo to see Tomlin, the town's herbalist and Maybelline's fiancé (go to 49).",
       "actions": {
         "inventory": {
           "type": "add",
