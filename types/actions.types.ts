@@ -17,7 +17,8 @@ export interface RollAction {
 export interface ChoiceAction {
   options: {
     label: string;
-    nextFragmentId: string;
+    nextFragmentId?: string;
+    roll?: RollAction;
   }[];
 }
 

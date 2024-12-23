@@ -354,20 +354,45 @@
         "inspiration": {
           "type": "gainInspiration"
         },
-        "roll": {
-          "stat": "Wisdom",
-          "skill": "Perception or Insight",
-          "threshold": 15,
-          "outcomes": {
-            "success": {
-              "nextFragmentId": "75",
-              "description": "You notice something important."
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "roll": {
+                "stat": "Wisdom",
+                "skill": "Perception",
+                "threshold": 15,
+                "outcomes": {
+                  "success": {
+                    "nextFragmentId": "75",
+                    "description": "You notice something important."
+                  },
+                  "failure": {
+                    "nextFragmentId": "92",
+                    "description": "You fail to notice something important."
+                  }
+                }
+              }
             },
-            "failure": {
-              "nextFragmentId": "92",
-              "description": "You fail to notice something important."
+            {
+              "label": "Continue",
+              "roll": {
+                "stat": "Wisdom",
+                "skill": "Insight",
+                "threshold": 15,
+                "outcomes": {
+                  "success": {
+                    "nextFragmentId": "75",
+                    "description": "You notice something important."
+                  },
+                  "failure": {
+                    "nextFragmentId": "92",
+                    "description": "You fail to notice something important."
+                  }
+                }
+              }
             }
-          }
+          ]
         }
       }
     },
@@ -817,7 +842,7 @@
     {
       "fragmentId": "89",
       "src": null,
-      "text": "Despite the scare you just had, you see it as just another day in the life of a hero for hire. You check that the door and window are locked, draw the curtains, and crawl back into bed.\nIn the dark with just the sound of your own beating heart, it’s harder than you had thought to find sleep.\nRoll either a Constitution or Wisdom saving throw. If you get 12 or more, get the benefits of a long rest. If you get under 12, only get the benefits of a short rest.\n􀀆􀀊􀀃 􀀗􀀋􀀐􀀎􀀃􀀇 􀀋􀀘 􀀐􀀑􀀒􀀙􀀇􀀆􀀋􀀒 26\nWhen dawn breaks, you climb out of bed and prepare for the day (go to 107).",
+      "text": "Despite the scare you just had, you see it as just another day in the life of a hero for hire. You check that the door and window are locked, draw the curtains, and crawl back into bed.\nIn the dark with just the sound of your own beating heart, it’s harder than you had thought to find sleep.\nRoll either a Constitution or Wisdom saving throw. If you get 12 or more, get the benefits of a long rest. If you get under 12, only get the benefits of a short rest.\nWhen dawn breaks, you climb out of bed and prepare for the day (go to 107).",
       "actions": {
         "roll": {
           "stat": "ConstitutionOrWisdom",
@@ -1073,7 +1098,6 @@
       "text": "When you ask Tomlin where he was on the night of Maybelline’s death, a dark flash of anger crosses his face. However, his expression quickly dissolves into shame.\n\n“I was… with friends,” he says. “Oh no! Not that kind of friend! I was having a drink at the tavern, and it got a little out of hand. Maybelline and I had a whirlwind courtship, so there was no stag party. That night became it.”\n\nWhen you ask if anyone else can confirm that, he rattles off a bunch of names. He has a dozen or more people from around town who can confirm he was there until dawn.\n\nRoll either an Intelligence (Investigation) or Wisdom (Insight) check. If you roll 10 or more on Investigate, go to 83. If you roll 10 or more on Insight, go to 60. If you roll less than 10 on your check, go to 66.",
       "actions": {
         "choice": {
-          "prompt": "Roll either an Intelligence (Investigation) or Wisdom (Insight).",
           "options": [
             {
               "label": "Use Intelligence (Investigation)",

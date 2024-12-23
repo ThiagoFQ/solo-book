@@ -14,7 +14,7 @@ export const FragmentChapterMessage = ({
 }: {
   message: FragmentChapter;
 }) => (
-  <div className="border-b border-gray-300">
+  <div className="border-b border-red-400">
     <div className="relative w-full h-60">
       <Image
         src={message.chapterImage}

@@ -45,11 +45,24 @@ export const showActions = (content: string, currentChapter: any) => {
 
 export const handleChoice = (
   action: ChoiceAction,
-  onNextFragment: (nextFragmentId: string, label: string) => void
+  onNextFragment: (nextFragmentId: string, label: string) => void,
+  onRollResult: (
+    result: number,
+    outcome: { description: string; nextFragmentId: string }
+  ) => void
 ) => {
-  action.options.forEach((option) => {
-    onNextFragment(option.nextFragmentId, option.label);
-  });
+  if (!action || !action.options) return null;
+
+  return action.options.map((option) => ({
+    label: option.label,
+    action: () => {
+      if (option.nextFragmentId) {
+        onNextFragment(option.nextFragmentId, option.label);
+      } else if (option.roll) {
+        handleRoll(option.roll, onRollResult);
+      }
+    },
+  }));
 };
 
 export const handleRoll = (
