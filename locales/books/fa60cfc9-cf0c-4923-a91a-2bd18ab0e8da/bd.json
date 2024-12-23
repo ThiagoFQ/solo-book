@@ -2,6 +2,7 @@
   "fragments": [
     {
       "fragmentId": "0",
+      "chapterTitle": "The Adventure Begins...",
       "text": "After a long day on the road, you crest a hill and see the lights of a town. According to maps and helpful locals you’ve consulted, this must be Langston. Though the last blush of sunset still colors the sky to the west, lamplight is already visible at the gate and in the streets.\nIn the dim twilight, you can clearly see that the dirt road you’ve been traveling transitions to cobblestones, and a simple stone wall rings the town. Even from this distance, you can see the timber-framed walls of the buildings in town are well-maintained with fresh whitewash that glow golden in the lamplight. It’s a beautiful little town, a prosperous trading hub nestled among the fertile farmland and old-growth forest you’ve spent the last few days traversing.\nThe stars are just starting to emerge as the lone howl of a wolf splits the silence off somewhere in the woods. A chorus of responding howls take up the call, some uncomfortably close. And getting closer.\nYou pick up your pace to put more distance between you and the wilderness in the hope of a soft bed, a hot meal, and some work for an enterprising adventurer. A town as prosperous as Langston looks like a place to do good, earn coin, and achieve glory. Maybe all three at once, so long as you aren’t eaten by wolves between here and there.\nRoll a Wisdom (Perception) check. If you get 10 or more, go to 23. If you get less than 10, go to 11.",
       "actions": {
         "roll": {
@@ -810,6 +811,7 @@
     },
     {
       "fragmentId": "48",
+      "chapterEnd": true,
       "text": "“Excellent,” Mayor Anathram says in a gravelly tone you can only assume means she’s pleased. “Let us begin. Please speak to Maybelline’s fiancé. He is an herbalist who lives on the western edge of town where he tends his garden and makes medicines for the townsfolk.”\nYou thank the mayor and prepare to leave, but she holds up a hand.\n“I have also made an arrangement with our general store. You may go to resupply anytime you may need to do so. It does not have as many goods as a big city, but it will likely have whatever you need.\nMuch at a discount. And here is an advance to make whatever purchases you may need.”\nAdd 20 gp to your inventory.\nYou thank the mayor for her kind gesture, and she grunts in response before returning to the paperwork on the table.\nGo to see Tomlin, the town's herbalist and Maybelline's fiancé (go to 49).",
       "actions": {
         "inventory": {

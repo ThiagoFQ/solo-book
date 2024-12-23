@@ -24,6 +24,8 @@ interface Content {
 
 interface Fragment {
   fragmentId: string;
+  chapterTitle: string;
+  chapterEnd: boolean;
   text: string;
   actions?: {
     choice?: {
@@ -105,7 +107,7 @@ export const ChapterProvider = ({
 
   const goToNextChapter = () => {
     const nextChapter = chapters.find(
-      (chapter) => chapter.order === String(Number(currentOrder) + 1)
+      (chapter) => Number(chapter.order) === currentOrder + 1
     );
     if (nextChapter) {
       setCurrentChapter(nextChapter);

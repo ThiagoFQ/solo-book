@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface ChatHeaderProps {
   book: Book & {
@@ -57,6 +57,14 @@ export const ChatHeader = ({ book }: ChatHeaderProps) => {
       });
     }
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsSmall(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleImageSize = () => {
     setIsSmall((prev) => !prev);

@@ -1,10 +1,14 @@
 "use client";
 
 import { ChatMessage, ChatMessageProps } from "@/components/chat-message";
+import { ScrollToBottomButton } from "@/components/chat/scroll-button";
+import {
+  FragmentChapter,
+  FragmentChapterMessage,
+} from "@/components/fragments/fragment-chapter";
 import { useChapter } from "@/context/chapter-provider.context";
 import { Book } from "@prisma/client";
 import { ElementRef, useEffect, useRef, useState } from "react";
-import { ScrollToBottomButton } from "./chat/scroll-button";
 
 interface ChatMessagesProps {
   messages: ChatMessageProps[];
@@ -27,11 +31,12 @@ export const ChatMessages = ({
 
   const firstFragment =
     currentChapter?.content?.fragments?.find(
-      (fragment) => fragment.fragmentId === "0"
+      (fragment) => fragment.chapterTitle
     ) || null;
 
   useEffect(() => {
     if (
+      currentChapter &&
       firstFragment &&
       !messages.some((msg) => msg.fragmentId === firstFragment.fragmentId)
     ) {
@@ -39,12 +44,20 @@ export const ChatMessages = ({
         ...prev,
         {
           role: "system",
+          content: "",
+          fragmentId: `chapter_${currentChapter.order}_start`,
+          chapterTitle: currentChapter.title,
+          chapterOrder: currentChapter.order,
+          chapterImage: currentChapter.src,
+        } as FragmentChapter,
+        {
+          role: "system",
           content: firstFragment.text,
           fragmentId: firstFragment.fragmentId,
         },
       ]);
     }
-  }, [firstFragment, messages, currentChapter]);
+  }, [currentChapter, firstFragment]);
 
   useEffect(() => {
     if (nextMessageRef.current) {
@@ -111,27 +124,29 @@ export const ChatMessages = ({
     handleNextFragment(outcome.nextFragmentId, outcome.description);
   };
 
+  const handleChapterEnd = (nextFragmentId: string) => {
+    if (!goToNextChapter) return;
+    goToNextChapter();
+  };
+
   return (
     <div ref={containerRef} className="flex-1 overflow-y-auto pr-1 relative">
-      {currentChapter && (
-        <div className="mb-4 p-4 border-b border-gray-300">
-          <h2 className="text-m font-bold flex justify-between items-center">
-            <span>{currentChapter.title}</span>
-            <span>{`Chapter ${currentChapter.order}`}</span>
-          </h2>
-        </div>
-      )}
       {messages.map((message, index) => (
         <div
           key={index}
           data-message-index={index}
           ref={index === messages.length - 1 ? nextMessageRef : null}
         >
-          <ChatMessage
-            {...message}
-            onNextFragment={handleNextFragment}
-            onRollResult={handleRollResult}
-          />
+          {"chapterTitle" in message ? (
+            <FragmentChapterMessage message={message as FragmentChapter} />
+          ) : (
+            <ChatMessage
+              {...message}
+              onNextFragment={handleNextFragment}
+              onRollResult={handleRollResult}
+              onChapterEnd={handleChapterEnd}
+            />
+          )}
         </div>
       ))}
       {isLoading && <ChatMessage role="system" src={book.src} isLoading />}

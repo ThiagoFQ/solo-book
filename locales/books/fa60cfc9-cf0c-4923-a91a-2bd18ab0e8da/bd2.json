@@ -1,0 +1,1222 @@
+{
+  "fragments": [
+    {
+      "fragmentId": "49",
+      "chapterTitle": "Speaking to Tomlin",
+      "src": null,
+      "text": "This morning, Langston seems to be back to normal. Townspeople bustle about their daily lives of working, shopping, eating, and gossiping. You guess there are around a thousand people in Langston, but you see very few people idle. Tradespeople ply their trades smithing, weaving, building furniture, or baking bread.\nBut laughter is just a little too spaced out. The sounds of hammers and hoofbeats seem just a little too loud. The air is charged with fear and grief, even in the light of day. You pass the wagon laden with flowers from the funeral once again looking forlorn alone in the street.\nSo you now find yourself in a strange town with a substantial payday on the other end of a murder investigation. The victim is a young woman who was apparently torn apart by a wild beast but within the confines of the town. Your first lead is the dead woman’s fiance, but that’s it. It looks like you have your work cut out for you.\n“Hey, adventurer!” calls out a man’s voice behind you. It’s the same man that challenged you to a fight the night before carrying a bundle of barrel staves. “We’ve got our eyes on you. Don’t you think we don’t!” A few others nearby shake their heads, and one local shoots you an embarrassed look. Yes, you will definitely have your work cut out for you.\nIf you are able to detect magic through a spell or ability, go to 91. If not, go to 84.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Able to detect magic",
+              "nextFragmentId": "91"
+            },
+            {
+              "label": "Not able to detect magic",
+              "nextFragmentId": "84"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "50",
+      "src": null,
+      "text": "You can't tell if the tea is safe or not. This is starting to get awkward, but Tomlin is at least trying to look like he isn’t amused.\nDrink the tea anyways (go to 103) or refuse the tea (go to 86).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Drink the tea anyways",
+              "nextFragmentId": "103"
+            },
+            {
+              "label": "Refuse the tea",
+              "nextFragmentId": "86"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "51",
+      "src": null,
+      "text": "As hard as you try, even with Tomlin’s help you just can’t get the beam to move. He will have to get a work crew from town to help fix it.\nFrom here, if you haven’t done so you can check the flowerbeds (go to 99) or walk the perimeter of the garden (go to 81).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Check the flowerbeds",
+              "nextFragmentId": "99"
+            },
+            {
+              "label": "Walk the perimeter of the garden",
+              "nextFragmentId": "81"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "52",
+      "src": null,
+      "text": "You ask Tomlin who that is.\n“Oh,” he says, swiping his mussed hair back into place. “Pretty routine, really. She is just a young woman getting medicine for her poor sick brother.”\nAunt, you remind him.\n“Oh yes, Aunt,” Tomlin says with a half laugh. “Terribly ill. But such a darling girl for taking such good care of her ailing mother like that.”\nAunt, you say again.\n“Right. Won’t you come in?” He steps inside, waving for you to follow him in (go to 69).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "69"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "53",
+      "src": null,
+      "text": "You call out loudly for help. The golden eyes across the way narrow at you and you wonder if some attack is coming, but then its shoulders start to shake. The thing is laughing at you for calling out for help.\nIt slips away into the darkness just as the innkeeper bursts in wearing a striped nightgown. You tell him what you just saw.\nThe innkeeper rushes to the window and looks out before turning back to you.\n“You sure?” he asks. “Doesn’t look like there’s anything there. Maybe you should get some more sleep, yeah?”\nYou can do as the innkeeper suggests and try to get a full night’s sleep (go to 89) or you can bid him goodnight and keep watch on your own (go to 55). Alternatively, you can go outside to look for clues as to what the beast was (go to 87).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Get a full night's sleep",
+              "nextFragmentId": "89"
+            },
+            {
+              "label": "Keep watch on your own",
+              "nextFragmentId": "55"
+            },
+            {
+              "label": "Go outside to look for clues",
+              "nextFragmentId": "87"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "54",
+      "src": null,
+      "text": "You don’t immediately recognize the tea’s ingredients based on its appearance or smell. How do you assess the tea's safety?\nCast detect poison and disease on the tea (go to 58), use an Intelligence (Nature) check (go to 97), or use a Wisdom (Medicine) check (go to 90).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Cast detect poison and disease",
+              "nextFragmentId": "58"
+            },
+            {
+              "label": "Use Intelligence (Nature)",
+              "nextFragmentId": "97"
+            },
+            {
+              "label": "Use Wisdom (Medicine)",
+              "nextFragmentId": "90"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "55",
+      "src": null,
+      "text": "Get the benefits of a short rest.\nSometime in the darkest hours of the morning, it starts to rain. It comes down hard for a while, streaking the window panes as you watch. There won't be any trace of whatever you saw now.\nEventually the day dawns, damp but clear and you hear a clatter outside your door (go to 107).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "107"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "56",
+      "src": null,
+      "text": "Tomlin scoffs. “Of course, she didn't have any enemies. Everyone loved her and she loved everyone back. It’s as simple as that.”\nObviously, even the best people aren’t universally beloved so Tomlin isn’t telling you something. You try to get the information out of him by persuading him that it’s safe to tell you.\nRoll a Charisma (Persuasion) check. If you get 10 or more, go to 85. If you get under 10, go to 98.",
+      "actions": {
+        "roll": {
+          "stat": "Charisma",
+          "skill": "Persuasion",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "85",
+              "description": "You succeed in persuading him."
+            },
+            "failure": {
+              "nextFragmentId": "98",
+              "description": "You fail to persuade him."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "57",
+      "src": null,
+      "text": "Pierced by the sharp claws of your attackers, you topple into the earth of the garden. The clattering of wooden limbs seems to move away, or that could be the darkness moving in on you. You wonder if Tomlin will be able to help staunch the bleeding in time.\nThen you hear Tomlin scream as the world fades to black.\nYou die.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "58",
+      "src": null,
+      "text": "Gain Inspiration.\nThe tea is not at all poisonous. All the purple flowers in the windows are, however. Also, the first few steps of the filtration system also register as toxic, but the end result is not.\nDrink the tea (go to 103) or refuse the tea anyways (go to 86).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Drink the tea",
+              "nextFragmentId": "103"
+            },
+            {
+              "label": "Refuse the tea anyways",
+              "nextFragmentId": "86"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "59",
+      "src": null,
+      "text": "You can’t make it up the side of the building, so the trail goes cold for you here.\nYou return to your room to either try to get some more sleep (go to 89) or stay up and keep watch (go to 55).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Try to get more sleep",
+              "nextFragmentId": "89"
+            },
+            {
+              "label": "Stay up and keep watch",
+              "nextFragmentId": "55"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "60",
+      "src": null,
+      "text": "Gain Inspiration.\nTomlin isn't lying, but he's leaving something out. You decide to dig deeper.\nAsk if it really was just the menfolk (go to 74) or why Maybelline wasn’t with him (go to 104).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Ask if it really was just the menfolk",
+              "nextFragmentId": "74"
+            },
+            {
+              "label": "Ask why Maybelline wasn’t with him",
+              "nextFragmentId": "104"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "61",
+      "src": null,
+      "text": "You find a trail through the flowerbeds. Something got into the garden, and it seems it can't get out. Some of the damage to the flowers is recent, so whatever caused it either returned multiple times or never left.\nThe destruction is low to the ground, but there doesn't seem to be any evidence of feeding. Almost like something enjoyed tearing up the cultivated plants.\nYou can follow the trail (go to 75), check the path by the trellis (go to 81), or examine the post (go to 71).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Follow the trail",
+              "nextFragmentId": "75"
+            },
+            {
+              "label": "Check the path by the trellis",
+              "nextFragmentId": "81"
+            },
+            {
+              "label": "Examine the post",
+              "nextFragmentId": "71"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "62",
+      "src": null,
+      "text": "Tomlin rubs his beard, which he probably knows highlights his jawline.\n“Nothing strange except maybe that the wolves have been more vocal than usual. There have always been wolves around, but they seem louder and closer over the last month or two.”\nYou ask if the wolves have ever been a threat before.\n“Only to livestock,” Tomlin says. “But now that I think about it…There was also some talk of a couple of strangers that for some reason made a camp near Emmitt and Tilly’s farmstead.”\nWhy wouldn’t someone stay in town?\n“There are lots of reasons,” Tomlin says with a shrug. “If they haven’t the coin, maybe. Or they’re like Roi and just prefer to sleep without walls hemming you in. But there have also been some farmers complaining about thefts. If these… whoever they are… Well, if they're up to no good, that could be why they aren’t staying in town. Could they have done this?”\nThe herbalist’s voice tightens as he makes the realization and his eyes flash with anger, but you assure him that you will find out.\nYou can continue questioning Tomlin if there are still some questions you haven’t asked him. You could ask where he was on the night of Maybelline’s death (go to 101) or ask if Maybelline has any enemies (go to 56).\nOr if you haven’t anything else you want to ask, you can bid Tomlin farewell and continue your investigation elsewhere (go to 105).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask where he was on the night of Maybelline’s death",
+              "nextFragmentId": "101"
+            },
+            {
+              "label": "Ask if Maybelline has any enemies",
+              "nextFragmentId": "56"
+            },
+            {
+              "label": "Bid Tomlin farewell",
+              "nextFragmentId": "105"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "63",
+      "src": null,
+      "text": "Gain Inspiration.\nYou make it very clear that you don't approve of Tomlin’s behavior. Has his fiancee even been buried yet?\n“Everyone grieves in their own way,” he says, though his eyes still avoid yours. “I assume you’re who the mayor has tasked with finding the killer?”\nYou let him know that he’s right, and he steps aside and indicates the inside of his cottage.\n“Won’t you please come in then?” he asks. “I’m sure you have- um- many questions.”\nYou enter Tomlin’s cottage (go to 69).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "69"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "64",
+      "src": null,
+      "text": "The scraplings look like two small humanoids apparently made of dry wood. They rake at you with sharp claws amid the clattering of their wooden limbs.\nTomlin grabs a nearby pitchfork and engages one of them but he calls out, “Kill them! With fire if you can!”\nFight the scrapling you have engaged. Both fight to the death.\nIf you win, go to 88. If you lose, go to 57.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "If you win",
+              "nextFragmentId": "88"
+            },
+            {
+              "label": "If you lose",
+              "nextFragmentId": "57"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "65",
+      "src": null,
+      "text": "From where you're standing, neither you nor Tomlin sees anything amiss.\nKeep exploring the garden by either examining the flowerbeds (go to 99) or walking the perimeter (go to 81).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the flowerbeds",
+              "nextFragmentId": "99"
+            },
+            {
+              "label": "Walk the perimeter",
+              "nextFragmentId": "81"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "66",
+      "src": null,
+      "text": "You can’t see any gaps in Tomlin’s story about an unexpected stag party. There are almost certainly things that he - or you - have missed, but this line of questioning isn’t likely to help uncover them.\nIf you haven’t done so yet, you can ask Tomlin about Maybelline’s enemies (go to 56) or ask about any strange phenomena around town (go to 62).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask Tomlin about Maybelline’s enemies",
+              "nextFragmentId": "56"
+            },
+            {
+              "label": "Ask about any strange phenomena",
+              "nextFragmentId": "62"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "67",
+      "src": null,
+      "text": "Gain Inspiration.\nYou heave the heavy beam out of the way, exposing what it was lying on.\nIt appears to be a small human figure made of gnarled and knotted wood with sharp-clawed hands. The impact of the beam broke it in several places and it now appears to be quite dead. It seems that a small hole dug under the trellis caused some instability, and the post collapsed under the combined weight of the trellis plus the creeping vines wrapped around its lattice.\n\"Scraplings!\" Tomlin spits, then curses. He looks up at you with a combination of anger and fear. “Animated plants that thirst for blood. I’ve never had any in my garden before, but they’ve wandered into other plots or farms around town before. Very dangerous and almost never alone.”\nRoll a Wisdom (Perception) or Wisdom (Insight) check with advantage as Tomlin assists you. If you roll 15 or more, goto75. If you roll under 15, goto92.",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Perception or Insight",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "75",
+              "description": "You notice something important."
+            },
+            "failure": {
+              "nextFragmentId": "92",
+              "description": "You fail to notice something important."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "68",
+      "src": null,
+      "text": "Gain Inspiration.\nOn the roof tiles around the claw marks, you find smears of what look and smell like black earth. There’s a faint smell of rot to it, but it otherwise just appears to be unusually rich soil.\nYou also find a few tufts of coarse animal hair, but only in that location. After handling the fur for a moment, it disintegrates into a shimmer of moonlight.\nExamining the rest of the roof shows one or two more smears of dark earth but no other hair.\nFinding nothing else, you decide to return to the inn. You carefully make your way back down off of the building and go back to your room, locking your door and window.\nYou can now either keep watch for the creature’s return (go to 55) or try to get some sleep (go to 89).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Keep watch for the creature’s return",
+              "nextFragmentId": "55"
+            },
+            {
+              "label": "Get some sleep",
+              "nextFragmentId": "89"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "69",
+      "src": null,
+      "text": "Looking embarrassed, but not able to resist glancing after his \"guest,\" Tomlin closes the door behind you.\nThe herbalist’s cottage is a riotous sensory experience. Fresh flowers sit in vases and lie in bunches on various surfaces. More flowers, herbs, and roots hang from special drying racks among the ceiling beams.\nThe windows are all hung with vibrant purple flowers in the early stages of drying out. They are evenly spaced with small bunches of daisies tied with little purple ribbons, so it’s difficult for you to tell if they are medicinal or decorative, but it looks like a bit of Maybelline’s influence on the space.\nThe odors come in waves, some medicinal and astringent, others floral, herbal, and fruity in waves. It’s intense, but not unpleasant.\nThe hearth’s coals are banked low, but some decoction bubbles away in a cauldron. A more sophisticated filtering system rests on a workbench slowly dripping a bright orange liquid into a vial.\nTomlin reaches for a kettle just starting to bang away over a burner. Clearly, he had started the water for tea with the expectation of a different companion. He selects a packet of herbs and wildflowers almost without looking and tosses them into a teapot and douses the tea in boiling water from the kettle.\nHe pours two cups and hands one to you. Bitter steam wafts up from the yellowish liquid in your cup. He eagerly watches you to see if you like the tea.\nYou may drink the tea (go to 103), politely refuse the tea (go to 86), or assess the tea for safety (go to 54).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Drink the tea",
+              "nextFragmentId": "103"
+            },
+            {
+              "label": "Politely refuse the tea",
+              "nextFragmentId": "86"
+            },
+            {
+              "label": "Assess the tea for safety",
+              "nextFragmentId": "54"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "70",
+      "src": null,
+      "text": "When you detect magic, you see a burst of bright light strobing with pitch darkness. A rushing hum fills your ears and your head is filled with a piercing agony.\nLose 1 hp.\nAs the pain subsides, you are able to sense that the magic is a mix of necromancy and abjuration warring with one another.\nYour senses return to normal as you gasp for air and the buzzing of the magical power here fades away.\nWith a final shake of your head, you continue on your way to meet the herbalist (go to 84).",
+      "actions": {
+        "damage": {
+          "hp": 1,
+          "description": "Lose 1 hp from the magical backlash."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "84"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "71",
+      "src": null,
+      "text": "A large beam has somehow fallen. It seems as though it was partially dug up. And it appears to have fallen on something as it's lying crookedly.\nTomlin admits to trying to move the beam but not being able to and there are more pressing matters.\nYou decide to move it for him.\nRoll a Strength check with advantage because Tomlin helps you. If you roll 15 or more, go to 67. If you roll less than 15, go to 51.",
+      "actions": {
+        "roll": {
+          "stat": "Strength",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "67",
+              "description": "You move the beam successfully."
+            },
+            "failure": {
+              "nextFragmentId": "51",
+              "description": "You fail to move the beam."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "72",
+      "src": null,
+      "text": "“I’m very grateful for your help,” Tomlin says once you’re in his cottage. “This is to help with your investigation. It was meant to be a wedding gift for Maybelline, but I can no longer bear to have it here with me. But maybe it will be useful to you.”\nHe presents you with an ornate glass vial. The vial contains a philter of remembrance.\nAdd philter of remembrance (10 doses) to your inventory.\n“Am I a terrible person for feeling some relief?” he asks, a smile briefly dancing across his lips. “No, I suppose that would be natural. And we were together till death did us part.”\nHe gets a faraway look in his eye as he stares past you. You bid him farewell, which he distractedly returns. and make your way back to the inn (go to 106).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Philter of Remembrance",
+          "quantity": 10,
+          "description": "Add philter of remembrance (10 doses) to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "106"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "73",
+      "src": null,
+      "text": "There's some minor damage to the flowers, much to Tomlin's distress, but you can't see any clues as to what caused it.\nContinue exploring the garden by following the trellis around the edge of the garden (go to 81) or examining the fallen beam (go to 71).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Follow the trellis around the edge of the garden",
+              "nextFragmentId": "81"
+            },
+            {
+              "label": "Examine the fallen beam",
+              "nextFragmentId": "71"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "74",
+      "src": null,
+      "text": "“Well, mostly just the men,” Tomlin says. “At some point, Solaine was passing through on her way to speak to someone. She looked a little haggard but was her usual cheery self. She stopped over for a quick hello before rushing on her way.”\nYou ask how familiar Tomlin is with Solaine and her usual self.\n“Well, you know…” he shrugs but more to relieve himself of some strong emotion than uncertainty. “We were lovers before her pilgrimage. But while she was gone, Maybelline and I fell in love.”\nYou ask how Solaine took it.\n“Not well at first, but she came around. She even agreed to perform the wedding ceremony.”\nYou ask if that’s typical for Solaine to perform ceremonies like that.\n“Her or Roi,” he pours himself another cup of tea. “Roi was there with us, actually. He left early, though, when he started sneezing and coughing up a fit.”\nYou can still ask why Maybelline wasn’t with him in the first place (go to 104).\nOr if you haven’t done so yet, you can ask more about Maybelline, like if she had any enemies (go to 56) or if there has been anything suspicious about town (go to 62).\nIf you have no further questions for Tomlin, you can also take your leave and continue with the investigation elsewhere (go to 105).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask why Maybelline wasn’t with him",
+              "nextFragmentId": "104"
+            },
+            {
+              "label": "Ask if Maybelline had any enemies",
+              "nextFragmentId": "56"
+            },
+            {
+              "label": "Ask if there has been anything suspicious about town",
+              "nextFragmentId": "62"
+            },
+            {
+              "label": "Take your leave",
+              "nextFragmentId": "105"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "75",
+      "src": null,
+      "text": "You notice two dead shrubs that appear out of place in this manicured garden. Despite being out of the wind, they start to shake and creak, so you know something is amiss.\nThe shrubs uproot themselves and attack, which is about what you'd expected (go to 64).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "64"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "76",
+      "src": null,
+      "text": "You identify some of the medicinal herbs in the tea and determine it is not just safe but probably an excellent decoction for your health.\nThe purple flowers hanging in the windows are a bit concerning as they are wolfsbane, a dangerous nightshade normally but a potent medicine in the right hands.\nDrink the tea now (go to 103) or refuse the tea anyways (go to 86).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Drink the tea now",
+              "nextFragmentId": "103"
+            },
+            {
+              "label": "Refuse the tea anyways",
+              "nextFragmentId": "86"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "77",
+      "src": null,
+      "text": "You take a moment to admire the lush flowers and plants around you. A brightly colored butterfly flutters past on its way to some purple growing by the door and bees hum contentedly among some brightly colored blooms nearby. It smells sweet and green in a way that you could lose yourself in the moment.\nBut before you can decide to give up a life of adventure for a plot of land, the door opens with a loud click. You jump, instinctively reaching for a way to defend yourself before you realize that it’s just Tomlin. And someone else.\nHe is locked in a long kiss with a young woman, but sees you out of the corner of his eye and abruptly pulls away. She nearly falls with a cry before catching herself against the door frame.\nTomlin stammers a moment before reaching into the house and handing the woman a sachet of some herbal tea. “Here’s the- um- medicine for your sick grandmother. If there’s - uh - anything else…”\nThe woman has now noticed you as well and blushes.\n“No, no. Thank you. I’ll give this to my aunt, I mean my grandmother?” ”\nShe grips the sachet tightly in her fingers and excuses herself. Tomlin offers you a sheepish smile and a half-shrug.\nYou can chastise the herbalist (go to 63), ask him who his guest was (go to 52), or say nothing at all (go to 95).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Chastise the herbalist",
+              "nextFragmentId": "63"
+            },
+            {
+              "label": "Ask who his guest was",
+              "nextFragmentId": "52"
+            },
+            {
+              "label": "Say nothing at all",
+              "nextFragmentId": "95"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "78",
+      "src": null,
+      "text": "Tomlin shows you to the garden outside the back of his cottage. The lush space is a riot of color and smells, but it’s also well-organized. It's more of a small farming plot than what can reasonably be called a garden.\nFlowerbeds and tracts of green herbs dominate the plot while climbing vines cover trellises that make up a fence. One of the beams anchoring a far corner of the trellises has fallen over. The place smells amazing and bees lazily hum from blossom to blossom.\nFrom here, you can examine the flowerbeds (goto99), take a look at the fallen post (go to 71), or walk the trellis perimeter (go to 81).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the flowerbeds",
+              "nextFragmentId": "99"
+            },
+            {
+              "label": "Take a look at the fallen post",
+              "nextFragmentId": "71"
+            },
+            {
+              "label": "Walk the trellis perimeter",
+              "nextFragmentId": "81"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "79",
+      "src": null,
+      "text": "You open the window and call out to the hunched figure, asking what it wants.\nIt lowers its arm, but the risen moon is behind the creature and it is obscured by shadow. All that you can tell is that it keeps its powerful form close to the rooftop and is bristling with hair that is either worn or naturally occurring, and eyes that catch the moonlight in glints of golden yellow.\n\"He’s mine!\" it snarls with the force of a whip cracking. A low growl rumbles through the night just before the form disappears over the top edge of the rooftop. It makes no other appearance.\nYou’re bone tired after your first full day in Langston, but the encounter has left you feeling a bit rattled.\nYou can either try to get some more sleep (go to 89) or stay up and keep watch (go to 55). Alternatively, you could go outside and investigate (go to 87).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Try to get some more sleep",
+              "nextFragmentId": "89"
+            },
+            {
+              "label": "Stay up and keep watch",
+              "nextFragmentId": "55"
+            },
+            {
+              "label": "Go outside and investigate",
+              "nextFragmentId": "87"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "80",
+      "src": null,
+      "text": "“So I guess you’re here to ask me about Maybelline?” Tomlin asks. You let him know he’s correct.\nThe herbalist sighs and sips at his tea. Pain springs onto his handsome features and he looks past you into the middle distance.\n“Maybelline and I have known each other forever, of course,” he says. “She was the queen of the marketplace and has been since she was a child I’m told. Even when running her family’s vegetable cart, she still kept everyone organized and mediated conflicts. And I’m the town’s primary medical authority. For the mundane medicine, at least. Roi and Solaine help when divine intervention becomes necessary. But still, I know everybody anyway.”\nA slow, sad smile spreads across his face. “And then sometime around three months ago, something just clicked. We danced at the tavern to a bawdy song, kissed in the moonlight, and planned to wed within the month. We were just… perfect for each other.”\nAnd then the tears start. “I’m sorry. Thank you for being here to help find whoever - or whatever - did this so that no one else would have to feel this kind of pain. It’s no wonder her parents are holing themselves up in the farm, refusing to talk to anyone. Maybelline was a bright and shining star who will be dearly missed.”\nWhat else do you want to know?\nAsk where Tomlin was the night Maybelline died (go to 101).\nAsk if Maybelline had any enemies (go to 56).\nAsk if Tomlin has seen anyone or anything strange around town lately (go to 62).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask where Tomlin was the night Maybelline died",
+              "nextFragmentId": "101"
+            },
+            {
+              "label": "Ask if Maybelline had any enemies",
+              "nextFragmentId": "56"
+            },
+            {
+              "label": "Ask if Tomlin has seen anything strange around town lately",
+              "nextFragmentId": "62"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "81",
+      "src": null,
+      "text": "You walk around the outer edge of the garden. There’s a well-worn trail here and Tomlin seems to be moving almost mechanically. The trellis is hung with climbing vines of different varieties, some sprouting flowers and others fruits or vegetables.\nThe trellis uses a fairly tight lattice to form what’s functionally a wall of vegetation around Tomlin’s herb garden, offering both privacy and a sense of peace to the sizable plot of land Tomlin can call his own.\nIt’s a pleasant little stroll, in fact, and you can’t help wondering how many times Tomlin and Maybelline might have walked this same circuit, or with how many other women Tomlin may have done the same. The herbalist doesn’t seem to notice the beauty, but instead is checking the health of his plants, some of which appear to be worse for wear.\nRoll a Wisdom (Perception) check. If you get 15 or more, go to 75. If you roll less than 15, go to 92.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Perception",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "75",
+              "description": "You notice something important."
+            },
+            "failure": {
+              "nextFragmentId": "92",
+              "description": "You fail to notice anything special."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "82",
+      "src": null,
+      "text": "Besides the clawmarks proving you’re not just imagining things, you can’t find any other clues on the rooftop.\nFrustrated, you return to the inn. You climb back down off of the building and go back to your room, locking your door and window behind you.\nYou can now either keep watch for the creature’s return (go to 55) or try to get some sleep (go to 89).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Keep watch for the creature’s return",
+              "nextFragmentId": "55"
+            },
+            {
+              "label": "Try to get some sleep",
+              "nextFragmentId": "89"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "83",
+      "src": null,
+      "text": "Gain Inspiration.\nYou ask a few more questions about the night in the tavern, who was there, and what everyone was doing. A picture emerges and it sounds like Tomlin is leaving something out. There are details missing.\nAsk if it really was just the menfolk (go to 74) or why Maybelline wasn’t with him (go to 104).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Ask if it really was just the menfolk",
+              "nextFragmentId": "74"
+            },
+            {
+              "label": "Ask why Maybelline wasn’t with him",
+              "nextFragmentId": "104"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "84",
+      "src": null,
+      "text": "You follow the mayor’s instructions to Tomlin’s cottage on the edge of town, but you’d have recognized it regardless. The home is a single-story, multi-room building with the same timber-framed walls, a clean coat of whitewash, and good-condition clay tiles on the roof.\nHowever, each visible window is nearly obscured by lush flowerboxes bursting with color. The entire front of the home is festooned with decorative flowers sprouting from bushes and vines. And extending off to either side are more vine-covered trellises indicating a substantial garden out back, some of which you can see between plants and the trellis.\nIt’s a beautiful space whose owner obviously takes great pride in maintaining, and you admire the effort that went into it if nothing else.\nAs you’re not sure if the herbalist, Tomlin, is expecting you, you can either knock at the door right away (go to 100) or take in more of the surroundings to see if there’s anything interesting (go to 77).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Knock at the door right away",
+              "nextFragmentId": "100"
+            },
+            {
+              "label": "Look around more",
+              "nextFragmentId": "77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "85",
+      "src": null,
+      "text": "Tomlin resists revealing any names at first, but only slightly.\n“In fact, there are at least two people I can think of,” he says, then quickly raises his hands in a soothing motion. “Now these aren’t so much enemies as conflicts, you understand.”\nYou nod and he tells you what he knows.\nHe'd seen Maybelline and Mayor Anathram arguing, and Maybelline never argued with anyone as far as he knew. Sadly, he couldn’t hear what they were saying.\nAnd Solaine was his lover before she went on a pilgrimage. He didn't wait for her, and his love for Maybelline blossomed while Solaine was away.\n“Obviously, losing me was quite the blow,” Tomlin says with a crooked smile, but then he remembers himself and returns to the story without the playboy arrogance.\nSolaine had shut herself up in the tower for a while before finally venturing out to administer her priestly duties. Mostly anointing of babies, blessing homes, and similar tasks. Tomlin didn’t speak to her much at that time.\n“Does that help at all?” Tomlin asks.\nIf you haven’t done so yet, you can either ask about who else was at the event (go to 74) or inquire about other strange phenomena around town (go to 62).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask who else was at the event",
+              "nextFragmentId": "74"
+            },
+            {
+              "label": "Inquire about other strange phenomena",
+              "nextFragmentId": "62"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "86",
+      "src": null,
+      "text": "The herbalist is disappointed you won't join him for a cup of tea, but he shrugs and drinks the cup he's poured for you by himself.\nDespite the fact it’s still steaming hot, he downs it in a single long gulp. This is a man who drinks a lot of tea (go to 80).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "80"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "87",
+      "src": null,
+      "text": "You walk over to the building where you saw the creature and look for a way up to the rooftop. The timber-walled construction offers lots of handholds, but it’s not exactly a ladder and the darkness makes it more challenging.\nRoll a Strength (Athletics) check to scale the wall. If you roll 12 or more, go to 96. If you roll less than 12, go to 59.\nIf you have a climb speed or the ability to fly from a spell or ability, you can also go to 96.",
+      "actions": {
+        "roll": {
+          "stat": "Strength",
+          "skill": "Athletics",
+          "threshold": 12,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "96",
+              "description": "You scale the wall successfully."
+            },
+            "failure": {
+              "nextFragmentId": "59",
+              "description": "You fail to climb the wall."
+            }
+          }
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Use climb speed or flight",
+              "nextFragmentId": "96"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "88",
+      "src": null,
+      "text": "As you deal the final blow to the scrapling, Tomlin screams with a wild fury and he stabs at his opponent until it is splintered and broken. The rusty tines of the pitchfork are bent with the force of his blows.\nHe brushes his hair out of his eyes and spits on the creatures, but his easy smile is back in place when he looks back up at you.\n“Well, glad that’s over with,” he says brightly. “Souvenir?”\nHe reaches down and plucks one of the severed arms with its claws still attached. He hands it to you.\nAdd a scrapling claw to your inventory.\n“Listen. I know plants but not plant creatures,” he admits. “So you should take that to go and speak to Roi Sunderhammer. That's the druid.”\nLooking up into the sky, the day is drawing to a close, however, and you feel it's not a good idea to try to find the druid's grove in the dark given what you’ve learned today. You decide to go to the inn for a good night's sleep, and maybe recover from the challenges of the day so far.\nYou start to say goodbye to Tomlin when he shushes you.\n“Before you go,” he says. “Please join me in the cottage.”\nYou follow him inside (go to 72).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Scrapling Claw",
+          "quantity": 1,
+          "description": "Add a scrapling claw to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "72"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "89",
+      "src": null,
+      "text": "Despite the scare you just had, you see it as just another day in the life of a hero for hire. You check that the door and window are locked, draw the curtains, and crawl back into bed.\nIn the dark with just the sound of your own beating heart, it’s harder than you had thought to find sleep.\nRoll either a Constitution or Wisdom saving throw. If you get 12 or more, get the benefits of a long rest. If you get under 12, only get the benefits of a short rest.\n􀀆􀀊􀀃 􀀗􀀋􀀐􀀎􀀃􀀇 􀀋􀀘 􀀐􀀑􀀒􀀙􀀇􀀆􀀋􀀒 26\nWhen dawn breaks, you climb out of bed and prepare for the day (go to 107).",
+      "actions": {
+        "roll": {
+          "stat": "ConstitutionOrWisdom",
+          "threshold": 12,
+          "outcomes": {
+            "success": {
+              "description": "You gain the benefits of a long rest.",
+              "nextFragmentId": "107"
+            },
+            "failure": {
+              "description": "You only gain the benefits of a short rest.",
+              "nextFragmentId": "107"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "90",
+      "src": null,
+      "text": "The herbalist is doing a poor job of hiding his amusement as you carefully examine the tea.\nRoll a Wisdom (Medicine) check. Expend 1 use of a healer's kit to gain advantage.\nIf you get 15 or more, go to 76. If you get less than 15, go to 50.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Medicine",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "76",
+              "description": "You succeed in your examination of the tea."
+            },
+            "failure": {
+              "nextFragmentId": "50",
+              "description": "You fail to glean more info about the tea."
+            }
+          },
+          "notes": "Expend 1 use of a healer's kit to gain advantage."
+        }
+      }
+    },
+    {
+      "fragmentId": "91",
+      "src": null,
+      "text": "Now that you've had the chance to be in town for a while, you sense that there is something odd about Langston, but it has nothing to do with its building and its people. The whole area is permeated in powerful magic, so strong that you can sense its presence even without the conscious act of it.\nYou suspect that whatever effect you’re experiencing will overpower your ability to detect magic, possibly to the point of harming you. You can test this assumption by detecting magic with a spell or ability (go to 70) or not detect magic while in or around Langston and continue on your way to the herbalist (go to 84).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Detect magic",
+              "nextFragmentId": "70"
+            },
+            {
+              "label": "Do not detect magic",
+              "nextFragmentId": "84"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "92",
+      "src": null,
+      "text": "As you walk past flowers and vines thriving along the fence and trellis, you stumble across a couple of parched and dead-looking shrubs.\nYou have barely enough time to register how out of place these are when the two form into small, woody humanoids and attack.\nYou are surprised for the first round and cannot move or take any actions (go to 64).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "64"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "93",
+      "src": null,
+      "text": "Gain the benefits of a short rest.\nYou wake with moonlight streaming in the window. It's a beautiful clear night, but you feel the back of your neck prickle. After walking to the window, you look across cobblestone streets to the roof of the neighboring building.\nA hunched, hairy shape is silhouetted against the night sky and limned with moonlight. Though its face is obscured in shadows, its eyes burn with a golden fire. Whatever it is extends a long powerful arm in your direction. And waits.\nThe rooftop is across the street and angled slightly upwards from your second-story room.\nYou can open the window and call out to the creature (go to 79), call out for help (go to 53), or charge outside to attack the beast (go to 94).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Open the window and call out",
+              "nextFragmentId": "79"
+            },
+            {
+              "label": "Call out for help",
+              "nextFragmentId": "53"
+            },
+            {
+              "label": "Charge outside to attack",
+              "nextFragmentId": "94"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "94",
+      "src": null,
+      "text": "Gain Inspiration.\nYou bolt out the door and thunder down the stairs, bursting out the front door to scan the skyline.\nBut the creature is gone. When you turn around, the innkeeper is standing at the threshold in a nightgown holding up a lantern in one hand. He’s staring at you with visible concern.\nAssure him everything is fine, return to your room, and go back to sleep (go to 89). Or return to your room, bar the doors, and keep watch (go to 55).\nAlternatively, you could tell him to go back inside before you investigate where you last saw the monster (go to 87).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Go back to sleep",
+              "nextFragmentId": "89"
+            },
+            {
+              "label": "Keep watch",
+              "nextFragmentId": "55"
+            },
+            {
+              "label": "Investigate outside",
+              "nextFragmentId": "87"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "95",
+      "src": null,
+      "text": "Gain Inspiration.\nYou stay stony-faced and silent. The awkward moment stretches between you two until it breaks.\n“You must be here from the mayor,” the herbalist says finally. “Come on in. I’m sure you have questions.”\nHe steps into his cottage, holding the door open for you (go to 69).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "69"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "96",
+      "src": null,
+      "text": "The rooftop is quite easy to navigate once you’re up there and you’re able to reach the location where you saw the creature easily enough. What appears to be long claw marks indicate the space very clearly, but there aren’t any claw marks anywhere else.\nYou look around for any other clues that might point you toward who - or what - you’re dealing with.\nRoll an Intelligence (Investigation) check. If you get 10 or more, go to 68. If you get less than 10, go to 82.",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Investigation",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "68",
+              "description": "You find additional clues."
+            },
+            "failure": {
+              "nextFragmentId": "82",
+              "description": "You fail to find any clues."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "97",
+      "src": null,
+      "text": "You carefully examine the tea, especially its color and aroma.\nRoll an Intelligence (Nature) check. If you get 15 or more, go to 76. If you get under 15, go to 50.",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Nature",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "76",
+              "description": "You identify the tea correctly."
+            },
+            "failure": {
+              "nextFragmentId": "50",
+              "description": "You fail to identify the tea."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "98",
+      "src": null,
+      "text": "Tomlin is clearly hiding something, but what isn't clear. What is clear is that he's not giving up the information.\nIf you haven’t done so yet, you can either ask about who else was at the event (go to 74) or inquire about other strange phenomena around town (go to 62).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask who else was at the event",
+              "nextFragmentId": "74"
+            },
+            {
+              "label": "Inquire about other strange phenomena",
+              "nextFragmentId": "62"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "99",
+      "src": null,
+      "text": "Upon closer inspection, some of the flowers are dug up or damaged. So are some of the herbs. Tomlin cradles some of the damaged plants, murmuring to them as if they were sick kittens.\nSomething has clearly been causing havoc here.\nRoll a Wisdom (Survival) check. If you get 15 or more, go to 61. If you roll less than 15, go to 73.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Survival",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "61",
+              "description": "You find the trail or clue."
+            },
+            "failure": {
+              "nextFragmentId": "73",
+              "description": "You fail to find the trail."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "100",
+      "src": null,
+      "text": "You knock on the door and hear muffled voices and what sounds like heavy furniture moving around. After waiting a few seconds, it goes silent and you’re about to knock again when the door opens from beneath your knuckles to the startled faces of Tomlin and a young woman.\nBoth have tousled hair and red faces, but Tomlin speaks up first. “I saw you at the service last night, didn’t I? What- What can I do for you?”\nYou let him know that the mayor has hired you to look into his beloved’s death.\n“If you’d excuse me,” says the woman. “I’d best be going.”\n“Don’t forget the medicine!” Tomlin calls out with a sachet of dried herbs in his hand, cutting a look toward you. “For your aunt!”\n“I’d nearly forgotten,” she says and takes the packet gingerly. “Thank you.”\nShe takes the medicine and hurries down the street while Tomlin visibly works out what to say next.\nYou can criticize the herbalist (go to 63), ask him who was visiting (go to 52), or say nothing at all (go to 95).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Criticize the herbalist",
+              "nextFragmentId": "63"
+            },
+            {
+              "label": "Ask who was visiting",
+              "nextFragmentId": "52"
+            },
+            {
+              "label": "Say nothing at all",
+              "nextFragmentId": "95"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "101",
+      "src": null,
+      "text": "When you ask Tomlin where he was on the night of Maybelline’s death, a dark flash of anger crosses his face. However, his expression quickly dissolves into shame.\n\n“I was… with friends,” he says. “Oh no! Not that kind of friend! I was having a drink at the tavern, and it got a little out of hand. Maybelline and I had a whirlwind courtship, so there was no stag party. That night became it.”\n\nWhen you ask if anyone else can confirm that, he rattles off a bunch of names. He has a dozen or more people from around town who can confirm he was there until dawn.\n\nRoll either an Intelligence (Investigation) or Wisdom (Insight) check. If you roll 10 or more on Investigate, go to 83. If you roll 10 or more on Insight, go to 60. If you roll less than 10 on your check, go to 66.",
+      "actions": {
+        "choice": {
+          "prompt": "Roll either an Intelligence (Investigation) or Wisdom (Insight).",
+          "options": [
+            {
+              "label": "Use Intelligence (Investigation)",
+              "roll": {
+                "stat": "Intelligence",
+                "skill": "Investigation",
+                "threshold": 10,
+                "outcomes": {
+                  "success": {
+                    "nextFragmentId": "83",
+                    "description": "You uncover crucial information with your Investigation."
+                  },
+                  "failure": {
+                    "nextFragmentId": "66",
+                    "description": "Your Investigation doesn't reveal what you need."
+                  }
+                }
+              }
+            },
+            {
+              "label": "Use Wisdom (Insight)",
+              "roll": {
+                "stat": "Wisdom",
+                "skill": "Insight",
+                "threshold": 10,
+                "outcomes": {
+                  "success": {
+                    "nextFragmentId": "60",
+                    "description": "You glean key insights from Tomlin’s behavior."
+                  },
+                  "failure": {
+                    "nextFragmentId": "66",
+                    "description": "You fail to get a read on Tomlin."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "102",
+      "src": null,
+      "text": "You and Tomlin clearly identify two more of the plant-like monsters. Hunkered down among the cultivated plants, they look exactly like shrubs. What sets them apart is that they are the only things not lustrous and green here.\nThe scraplings cannot stay here, so you advance on them ready for a fight (go to 64).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "64"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "103",
+      "src": null,
+      "text": "It's an invigorating blend, unlike anything you've ever tried before. Despite the bitter aroma, the decoction itself is earthy and a little sweet.\nGain the benefits of a short rest.\nYou let Tomlin know that the tea is really very good.\n“Thank you. It’s an old family recipe used to give us stamina. It’s best to drink it when the mix is fresh, so I didn’t see any point in wasting it just because you paid a visit.”\nYou look over, and it seems he’s finally overcome his embarrassment and eyeing you with a sly smile.\nYou look at the cup for a moment.\n“Oh no. Just stamina. Nothing… mood enhancing. So shall we get started?”\nYou agree to begin as you set aside your empty teacup (go to 80).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "80"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "104",
+      "src": null,
+      "text": "Tomlin looks down into his teacup, swirling the yellow-green liquid and watching the bits of leaves at the end spin.\n“I had plans to meet people that night - a childhood friend is having some marital woes and needed an ear to bend - but I would have loved to be with Maybelline, too, She just is … was… superstitious. She didn’t go out at night when the moon is full. Thought it was an evil omen.”\nHe looks up at you, eyes glistening with tears. “Turns out she was right.”\nThe silence stretches out, only interrupted by the occasional birdsong outside or a bubble bursting in the filtration system.\n“I miss her so much,” Tomlin finally says. “Never thought I had it in me to settle down with just one woman, especially not a farmer’s daughter from the town where I’ve lived all my life. But that’s what happened anyway, and despite my reputation.”\nThe herbalist’s voice catches and he wipes a few tears from each eye before asking if there’s anything else you might need to know from him.\nIf you haven’t asked yet, you can confirm that it was just him and his friends at the tavern (go to 74). Alternatively, you can either ask about Maybelline’s enemies (go to 56), inquire about any other strange happenings around town (go to 62), or say goodbye and continue your investigation elsewhere in town (go to 105).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Confirm it was just him and his friends",
+              "nextFragmentId": "74"
+            },
+            {
+              "label": "Ask about Maybelline’s enemies",
+              "nextFragmentId": "56"
+            },
+            {
+              "label": "Inquire about strange happenings",
+              "nextFragmentId": "62"
+            },
+            {
+              "label": "Say goodbye",
+              "nextFragmentId": "105"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "105",
+      "src": null,
+      "text": "You say that Tomlin has been very helpful so far and you get up to leave.\nTomlin clears his throat as you ready yourself to go. “Before you move on, adventurer. There is something going on here that I'm worried is related to Maybelline's death. The past few nights something has been tearing up the garden, destroying months of cultivation. And there are strange, clawed prints in the soil many mornings.”\nYou ask what you could possibly do to help.\n“Well, obviously I’m a lover,” he says. “Not a fighter. Please check the garden before you go?”\nHe seems genuinely earnest and fearful, so you feel as though you should check it out (go to 78).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "78"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "106",
+      "src": null,
+      "text": "You make your way back through town after a very eventful day. The occasional point of whispered conversation trails in your wake, but you are left to your own thoughts as you make your way back to the inn.\nIt’s been an eventful day in the life of the traveling adventurer. You’ve been hired to flush out and eliminate an unknown killer by Mayor Anathram and her terrifying pet.\nYou have also met with the emotionally needy - and possibly unstable - fiance of the victim. You then narrowly avoided becoming fertilizer in his garden at the hands of a pair of scraplings.\nSo you arrive back to the inn to get some rest after as the sun is just starting to dip into the west. You take a hot meal upstairs with you where you eat and ready yourself for a long rest.\nIf tomorrow is anything like today, you feel you will need all the rest you can get (go to 93).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "93"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "107",
+      "chapterEnd": true,
+      "src": null,
+      "text": "A cold breakfast is just outside the door to your room, which you eat as you go. The common room is empty and the streets are quiet. The wagon laden with flowers from the funeral still sits outside of the inn.\nYou remind yourself of your purpose here and head out of town to speak to the druid. You get the path to the druid's grove marked on your map before leaving town (go to 108).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "108"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

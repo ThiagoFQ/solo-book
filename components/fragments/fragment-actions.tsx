@@ -7,6 +7,7 @@ import { handleRoll } from "@/utils/actions";
 interface FragmentActionsProps {
   fragmentId: string;
   onNextFragment: (nextFragmentId: string, label: string) => void;
+  onChapterEnd: (nextFragmentId: string) => void;
   onRollResult: (
     result: number,
     outcome: { description: string; nextFragmentId: string }
@@ -16,6 +17,7 @@ interface FragmentActionsProps {
 export const FragmentActions = ({
   fragmentId,
   onNextFragment,
+  onChapterEnd,
   onRollResult,
 }: FragmentActionsProps) => {
   const chapterContext = useChapter();
@@ -29,6 +31,14 @@ export const FragmentActions = ({
 
   if (!fragment || !fragment.actions) return null;
 
+  const handleNext = (nextFragmentId: string, label: string) => {
+    if (fragment.chapterEnd) {
+      onChapterEnd(nextFragmentId);
+    } else {
+      onNextFragment(nextFragmentId, label);
+    }
+  };
+
   return (
     <div className="flex flex-col gap-2 mt-2">
       {fragment.actions.choice && (
@@ -41,9 +51,7 @@ export const FragmentActions = ({
               key={option.nextFragmentId}
               size="sm"
               variant="outline"
-              onClick={() =>
-                onNextFragment(option.nextFragmentId, option.label)
-              }
+              onClick={() => handleNext(option.nextFragmentId, option.label)}
               className="flex flex-col mt-2"
             >
               {option.label}

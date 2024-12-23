@@ -22,6 +22,7 @@ export interface ChatMessageProps {
     result: number,
     outcome: { description: string; nextFragmentId: string }
   ) => void;
+  onChapterEnd?: (nextFragmentId: string) => void;
   isHidden?: boolean;
 }
 
@@ -33,6 +34,7 @@ export const ChatMessage = ({
   fragmentId,
   onNextFragment,
   onRollResult = () => {},
+  onChapterEnd = () => {},
   isHidden = false,
 }: ChatMessageProps) => {
   const { theme } = useTheme();
@@ -61,6 +63,7 @@ export const ChatMessage = ({
           <FragmentActions
             fragmentId={fragmentId}
             onNextFragment={onNextFragment}
+            onChapterEnd={onChapterEnd}
             onRollResult={onRollResult}
           />
         )}
