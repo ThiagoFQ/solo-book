@@ -43,7 +43,10 @@ model Book {
 
   messages      Message[]
 
+  characters    Character[]
+
   @@index([categoryId])
+  @@index([userId])
 }
 
 model Chapter {
@@ -81,16 +84,42 @@ model Message {
 
 model Character {
   id          String    @id @default(uuid())
+  userId      String
   name        String    @db.Text
-  description String    @db.Text
+  species     String
+  class       String
+  level       Int       @default(1)
+  background  String    @db.Text
+  
+  initiative  Int
+  armorClass  Int
+  hitPoints   Int
+  speed       Int
+  
+  strength     Int
+  dexterity    Int
+  constitution Int
+  intelligence Int
+  wisdom       Int
+  charisma     Int
 
+  skills      String[]
+  senses      String
+  languages   String[]
+  
+  traits      Json
+  actions     Json
+  
   category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
   categoryId  String
 
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
+  books       Book[]
+
   @@index([categoryId])
+  @@index([userId])
 }
 
 model UserSubscription {
