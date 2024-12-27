@@ -1,0 +1,1327 @@
+{
+  "fragments": [
+    {
+      "fragmentId": "165",
+      "chapterTitle": "Helping Mayor Anathram",
+      "src": null,
+      "text": "After you’ve eaten, you make your way once again to the town hall. As you make the trip, you feel like you’re starting to see the rhythm of life here in Langston.\nYou’re seeing many of the same going to and coming from the market. Craftspeople of all kinds quietly go about their business. If not for an undercurrent of fear seen in the occasional jump start or a furtive look over a shoulder, Langston could be mistaken for any of the other sleepy towns that dot the land.\nBut it’s not. It’s a place where killers walk the streets at night, beasts invade gardens by day, and druids are trapped within their own powers. And now there’s something else (go to 193).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "193"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "166",
+      "src": null,
+      "text": "The doorframe splintered around the lock as you forced the door open.\n“What in the hells was that?” yells a man’s voice from the next room over.\nYou advance quickly down the hall, readying yourself for a fight. As you round the corner, you barge into the house’s parlor.\n“You!” shouts the mayor, though you can’t really tell with what emotion. “Horace. Titch. This is my investigator.”\n“For the girl, eh?” says the tall lean one.\nRoll a Charisma (Persuasion) check at advantage because the mayor is helping you calm the situation. If you get 15 or more, go to 209. If you roll under 15, go to 178.",
+      "actions": {
+        "roll": {
+          "stat": "Charisma",
+          "skill": "Persuasion",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "209",
+              "description": "You calm the situation successfully."
+            },
+            "failure": {
+              "nextFragmentId": "178",
+              "description": "You fail to calm them; a fight ensues."
+            }
+          },
+          "notes": "Roll at advantage because the mayor is helping."
+        }
+      }
+    },
+    {
+      "fragmentId": "167",
+      "src": null,
+      "text": "You dash after the strange forest creature and run head-first into a solid tree trunk.\nTake 1d6 plus your Strength modifier in bludgeoning damage. If the damage reduces you to 0 hp, go to 174.\nIf you haven't killed yourself by running into a tree, continue on to the bandit camp on your own (go to 204).",
+      "actions": {
+        "damage": {
+          "dice": "1d6+STR",
+          "description": "Bludgeoning damage from running into a tree."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "If damage reduces you to 0 hp",
+              "nextFragmentId": "174"
+            },
+            {
+              "label": "Continue to the bandit camp",
+              "nextFragmentId": "204"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "168",
+      "src": null,
+      "text": "You step out of hiding and loudly announce yourself. Everyone jumps and reaches for weapons at their belt. Only the guard dog doesn’t react, as if it’s been aware of you the whole time and just didn’t react.\n“Bloody hell!” curses the short, portly brigand. “Where in the hells did you come from?”\n“Calm yourself,” the mayor says, resting a hand on her dog’s head. “I have been expecting company.”\n“Couldn’t warn us?” the plump one grumbles. The lean bandit relaxes his grip on his dagger but doesn’t let go entirely. The plump bandit continues, “So who’s this?”\n“An investigator I have hired,” the mayor says.\nWhile the bandits are getting over their shock, you’ve been looking around the room for any other threats (go to 209).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "209"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "169",
+      "src": null,
+      "text": "The door is made of thick wood with strong iron hinges and fixings. It will be a challenge to force it open, but you think it should still be possible.\nRoll a Strength check. If you get 15 or more, go to 166. If you get less than 15, go to 208.",
+      "actions": {
+        "roll": {
+          "stat": "Strength",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "166",
+              "description": "You force the door open successfully."
+            },
+            "failure": {
+              "nextFragmentId": "208",
+              "description": "You fail to force the door."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "170",
+      "src": null,
+      "text": "Titch begs for his life as you land the final blow. He sags to the floor and rattles out his last breath.\nThe mayor’s eyes burn with fury and Buttercup's hackles rise as he bares his teeth at you.\nYou are no longer under contract and are expected to leave town immediately,” the mayor snaps. “There will be no gold, and if you show your face in town ever again you will be hanged as a murder.”\n“Horace, the same goes for you,” she says, spinning on the cowering bandit. “Now get out of my home. Both of you.”\nYou may keep whatever treasure and items you have collected but receive no experience or levels. Your adventure ends here.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "171",
+      "src": null,
+      "text": "The green-skinned woman with the plantlike charm opens her hand in your direction and you are hit with a wave that feels made of sunlight and emotion. You begin to feel drawn to her in a way not entirely under your control.\nRoll a Wisdom save against a charm effect. If you roll 14 or more, go to 194. If you roll under 14, go to 224.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "threshold": 14,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "194",
+              "description": "You resist the charm."
+            },
+            "failure": {
+              "nextFragmentId": "224",
+              "description": "You succumb to the charm."
+            }
+          },
+          "notes": "Charm effect from the green-skinned woman."
+        }
+      }
+    },
+    {
+      "fragmentId": "172",
+      "src": null,
+      "text": "You say that you would like to be better protected from whatever is out there.\n“Then take this,” the mayor says, lifting an amulet off her neck. “This will protect you from all manner of beasts. It was helpful when I was training Buttercup to fight.”\nShe hands you the amulet, and Buttercup huffs for a moment before putting his huge head back down on his paws.\nAdd lesser amulet of the beast to your inventory.\nYou slip the amulet around your neck (go to 222).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Lesser Amulet of the Beast",
+          "quantity": 1,
+          "description": "Add lesser amulet of the beast to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "222"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "173",
+      "src": null,
+      "text": "It's clear there's something the mayor isn't telling you, but it's unclear what that could be. It is also clear from the mayor's demeanor that taking on this task is non-negotiable.\nYou have no choice but to accept (go to 232).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Accept the task",
+              "nextFragmentId": "232"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "174",
+      "src": null,
+      "text": "You bash your own skull in on the solid trunk of a tree. As the world spins into darkness, you wonder if the adventurer's life was the right path for you.\nYou are dead.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "175",
+      "src": null,
+      "text": "Deciding stealth is for sneaks, thieves, and cowards, you emerge from the woods in full sight of the green-skinned woman in the clearing. She is clearly surprised - the foliage that makes up her hair and clothes rustles in a breeze that isn’t there - but she appears unafraid.\nShe remains silent as she calmly watches what you do next.\nYou can either try to communicate (go to 200) or attack her (go to 227).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Try to communicate",
+              "nextFragmentId": "200"
+            },
+            {
+              "label": "Attack her",
+              "nextFragmentId": "227"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "176",
+      "src": null,
+      "text": "Heading north as if traveling to the nearby farmlands, you veer off the road into the woods to the east of the road.\nYou pick your way through the woods. As you proceed, you keep an eye on the sun through the trees and clouds and seek out any of the landmarks you might see on the map.\nThis part of the forest is quiet but lacks the unnatural stillness of Roi’s woods when he was sick. It’s just a peaceful forest full of all the hums and twitters of a healthy natural environment. A river burbles somewhere off to the west. If you weren’t marching toward almost certain violence, it would be a very calming hike on a pleasant day (go to 215).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "215"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "177",
+      "src": null,
+      "text": "“Common not good me,” she says. “Sylvan gooder. But talking.”\nYou nod as if you understand, and she continues.\n“Bad men there,” she says, pointing off into the distance. “Many string. Sharp string grab friends.” She wraps her hands around her own neck and makes a sad face.\n“Help us can you?” she says. “Little friends so sad. I know not fixing how. Bad men now gone, but camp still being. Soon returning be may be.”\nYou say that yes, you should be able to help her sad little friends and confirm that she means the bandits are not at the camp right now. The dryad nods with a proud smile.\n“For help you,” she says and gives you a small bottle. “Drink to be… tree skin.”\nYou almost certainly don’t understand this one, so you touch the potion to your lips to find out what it is. You immediately feel sturdier, tougher all over.\nAdd a potion of barkskin to your inventory.\nThe potion grants the effects of the barkskin spell. (Your AC is at least 16 for the next hour after consuming its contents.)\nYou ask the dryad to show you where the camp is located (go to 195).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Potion of Barkskin",
+          "quantity": 1,
+          "description": "Your AC is at least 16 for 1 hour after drinking."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Let the dryad show you the camp",
+              "nextFragmentId": "195"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "178",
+      "src": null,
+      "text": "You engage Titch, the quick lean bandit nearest to you. Horace tries to help, but the mayor and Buttercup engage him.\nIf you reduce the bandit to 0 hp, go to 184. If the bandit reduces you to 0 hp, go to 219.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Bandit drops to 0 hp",
+              "nextFragmentId": "184"
+            },
+            {
+              "label": "You drop to 0 hp",
+              "nextFragmentId": "219"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "179",
+      "src": null,
+      "text": "The dryad leaps into one of the thick gnarled trees flanking the clearing, vanishing as if she had just leaped into a waterfall. Your senses don’t know how to fully process what you’ve seen, but the fey creature is clearly gone.\nAs you stand alone in the sunlit clearing, the sunshine suddenly seems a little dimmer and the birdsong more muted. The space is somehow less complete now that the dryad has left it. You can attempt to follow the dryad into the tree (go to 167) or continue on your way to the bandit camp (go to 204).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Try to follow the dryad",
+              "nextFragmentId": "167"
+            },
+            {
+              "label": "Continue to the bandit camp",
+              "nextFragmentId": "204"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "180",
+      "src": null,
+      "text": "You remain hidden as you case the camp. You see nobody in or around the camp. The coast seems clear.\nDo you want to approach the camp (go to 182) or wait to see if anyone comes back (go to 185)?",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Approach the camp",
+              "nextFragmentId": "182"
+            },
+            {
+              "label": "Wait to see if anyone returns",
+              "nextFragmentId": "185"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "181",
+      "src": null,
+      "text": "You say that you want to be able to deal some damage.\n“You may not have that,” the mayor says as she points to her battle axe hung over the hearth. “But you may have this.”\nShe retrieves a box from a shelf and opens it to reveal a beautifully crafted dagger. The blade shimmers with a pale light of its own.\n“It is called Moonshard for obvious reasons,” Mayor Anathram says\nAdd moonshard to your inventory.\nYou tuck away the dagger (go to 222).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Moonshard (Dagger)",
+          "quantity": 1,
+          "description": "A beautifully crafted dagger that shimmers with pale light."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "222"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "182",
+      "src": null,
+      "text": "The camp isn’t much all told, and you probably wouldn’t think anything of it just stumbling across the site on your own. A competent - but not impressive - firepit is set up at the center of the clearing, though no kindling appears to be gathered for tonight.\nCharred bones from a variety of small animals and other less recognizable detritus litters the ground. There don’t seem to be any tents but two rough lean-tos have been constructed to presumably keep bedrolls dry in the event of rain.\nThere is very little else that seems important in camp, though you can see an oilcloth bundle hanging in a tree to keep something off the ground and away from curious animals. It’s tied to a tree trunk with a rough hemp rope.\nRoll an Intelligence (Investigation) check to search the camp for anything you may have missed. If you get 12 or more, go to 207. If you get less than 12, go to 223.",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Investigation",
+          "threshold": 12,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "207",
+              "description": "You find something you missed in the camp."
+            },
+            "failure": {
+              "nextFragmentId": "223",
+              "description": "You fail to find anything else."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "183",
+      "src": null,
+      "text": "Your trip back into town is uneventful. As you walk, the roads are empty of other travelers, though that could also be explained by the quickly advancing nightfall. You keep your eyes on the treeline too, but no hungry wolves make another appearance either. No one wants to be caught outside after dark with an unknown killer out there.\nBy the time you make it back to Langston, the sun is nothing more than a faint blush on the western horizon and stars are just speckling the sky overhead. It’s later than you expected, but you feel that the warrant should be discussed immediately.\nAs you arrive at the town hall, the sun is completely gone. The building is dark, but you run into the mayor’s aide locking up just as you arrive.\n“The mayor isn’t here,” he says in response to your question. “Though she does often stay into the night. She seemed distracted after receiving a sealed message earlier today. She wouldn’t tell me what was in it but she left shortly after.”\nYou let him know it’s incredibly urgent and that you need to speak to Mayor Anathram right away. He gives you directions to her house and bids you a good night (go to 206).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "206"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "184",
+      "src": null,
+      "text": "You overpower the bandit named Titch and he falls to the ground. As you’re about to finish him off, he holds up a feeble hand and his eyes beg for mercy. His helplessness gives you a moment’s pause.\n“Stop!” cries out Mayor Anathram. “I have caused enough death and destruction. I will see no more in this house.”\nHorace throws his hands up and drops his knife while Buttercup snarls at him without advancing. The mayor is still standing still and imperious, but in the battle, she has pulled the aging battle axe off the wall. The weapon hangs ready at her side.\nLet the bandit live (go to 231) or kill him anyways (go to 170).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Let the bandit live",
+              "nextFragmentId": "231"
+            },
+            {
+              "label": "Kill him anyways",
+              "nextFragmentId": "170"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "185",
+      "src": null,
+      "text": "Gain Inspiration.\nThe sun is just starting to slant downward, letting you know that the day is running out of light. No one has returned yet, and if you are going to make it back by tonight as the mayor instructed you need to get into the bandit camp and figure out what they’re doing in Langston.\nYou go into the bandit camp to explore (go to 182).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Go into the bandit camp",
+              "nextFragmentId": "182"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "186",
+      "src": null,
+      "text": "You managed to peek into the mayor’s parlor, and while you can’t see much of the environment you can see the backs of the two hoodlums you saw outside.\n“Now there was this pretty young thing that we met, Wolf,” the chubbier one says. “I think we met her out on the road somewhere?”\n“The market,” the skinny one corrects.\n“Ah right, the market. Well, a lovely little wisp of a thing. Very disarming. Might’ve let slip the reason for our little visit. You know how I am around a pretty pair of eyes.”\n“That was you!” the mayor shouts, then brings herself under control with visible effort. “You will pay for that.”\nYou decide to announce yourself before things escalate further (go to 168).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Announce yourself",
+              "nextFragmentId": "168"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "187",
+      "src": null,
+      "text": "Despite your best efforts, you can’t pick the lock, and being out in the open like this you can’t afford to keep trying. However, the heated conversation inside continues and you have to do something.\nYou either need to knock (go to 205) or try to force the door open (go to 169).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Knock on the door",
+              "nextFragmentId": "205"
+            },
+            {
+              "label": "Force the door open",
+              "nextFragmentId": "169"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "188",
+      "src": null,
+      "text": "The door is thick and the voices are obviously some distance from it. It’s only because they’re shouting that you can hear them at all. The shouted conversation is occasionally punctuated by the deep bark of Mayor Anathram’s guard dog.\nRoll a Wisdom (Perception) check. If you get 15 or more, go to 217. If you get under 15, go to 229.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Perception",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "217",
+              "description": "You perceive crucial details."
+            },
+            "failure": {
+              "nextFragmentId": "229",
+              "description": "You fail to glean more info."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "189",
+      "src": null,
+      "text": "According to the fey you’re talking to, the trees have reported some strange creature wandering the land, but they could not say what it was. The words \"beast\" and \"person\" were used interchangeably, so she’s also a bit confused. It likely has something to do with the bandit camp nearby, she thinks, but they are clearly men and not beasts.\nShe offers you protection in ridding the wood of those ruffians. She presents you with something that may help (go to 213).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Accept her offer",
+              "nextFragmentId": "213"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "190",
+      "src": null,
+      "text": "As you deal the final blow to the beautiful woodland creature, you feel a pang of sadness stab your heart. You can’t tell if it welled up from within you or if it was the forest itself expressing sorrow, but the feeling quickly fades.\nThose bandits aren’t going to find themselves now, so you head off in the direction their camp is supposed to be (go to 204).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Head to the bandit camp",
+              "nextFragmentId": "204"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "191",
+      "src": null,
+      "text": "Now that you’re alone, you give Mayor Anathram the bounty. She reviews the letter and Buttercup pads over to his kennel and lies down. Clearly, you’re now on the safe list.\n“I did not kill him,” she says. “And I do not know who did. He was alive when I escaped with Buttercup.”\nMayor Anathram actually sighs as she returns her old battle axe to the mantel.\nShe explains that she was once the leader of a bandit crew for a time, turning to a life of crime after falling into the chasm between orc and human societies. It came to her as naturally as breathing, and she rose up to lead her own band.\nShe went by the name Wolf of the Road because she led her pack of bandits to their next meal. They operated in the Three Rivers area, robbing caravans or travelers and raiding villages when wealthier travelers became scarce.\n“I was a warrior once,” she says, looking at her hands. “But then I was just a thief.”\nBut when one of the resistance leaders was killed, a constable of Three Rivers, and the whole area erupted into open conflict thinking it was an assassination. In truth, it was Horace and Titch who had broken into his home and tried to threaten him into easing up on the band of thieves. They were overly enthusiastic, and beat the man to death tied to a chair in his own home.\n“I was responsible,” the mayor says. “They were my men that murdered this man where he slept. But I refused to be responsible for the next one. I used the chaos of the unrest to escape.”\nShe took her bandits on an impossible raid of the invading force. While her crew was being overwhelmed she just disappeared into the night to join the stream of refugees and found her way to Langston with Buttercup at her side.\nThe people of Langston assumed she was a veteran, and she never corrected them. She's lied about everything the whole time she's been in Langston. But she's determined to make things right. But Maybelline had found out, probably from Horace or Titch visiting the market and stirring up trouble.\n“I have changed. I was a warrior once, then a thief. But I was not a murderer.” She paused to take a breath. “Maybelline did not see it that way.”\n(Go to 221.)",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "221"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "192",
+      "src": null,
+      "text": "Mayor Anathram sits in stony-faced silence. Her eyes shift into the middle distance, but her dog continues its vigil of the room.\n“Well I’m Horace and this lean-looking lad is my good friend Titch,” says the shorter of the pair, breaking the silence. “Your employer here… Well, hells know what name she gave you but we know her as the Wolf of the Road.”\nHe produces a wanted poster clearly labeled the Three Rivers constabulary. There is an accurate image of Mayor Anathram on it, right down to the wounds where her scars are now apparent.\n\"So now your pet sleuth knows,” says Titch to the mayor. “But if you don't open up the town coffers, or if we don't make it back to camp by morning, our friends back in camp are going to tell everyone in town your little secret. And we've got more proof like this.\"\nYou take this opportunity to point out that neither are there any more conspirators back at camp, only the warrant. And that is somewhere safe.\n“I see,” said the mayor. Her smile is far more unsettling than her scowl.\nThe two bandits glance at each other, the blood draining from their faces. Mayor Anathram pats her enormous dog’s head as it begins to growl.\nYou can try to threaten them into running away (go to 199), or attack them (go to 178).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Threaten them into running away",
+              "nextFragmentId": "199"
+            },
+            {
+              "label": "Attack them",
+              "nextFragmentId": "178"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "193",
+      "src": null,
+      "text": "The mayor’s aide is waiting for you at town hall.\n“Ah you’re here,” he says. “The mayor has been waiting. Follow me, please.”\nHe leads you to the mayor’s office and leaves without a word. The mayor looks up as you enter. Buttercup maintains his position beside the desk.\nAfter a perfunctory greeting, Mayor Anathram says that she needs you to investigate a report of bandits in the region.\n“Reports are coming in of two strangers that make citizens feel threatened,” she says. “Likewise there are a number of farm animals missing. Also other items of value. The arrival of these strangers is likely related. Maybelline’s death could also be related to these strangers. I want you to investigate.”\nRoll an Insight check against DC 15. If you pass, go to 212. If you fail, go to 173.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Insight",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "212",
+              "description": "You notice something in the mayor’s words or demeanor."
+            },
+            "failure": {
+              "nextFragmentId": "173",
+              "description": "You fail to notice anything special."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "194",
+      "src": null,
+      "text": "You feel the fae trying to charm you, but you resist the effects with considerable force of will.\nYou can continue combat and take your action (go to 227) or stop your attack (go to 235).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue combat",
+              "nextFragmentId": "227"
+            },
+            {
+              "label": "Stop your attack",
+              "nextFragmentId": "235"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "195",
+      "src": null,
+      "text": "The dryad leads you through the woods, her feet barely making a sound in the underbrush that you need to at least make an effort to avoid. She leads you to an easy entrance point and points to where the trees thin into another clearing.\nThis flat patch of earth couldn’t be more different from where you met the dryad. The sloppily built fire pit is surrounded with the detritus of several meals, including scorched bones of various sizes and old grayish porridge even the local wildlife steered clear of.\nMost importantly, the camp is indeed empty with no sign of activity at all.\nYou turn to the dryad to thank her for her help in finding the camp, but she has already vanished into the woods as if she was never there.\nWith a shrug, you slip into the camp to investigate further (go to 182).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Investigate the camp",
+              "nextFragmentId": "182"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "196",
+      "src": null,
+      "text": "Add wanted poster to your inventory. Add mayor’s warrant to your inventory.\nAs you’re stowing the poster, you see that Buttercup is staring at you. His gaze follows you as you leave through the front door, the same way the bandits had gone. A low rumbling growl emanates from his chest as you pass but he doesn’t move from where he is reclined.\nGo to the inn for the night (go to 202).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Wanted Poster",
+          "quantity": 1,
+          "description": "Add wanted poster to your inventory."
+        },
+        "gainItem2": {
+          "itemName": "Mayor’s Warrant",
+          "quantity": 1,
+          "description": "Add mayor’s warrant to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the inn",
+              "nextFragmentId": "202"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "197",
+      "src": null,
+      "text": "The mayor’s house is a large single-story home with a small, neglected garden, and a thick wooden door. Like the rest of town, it’s built on a stone foundation with timber-framed walls. Lamps have been lit inside and glow through closed curtains.\nDespite the thickness of the door, however, you can clearly hear voices raised in anger inside.\nYou can continue listening at the door (go to 188), knock (go to 205), attempt to force the door (go to 169), or try to quietly pick the lock with thieves' tools (go to 216).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue listening at the door",
+              "nextFragmentId": "188"
+            },
+            {
+              "label": "Knock on the door",
+              "nextFragmentId": "205"
+            },
+            {
+              "label": "Attempt to force the door",
+              "nextFragmentId": "169"
+            },
+            {
+              "label": "Pick the lock (thieves' tools)",
+              "nextFragmentId": "216"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "198",
+      "src": null,
+      "text": "You pass by the strange green woman entirely. You continue on towards the area marked as the camp on the map (go to 204).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "204"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "199",
+      "src": null,
+      "text": "You let the two bandits know that there is only one way they get out of this alive, and that’s to give up now.\n“This one is smart,” the mayor says, nodding toward you. Buttercup licks his lips and bares his teeth.\nRoll a Charisma (Intimidation) check with advantage due to the mayor’s assistance. If you get 15 or more, go to 214. If you get less than 15, go to 228.",
+      "actions": {
+        "roll": {
+          "stat": "Charisma",
+          "skill": "Intimidation",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "214",
+              "description": "You successfully intimidate the bandits."
+            },
+            "failure": {
+              "nextFragmentId": "228",
+              "description": "You fail to intimidate the bandits."
+            }
+          },
+          "notes": "Roll at advantage due to the mayor’s assistance."
+        }
+      }
+    },
+    {
+      "fragmentId": "200",
+      "src": null,
+      "text": "You greet the green-skinned woman and ask her what she is doing here in the forest.\n“I meet you, skin person,” the woman says in broken Common. “Sylvan speak you?”\nIf you speak Sylvan, you can speak Sylvan to her (go to 226), cast a spell or use an ability to understand her (go to 210), or continue in Common (go to 177).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Speak Sylvan",
+              "nextFragmentId": "226"
+            },
+            {
+              "label": "Use spell or ability to understand",
+              "nextFragmentId": "210"
+            },
+            {
+              "label": "Continue in Common",
+              "nextFragmentId": "177"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "201",
+      "src": null,
+      "text": "The thin-limbed dryad backhands you with knuckles as tough as any oak. You feel something in your skull crack and the world wobbles in front of your eyes.\nYou drop to her feet, the world fading to the sound of her tinkling laughter. At you.\nYou’re dead.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "202",
+      "src": null,
+      "text": "It’s late by the time you’re leaving the mayor’s home. The streets of Langston are completely empty but the lamps are lit at least.\nAs you make your way back to The Pickled Hen, you scan the rooftops and alleys for any return of the creature you saw the other night. You see nothing and do not feel as if you are being watched.\nIn fact, it’s a quiet and pleasant night after the hectic events of the day. The only sounds in the night are hidden crickets chirping and a single long, low howl from somewhere to the east.\nWhen you arrive at your room, a tray of dinner that has long gone cold waits for you, and you eat it without really tasting it. Finally, you climb into bed for some much-needed rest, only vaguely aware of another howl in the night as you fall asleep (go to 236).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "236"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "203",
+      "src": null,
+      "text": "You start padding slowly through the woods, watching carefully for dry leaves and twigs that could give you away while also keeping an eye on the green, leafy woman in the clearing.\nRoll Dexterity (Stealth). If you roll under 14, go to 198. If you roll 14 or more, go to 230.",
+      "actions": {
+        "roll": {
+          "stat": "Dexterity",
+          "skill": "Stealth",
+          "threshold": 14,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "230",
+              "description": "You succeed at stealthily approaching."
+            },
+            "failure": {
+              "nextFragmentId": "198",
+              "description": "You fail to remain undetected."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "204",
+      "src": null,
+      "text": "Having left the dryad’s clearing behind, you make your way through the woods on your own just trying to follow the directions on the map. It isn’t as easy as you thought it would be, but you can see the trees thinning ahead, so this must be the place.\nApproach the camp stealthily (go to 218) or go in directly (go to 182).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Approach stealthily",
+              "nextFragmentId": "218"
+            },
+            {
+              "label": "Go in directly",
+              "nextFragmentId": "182"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "205",
+      "src": null,
+      "text": "The voices go silent and you wonder if anyone is coming. As you’re considering other options, you hear the mayor’s voice call out from the other side:\n“Who’s there?”\nYou answer that it’s you and ask if everything is alright. Silence again.\nFinally, the door unlocks and the mayor’s scowling face greets you.\n“Excellent, I’m glad you could make it,” she says, the most courteous you’ve ever heard her speak. “Won’t you please come in.”\nConfused, you follow her into the front hall of her home. As soon as you step past the threshold, you see that the lean bandit is standing behind her with a dagger in the small of her back. Mayor Anathram hardly seems to notice him, however, as she is both taller and much broader than him.\n“Welcome to the party,” he says to you, his sour mouth twisting into a wry smile. “Come in and make yourself comfortable.”\nGrowing even more confused, you follow the mayor and the bandit into the house’s parlor. The shorter, more portly bandit is also there casually toying with a dagger and trying not to notice the enormous mastiff staring at him like a meal.\n“Hey, hey, as you were folks,” the broad bandit says, gesturing expansively, then pointing at you with his knife. “Except you. Stand over by my companion there so we can keep an eye on you, eh?”\nYou look askance of the mayor and she gives you a single small nod and you do as you’ve been asked (go to 209).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "209"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "206",
+      "src": null,
+      "text": "As you approach the mayor's home, you see two shabbily dressed men lounging by the entrance to her garden. One is tall and lean with a sharp face that seems set in a permanent grimace of contempt, so this must be Titch. The other - presumably Horace - has a smug smile on his face as he scratches idly at his protruding belly. Both wear equally mismatched clothing and piecemeal light armor as if everything they have is scavenged from those even less fortunate than them.\nAs you watch, the mayor approaches from the other direction. She stops to scowl at the two men. You see her hand stray towards her belt as if reaching for a weapon, but she catches herself and stalks forward. The shorter of the pair waves and waggles his eyebrows.\nThey greet each other - and not in a very friendly manner - though they are too far for you to hear specifics. After a brief exchange, they all go into the house together. Horace leads the way while Titch takes up the rear. A moment after the door shuts, lamplight illuminates the front window.\nYou approach the house (go to 197).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "197"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "207",
+      "src": null,
+      "text": "You search through the bandit camp starting with the oilcloth hung in the tree.\nA leather scroll case contains a rolled sheet of vellum. Examining the document, you see that it is a warrant made out to someone named Horace and Titch, the bandits’ names presumably. It offers hundreds of gold pieces in reward for information regarding the criminal’s location and thousands for her capture dead or alive.\nThe warrant is for the Wolf of the Road, who has an obviously Orcish name you don’t recognize. They are wanted for the killing of a constable in Three Rivers.\nNot knowing what to make of this, you take the document with you until you can find out more. These bandits have clearly fallen on hard times as their gear all seems tattered and in poor repair. It's likely that any valuables they might have are also kept on their persons.\nHowever, elsewhere in the clearing you also find a smaller oilcloth rolled up and stuck into a deep knoll on a tree. In this second oilcloth, you manage to find an agate brooch worth 15 gp and disguised with some ash there’s a flimsy jeweled dagger worth 5 gp.\nLeaving the rest of the bandits’ junk, you note that the day is coming to an end soon and you will need to hurry back to town to report to the mayor (go to 183).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Warrant (Wolf of the Road)",
+          "quantity": 1,
+          "description": "A document naming Horace and Titch as bounty hunters."
+        },
+        "gainItem2": {
+          "itemName": "Agate Brooch",
+          "quantity": 1,
+          "description": "Worth 15 gp."
+        },
+        "gainItem3": {
+          "itemName": "Jeweled Dagger",
+          "quantity": 1,
+          "description": "Flimsy but worth 5 gp."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Return to town",
+              "nextFragmentId": "183"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "208",
+      "src": null,
+      "text": "You fail to break through the door but you do manage to make a lot of noise. While no one comes rushing out of the nearby darkness, you hear the voices pause and a moment later the door opens on its own. It's the leaner of the two men who went into the house with the mayor.\n“Don’t know who you are, but you should probably come in,” he says. “Someone might get hurt if you don’t.”\nThe quiet certainty of how he says it makes you feel it’s best to do so. He leads you to the mayor’s parlor. On one side, the second bandit rejoins his friend. On the other side, Mayor Anathram stands at ease while her attack dog watches everyone closely (go to 209).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "209"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "209",
+      "src": null,
+      "text": "Now in the parlor, you can see that the home is well-appointed with comfortable furniture and a snug little kennel for the dog. The walls aren’t bare and include a few oil paintings, some sconces for lamps, and other generic decorations expected from a person in the mayor’s position. All of it is rather bland, however, as if she selected her surroundings based on someone else’s taste, except maybe the stained battle axe hanging over the mantel. A low fire is just getting going in the hearth.\nThe two bandits are standing closer to you, between you and the mayor’s position with her dog. The mayor is sitting in a dining room chair, one hand on her dog as if restraining him with her light touch. Both are still, but with a tightly coiled fury.\nYou introduce yourself as an investigator finding the culprit behind the murder of a young woman. As you speak, the shorter rounder bandit makes an elaborate show of listening and nodding. The taller, thinner one lounges against a wall, hand resting comfortably on a knife at his belt.\n“Did you have something to do with that?” the chubby asks sweetly. His compatriot chuckles and shrugs. “Maybe a pretty young lady found out your little secret while collecting berries in the woods, maybe? Or from a conversation in the market. ”\nYou’re starting to put everything together, but you look to the mayor for more (go to 192).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "192"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "210",
+      "src": null,
+      "text": "You cast a spell and ask her to speak Sylvan.\nShe sighs and smiles with relief before explaining that there are some bad men camped nearby. They are cruel and are polluting the forest with their refuse. Plus, they’re scaring the animals and setting snares for what seems to be an insatiable desire for meat.\nShe hopes that you can help get rid of the bad men. You let her know that you will and she asks if you can also help keep the herb man from town away from the woods. His advances have become quite annoying. Within the last fortnight, he had been out gathering wild herbs and trying to seduce her.\nYou worry that the spell isn’t functioning properly and decide to move on.\nYou can ask for directions to the bandit camp (go to 220) or ask if anything else has been strange in the woods lately (go to 189).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask for directions to bandit camp",
+              "nextFragmentId": "220"
+            },
+            {
+              "label": "Ask if anything else has been strange",
+              "nextFragmentId": "189"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "211",
+      "src": null,
+      "text": "You make sure the mayor’s secret stays safe and kick the wanted poster and warrant into the flame.\nGain Inspiration.\nAs you watch the flames of the hearth consume the evidence of the mayor’s pass, you feel something wet and warm on your hand. You jerk your hand away from what you see is Buttercup’s face. Specifically, his tongue licking your palm.\nYou wipe your hand and back away from the huge guard dog, moving towards the door. He follows, but only as far as his mat where he flops down again and closes his eyes.\nGo to the inn for the night (go to 202).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the inn",
+              "nextFragmentId": "202"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "212",
+      "src": null,
+      "text": "You realize that this is probably not related to the murder you are investigating and call the mayor out.\n“It is unclear,” she says, but some uncertainty shows around her deadpan stare. “But there is no evidence of their involvement. Yet. Still, I need you to find out for sure.”\nYou can either negotiate additional pay (go to 225) or accept the task as is (go to 232).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Negotiate additional pay",
+              "nextFragmentId": "225"
+            },
+            {
+              "label": "Accept the task as is",
+              "nextFragmentId": "232"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "213",
+      "src": null,
+      "text": "Before showing you the way to the camp for you to investigate, the dryad hands you a small wooden vial and gestures for you to take a sip.\nYou carefully smell the contents and take a small sip to determine what the potion might do. You feel your skin toughen and twist for a moment before returning to normal.\nAdd potion of barkskin to your inventory.\nThe potion grants the effects of the barkskin spell. (Your AC is at least 16 for the next hour after consuming its contents.)\nYou thank the dryad and she leads you to the camp (go to 195).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Potion of Barkskin",
+          "quantity": 1,
+          "description": "Your AC is at least 16 for 1 hour after drinking."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Follow the dryad to the camp",
+              "nextFragmentId": "195"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "214",
+      "src": null,
+      "text": "Horace swallows with a loud click and even the seemingly unflappable Titch glances around for escape routes.\n“You were outmatched when you arrived,” Mayor Anathram says to the bandits. “And now you are outnumbered. You may leave safely. But you must leave now.”\nYou let them know the opportunity to get away safely will end soon.\n“Well, I think that their offer is looking more generous by the minute, wouldn’t you Titch?” says Horace. His compatriot barely pauses to think about it before nodding. “So I suppose you’ll be wanting this?”\nHe holds up the wanted poster. The mayor speaks a word in Orcish to Buttercup and the huge canine pads over to gently retrieve the large sheet of thick paper. Horace grimaces in fear as the dog’s huge jaws approach his hand before letting go of the prize.\n“So, well, it’s been nice catching up? Hasn’t it, Titch?” Horace still has his jovial smile fixed to his lips, but it seems to be cracking around the edges.\nTitch shakes his head.\n“No, I guess you’re right. It’s been a miserable waste of everyone’s time. But can’t fault us for trying, eh, Wolf? Or maybe I should say, mayor?”\n“Just get out,” Mayor Anathram growls. “My mind is quickly changing.”\nHorace opens his mouth to speak once more before closing it with a snap. He points to the door and both he and Titch briskly half-jog their way out, looking over their shoulders the whole way.\nYou ask the mayor if you think that it’s wise to let them go like that.\n“They are cowards,” she says. “They are here because they are desperate. But they will not make that mistake again.”\nThe door slams and the mayor turns toward you (go to 191).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "191"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "215",
+      "src": null,
+      "text": "As you make your way through the woods, you come across a clearing ringed with old trees with thick, gnarled trunks. The birdsong is especially beautiful here and the air smells of a heady mix of wildflowers and honey.\nSitting in the center of the clearing on a stump you see an unusual woman. Her skin is bright green and her hair a tangle of leaves and moss. She hasn’t seen you, her whole attention on a robin resting in her outstretched hand as she laughs and twitters back to the little bird. You have found a dryad, a fae creature with a deep connection to the forest.\nYou can sneak past the dryad (go to 198), make your presence known (go to 175), or attack the dryad (go to 227).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Sneak past the dryad",
+              "nextFragmentId": "198"
+            },
+            {
+              "label": "Make your presence known",
+              "nextFragmentId": "175"
+            },
+            {
+              "label": "Attack the dryad",
+              "nextFragmentId": "227"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "216",
+      "src": null,
+      "text": "You look either way down the dark street and don’t see anyone nearby before pulling your thieves’ tools out of your pack.\nRoll a proficiency check with your thieves’ tools. If you get 15 or more, go to 234. If you roll under 15, go to 187.",
+      "actions": {
+        "roll": {
+          "stat": "DexterityOrThievesTools",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "234",
+              "description": "You successfully pick the lock."
+            },
+            "failure": {
+              "nextFragmentId": "187",
+              "description": "You fail to pick the lock."
+            }
+          },
+          "notes": "Proficiency with thieves' tools required."
+        }
+      }
+    },
+    {
+      "fragmentId": "217",
+      "src": null,
+      "text": "Gain Inspiration.\nDespite loud barking, you can make out three voices. One is obviously the mayor demanding what the two men are doing in Langston.\nThe two men take turns speaking in slow, arrogant voices. You still can't make out everything they're saying, however. You just catch the words \"wolf,\" \"money,\" and \"find out.\"\nYou can knock (go to 205), open the door by force (go to 169), or pick the lock (go to 216).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Knock",
+              "nextFragmentId": "205"
+            },
+            {
+              "label": "Force the door",
+              "nextFragmentId": "169"
+            },
+            {
+              "label": "Pick the lock",
+              "nextFragmentId": "216"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "218",
+      "src": null,
+      "text": "You drop into a crouch as you approach and advance on the bandit camp as quietly as you can.\nRoll a Dexterity (Stealth) check. If you get 10 or more, go to 180. If you get less than 10, go to 233.",
+      "actions": {
+        "roll": {
+          "stat": "Dexterity",
+          "skill": "Stealth",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "180",
+              "description": "You succeed in sneaking."
+            },
+            "failure": {
+              "nextFragmentId": "233",
+              "description": "You fail to sneak."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "219",
+      "src": null,
+      "text": "You feel Titch’s knife slip between your ribs and as it pulls out you feel a gush of blood go with it.\nSuddenly light-headed, you wobble on your feet before crashing to the ground.\nAs if from a great distance, you hear a snarl and a scream as Buttercup bites down hard on Horace, but you also hear the Mayor telling both men that while they may have killed in her home, she will not.\n“Now get out before I change my mind,” she says finally. Scrabbling feet and a slammed door are the last things you ever hear.\nYou die.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "220",
+      "src": null,
+      "text": "When you ask about the bandit camp, the dryad wrinkles her nose as if she had just smelled something off.\nShe explains that there are two bandits - both male and human - that have occupied the camp. However, neither is there now. They left for Langston this morning and have not yet returned. They have gone into town several times, sometimes returning with bread or meat for a porridge that they either stole or bought in the market.\nHowever, they have already been gone longer than on previous trips, so maybe they're staying in town tonight.\nIf you haven’t done so yet, you can ask the dryad if any strange events have occurred around in the woods lately (go to 189). Or you can ask her to escort you to the empty bandit camp (go to 195).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about strange events in the woods",
+              "nextFragmentId": "189"
+            },
+            {
+              "label": "Ask to escort you to the bandit camp",
+              "nextFragmentId": "195"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "221",
+      "src": null,
+      "text": "“We argued,” the mayor says. “She did not think someone with my past should be in my position. I disagreed and convinced her that I am better suited to protect Langston from threats.”\nShe sets her jaw and then looks at you, and you see tears shining in her eyes.\n“I was wrong. The next night, something killed that girl. It was not me.”\nA loud crack rings out and you jump. Turning, you see that the source is Buttercup who has just snapped what looks like the femur of a sheep in half and is licking out the marrow.\n“And this is where we are now. We must conclude quickly before my town loses itself to fear. But I wish to show my thanks for your help. Please let me offer you something from my previous life.”\nSo the mayor is offering you something to protect yourself (go to 172) or do some damage (go to 181)?",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Something to protect yourself",
+              "nextFragmentId": "172"
+            },
+            {
+              "label": "Something to deal damage",
+              "nextFragmentId": "181"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "222",
+      "src": null,
+      "text": "You thank the mayor for the gift and ask if there’s anything else you can do for her\n“No,” she says. “That will be all. I trust you to find your own way out. It has been an exhausting day.”\nShe balls up the wanted poster and the warrant. She throws them into the low-burning fire and walks away without another word, but the poster rolls out of the flame before it catches. A door closes towards the back of the house.\nButtercup remains to surreptitiously keep an eye on you while you\nTake the poster and bounty (go to 196) or place both in the fire (go to 211).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Take the poster and bounty",
+              "nextFragmentId": "196"
+            },
+            {
+              "label": "Place both in the fire",
+              "nextFragmentId": "211"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "223",
+      "src": null,
+      "text": "You search through the oilcloth and the rest of the camp without much luck. It’s clear from the disrepair of their belongings that these bandits are struggling in general.\nHowever, in the oilcloth hung from the tree, you find a leather scroll case containing a rolled sheet of vellum. Examining the document, you see that it is a warrant empowering named Horace and Titch, the bandits’ names presumably to collect the bounty. It offers hundreds of gold pieces in reward for information regarding a criminal’s location and thousands for her capture dead or alive.\nThe warrant is for the killer of a constable in Three Rivers. The killer is given the alias “The Wolf of the Road” with a real name you don’t recognize that is obviously Orcish.\nNot knowing what to make of this, you take the document with you until you can find out more. These bandits have clearly fallen on hard times as their gear all seems tattered and in poor repair. It's likely that any valuables they might have are also kept on their persons. You find nothing else in the camp.\nThe day is growing short, so you start off toward town to speak to the mayor (go to 183).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Warrant (Wolf of the Road)",
+          "quantity": 1,
+          "description": "Horace & Titch are bounty hunters for a killer."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Return to town",
+              "nextFragmentId": "183"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "224",
+      "src": null,
+      "text": "You are immediately overwhelmed with affection for the beautiful, green-skinned woman in front of you. You relax and stop your attack.\nShe smiles at you and waves, inviting you closer to sit beside her on the ground. She reaches for your coins and pulls out 1d6 gold pieces. (if you don't have enough she makes it up with the missing number of silver or copper pieces.)\nYou offer the money as a gift, which the dryad welcomes with a mischievous smile. She bids you a sarcastic goodbye as she walks into a nearby tree, vanishing from sight. You sit alone in that clearing missing your new friend until the effects of her charm wear off in an hour.\nCursing yourself, your luck, and anyone else you can think of, you continue on your way toward the bandit camp (go to 204).",
+      "actions": {
+        "removeItem": {
+          "itemName": "Gold Pieces (1d6)",
+          "description": "The dryad takes 1d6 gp; if short, use silver or copper."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue to the bandit camp",
+              "nextFragmentId": "204"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "225",
+      "src": null,
+      "text": "“I do not normally negotiate with those I employ,” she says. “But if it will speed you along then you can have this.”\nShe pulls a coin purse from a desk drawer and tosses it to you. You don’t say anything about how she had an additional fee ready.\nAdd 30 gp to your inventory.\n“I expect that is sufficient to continue doing the job you have agreed to do?” she says.\nYou agree and ask what the mayor knows (go to 232).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Gold Pieces",
+          "quantity": 30,
+          "description": "Add 30 gp to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "232"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "226",
+      "src": null,
+      "text": "You let her know that you do speak Sylvan and she smiles in gratitude.\n“I’m so glad,” she says. “My Common is limited. What is your purpose in the Wood?”\nYou let her know that you are here for a bandit camp, and the woodland being claps her hands with joy.\n“And now I’m gladder,” she says. “Those terrible men are scaring the residents of the forest and making an awful mess.”\nYou ask for more details, and she says that she has kept her distance from both the farms and the new interlopers.\n“But the birds tell me they are doing real damage,” she says. “And their snares are excessive to the point of being quite hazardous.”\nYou say that you will remove them from her wood. The fae woman you’re talking to claps her hands again and smiles.\n“Oh what a day,” she says brightly. “You are so much nicer than the other man I see from the town. Very handsome fellow who usually spends his time collecting herbs, but takes a break to try to bed a dryad.”\nYou ask if she’s sure.\n“Of course, not ten nights past I had to escape his hands through that tree right there. Kept saying that non-humans don’t count, whatever that means. My Common really is not good.”\nAsk about the bandit camp (go to 220) or ask if anything strange has been happening in the woods lately (go to 189).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about the bandit camp",
+              "nextFragmentId": "220"
+            },
+            {
+              "label": "Ask if anything strange has happened",
+              "nextFragmentId": "189"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "227",
+      "src": null,
+      "text": "You attack the dryad in the clearing. Roll initiative.\nOn the dryad’s first action, go to 171.\nOn the dryad’s second action, go to 179.\nIf you reduce the dryad to 0 hp, go to 190. If the dryad reduces you to 0 hp, go to 201.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Dryad's first action",
+              "nextFragmentId": "171"
+            },
+            {
+              "label": "Dryad's second action",
+              "nextFragmentId": "179"
+            },
+            {
+              "label": "Dryad drops to 0 hp",
+              "nextFragmentId": "190"
+            },
+            {
+              "label": "You drop to 0 hp",
+              "nextFragmentId": "201"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "228",
+      "src": null,
+      "text": "Horace looks at you for a moment before barking out a laugh. “Oh, nice try, investigator. Nice try indeed. But you see, we aren’t leaving here empty-handed.”\n“Nope,” Titch says, reaching for his knife.\n“So if you’re not going to give us what we want, Wolf,” Horace says. “We’re just going to take it. Maybe starting with that handsome doggy of yours.”\nHe yanks his knife from his belt and Titch does the same (go to 178).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "178"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "229",
+      "src": null,
+      "text": "You can definitely hear angry voices, but you can't tell anything about them or what they're saying over loud barking.\nYou can knock (go to 205), try to break down the door (go to 169), or attempt to pick the lock (go to 216).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Knock",
+              "nextFragmentId": "205"
+            },
+            {
+              "label": "Break down the door",
+              "nextFragmentId": "169"
+            },
+            {
+              "label": "Pick the lock",
+              "nextFragmentId": "216"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "230",
+      "src": null,
+      "text": "As you try to sneak past the green-skinned and leafy-haired woman in the clearing, you step on a dry twig. And then you stumble into a pile of dried leaves.\nShe leaps to her feet, pointing her arm at you as light shines around her fingertips. Whatever she’s planning to do, however, she hesitates before releasing it. She looks at you warily, the leaves of her hair and clothing swaying with a wind that only she can feel.\nYou can try to communicate (go to 200) or attack the strange woodland being (go to 227).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Communicate",
+              "nextFragmentId": "200"
+            },
+            {
+              "label": "Attack",
+              "nextFragmentId": "227"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "231",
+      "src": null,
+      "text": "You stay your hand and leave Titch trembling with fear on the ground. Horace raises his hands higher above his head.\nYou look at the mayor one last time and she nods. You command both Titch and Horace to be gone.\nTitch heaves himself to his feet as Horace sidles closer to him, and you, on his way toward the door.\n“You two,” the mayor says, producing a full battle axe she was able to hide behind her leg. “This is the only time I will spare you. If I ever see you again, I will end you.”\n“Yes, yes of course, Wo- I mean mayor,” Horace stammers. He then looks straight at you. “May see you around sometimes though.”\nHe tries to hide his fear with a smarmy grin, but it’s pure bravado. Titch beckons his squat partner to help him out and the two leave carefully - but quickly - through the front door (go to 191).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "191"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "232",
+      "src": null,
+      "text": "“Give me your map of Langston,” Mayor Anathram says with an outstretched hand.\nOnce you hand it over, she uses the quill from her desk to circle an area outside of town in the wooded area to the north.\n“Search this area for the bandit camp and to remove them from the area. By force if necessary. This should be well within your abilities.” She looks at you and points to the wooded area around the supposed camp. “Use the forest paths. People are frightened of the murderer and the rumor of bandits. More strangers on the road could cause panic.”\nYou agree, but it’s more of a reflex to the mayor’s raw authority than a conscious agreement. You take the map and say goodbye (go to 176).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "176"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "233",
+      "src": null,
+      "text": "As you approach the bandit camp, you stumble and fall into a pile of dry leaves and twigs that seem to have been blown there by the wind. Besides the rustling, cracking, and your involuntary cursing there’s no way anyone could miss your approach.\nLucky for you, the camp appears to be empty. You may as well just wander in and explore now (go to 182).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Explore the camp",
+              "nextFragmentId": "182"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "234",
+      "src": null,
+      "text": "Gain Inspiration.\nThe lock clicks and you open the door as quietly as you can into the front hall of the mayor’s house. Not that the precautions are necessary as the conversation going on next door masks any sound you might make - maybe short of trying to break the door down.\n“You will leave my town,” shouts the mayor. “You will hurt no one and leave.”\n“Little late for that now, eh, dear leader,” says a voice dripping with smugness.\n“Keep that dog on a short leash,” cries another. “I don’t like the way it’s looking at me. What are you laughing at, Horace?”\n“Well, Titch my lean friend, you rather look like a bone, don’t you?” There’s a guffaw followed by some restrained cursing from the other man. “But I digress, dear leader. Dear former leader that is. We haven’t worked for the Wolf of the Road since… when, Titch?”\nYou start moving carefully up the hall.\n“That would be since Three Rivers, Horace.” the tight voice identified as Titch says. “When she used the battle to cover her sneaking off. With our loot.”\n“With our loot!” bellows Horace but he continues in his previous joviality. “Not so much the Wolf of the Road and more of a fox… a squirrel even. It tarnishes your legacy, doesn't it?”\nYou can either announce yourself (go to 168) or continue listening (go to 186).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Announce yourself",
+              "nextFragmentId": "168"
+            },
+            {
+              "label": "Continue listening",
+              "nextFragmentId": "186"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "235",
+      "src": null,
+      "text": "Having failed to charm you, the woodland fey you found just wants to get away. With a shriek of fear she disengages herself from you and bolts for a thick tree (go to 179).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "179"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "236",
+      "chapterEnd": true,
+      "src": null,
+      "text": "You wake feeling refreshed and ready for whatever today may bring.\nGain the benefits of a long rest.\nYour breakfast is waiting for you when you open the door along with a neatly folded letter.\nThe letter says:\n\"Dear adventurer,\nMy thanks for your assistance with yesterday's challenges.\nI hope that you are making progress in your investigation into the threat to my town. The victim is due to be buried tomorrow. Visit the temple and examine the body before then.\nSolaine of the Radiant Order has been informed of your visit. Present this note if you have any problems.\" \nAnd then it is signed simply by the mayor as “The Mayor.”\nGuessing that any thanks at all are the mayor’s way of gushing with gratitude, you finish your morning meal and then make your way to the temple as suggested (go to 237).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "237"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

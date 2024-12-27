@@ -1,0 +1,1003 @@
+{
+  "fragments": [
+    {
+      "fragmentId": "317",
+      "chapterTitle": "The Accusation",
+      "src": null,
+      "text": "A tray of food is waiting for you on one of the tables across from the mayor, who is calmly waiting with hands folded and a cup of tea steaming at her elbow.\nYou sit down to eat and her face tightens in what you assume is her smile.\n“Today, you will make the accusation,” she says. “The whole town is likely to attend. We will do it in the town square.”\nYou acknowledge that you are ready to accuse someone of killing Maybelline.\nShe sits with you as you both finish your morning meal and then escorts you to the town hall. Since you helped the mayor rid the town of Horace and Titch, the silence remains but now it’s taken on a companionable quality lacking any previous awkwardness.\nThe mayor nods and then says, “With the added threat of the undead, we must resolve the murder investigation quickly. My aide will make himself available to you. Or if you need to visit the general store, this will be your last chance before the town gathers.”\nAfter this point, you may not visit the general store. Continue from here when you are ready.\n“I will take my leave now,” she says. “And my aide will prepare the documents you require to accuse the killer without my presence. Good luck, adventurer.”\nOnce you are ready, the aide will accompany you outside to the town square (go to 334).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Proceed to town square",
+              "nextFragmentId": "334"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "318",
+      "src": null,
+      "text": "You present the love letter to the aide, and he reads it. His face flushes a little. Solaine’s face darkens as she recognizes the sheet of paper.\n“What does it say?” cries out a voice from the crowd. “What is it?” calls out another.\n“Please,” Solaine says quietly but surprisingly firmly. “Please don’t.”\n“It’s a personal letter,” the aide says. “From Solaine to Tomlin. Confessing deep, ahem, romantic feelings. And hinting at something else.”\n“Motive maybe,” the mayor says. “But hardly evidence. Do you have anything more substantial?”\nIf you haven’t done so yet and have them in your inventory, you can present the burnt clothing (go to 330) or the silk ribbon (go to 355).\nOr you can let your case rest (go to 320).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present burnt clothing",
+              "nextFragmentId": "330"
+            },
+            {
+              "label": "Present silk ribbon",
+              "nextFragmentId": "355"
+            },
+            {
+              "label": "Let your case rest",
+              "nextFragmentId": "320"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "319",
+      "src": null,
+      "text": "Though you have no evidence to show, you tell the story of Horace and Titch’s visit. You include the fact that the bandits had told Maybelline about the mayor’s secret past.\nIn response, the mayor’s jaw clenches but she remains silent.\nThe gathered crowd starts to shout. And every voice is raised in support of the mayor.\n“We don’t believe it!” cries one man. Another calls out, “The adventurer lies!” A woman shouts, “We stand with you, mayor!”\nMayor Anatrham’s jaw relaxes for a moment and she allows herself a small smile. Meanwhile, her flustered aide shushes the crowd into silence.\nShe looks at you and says, “You’re an idiot.”\nBefore you can respond, someone starts an unhinged giggling. Looking over, you see Solaine is laughing and what she finds funny is you (go to 344).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "344"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "320",
+      "src": null,
+      "text": "Sensing the danger, the two militia members flanking Solaine reach for her, just as the cleric doubles over in what seems like excruciating pain.\nThen an angry crackling, ripping sound emanates from the slight cleric’s body. It bulges and ripples, splitting her white robes as muscles and fur sprout from her body. Limbs elongate and her face twists into a bestial muzzle.\nAnd through it all, the crowd stands in rapt horror. The only sound is Solaine’s pained laughter, which drops into a guttural snarl.\n“No,” Roi gasps. “Werewolf!”\nIn a moment of blind heroism, the two militia members to either side of the cleric rush in to try to restrain her, but she rakes them both with her powerful arms ending in long claws. Both men cry out in spurts of blood and fall to the ground.\nTomlin's new woman clings to him as the cleric changes and Solaine howls with rage.\n“You!” she says pointing at Tomlin. “You are now and always will be mine!”\nShe charges at her former lover, teeth bared and saliva streaming (go to 329).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "329"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "321",
+      "src": null,
+      "text": "While it’s clear Tomlin died of deep cuts to his neck and throat, you can’t tell anything else about the scene of his death that might help you.\nWithout additional information, you have nothing more to go on as you proceed into the temple (go to 324).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the temple",
+              "nextFragmentId": "324"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "322",
+      "src": null,
+      "text": "As you start casting your spell, Solaine growls and takes up a defensive position.\nAny damaging spells or magical abilities do damage normally. Spells and effects that work on beasts will work normally, but those that only affect humans are ineffective.\nNow that she thinks you can hurt her, you suspect Solaine won’t hold back against you. Return to the combat section to complete your spell and apply its effects (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to combat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "323",
+      "src": null,
+      "text": "You present the scrapling claw as evidence against Tomlin along with the theory that he lured Maybelline to her death among the dangerous creatures in his garden.\n“But, why would I do that?” says Tomlin, wide-eyed. “She was my fiancée. I loved her!”\nYou respond by saying that the motive was returning to the bachelor’s life.\nTomlin glances over to his companion who is still gripping his arm. He disengages and steps forward, eyes darting side to side in fear.\n“But I didn’t do this,” he shouts. “Everyone, you have to believe me. I didn’t kill Maybelline!”\n“I’m sorry, adventurer,” calls out Roi. “Those claws just aren’t enough to do the kind of damage we saw to that poor lass. It would have to be something much bigger than that.”\nYou ask if a pitchfork would do it, like the one Tomlin used to kill the scraplings.\n“Maybe at a stretch,” Roi says as two militia members approach Tomlin hesitantly, and the young woman he’s with clutches at his arm again. “But really not likely. What do you think, Solaine? Could Tomlin have killed Maybelline with a pitchfork?”\nThe silent crowd turns in unison to Solaine, whose head is hung low. “No,” she says quietly.\nThen, she screams, “No!” (go to 337).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "337"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "324",
+      "src": null,
+      "text": "You pass through the courtyard and its outdoor altar quickly on your way to the front hall.\nWhen you enter the temple, it doesn’t have the same sun-drenched charm as the first time you arrived. The red light streaming in the windows gives everything an air of menace, tinging even the shadows with bloody highlights. The tapestries depicting the dead seem darker, almost as if they are absorbing the light itself and feeding off of it.\nThe main hall where you met Solaine on your last visit is also changed. Instead of the sunburst mosaic, there is a spiral staircase bearing the same motifs circling down into the darkness below the temple.\nThough it’s possible Solaine escaped down one of the corridors, you feel certain that she has instead retreated into the darkness below. You cautiously descend the steps below to find corridors, rough-hewn walls of damp stone, and what seem like animal bones in various stages of decomposition.\nAs you proceed, you find your way lit by the same glowing orbs you saw above ground, so this is clearly part of the original temple. Its purpose in a temple devoted to the sun, however, is unclear.\nYou keep your wits about you as you advance down the corridors, careful at every turn not to become another set of bones on the floor (go to 363).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "363"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "325",
+      "src": null,
+      "text": "The philter of remembrance’s glowing vapors curl up from the ground and wrap around and through Solaine’s head. Her nose twitches on her muzzle and her large ears swivel, searching for the source of sounds only she can hear.\n“Tomlin? Is that you Tomlin?” she rumbles. “Oh, a picnic! How romantic! Thank you, darling.”\nShe sighs and sits on her haunches as she stares off into the middle distance.\nNo sooner does she settle in but she starts rocking back and forth, whimpering to herself.\n“No, no, no,” she whines, staring at her paws. “Don’t leave me, Tomlin. Stay with me.”\nAnd she stops speaking altogether, lost in her remembrance.\nRoll 1d4 and make note of the result. Solaine is considered stunned for a number of actions equal to your dice roll.\nReturn to combat with a dazed werewolf (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to combat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "326",
+      "src": null,
+      "text": "You admit that you do not have any evidence to present, but you did learn a lot from your investigation.\nFirst of all, Roi had been infected with polypox, a magical disease that caused him to lose control of his druidic powers. The disease is also known to cause fits of delirium, even attacks.\nThe crowd turns its gaze to Roi, who is standing teary-eyed apart from them. He’s even trembling.\n“Aye, it’s true,” he says with a shaking voice. “Everything the adventurer says is true. But- But I just don’t see myself hurting the lass. Even at my worst.”\nThe mayor steps forward and lays a hand on the back of Roi’s head, the easiest spot for her to reach given her height.\n“Does anyone else have reason to believe that Roi Sunderhammer, the druid who has protected this town for many years, killed Maybelline?”\nThe collected townspeople murmur and mutter amongst themselves, but no one comes forward.\n“Come with us, Roi,” the mayor says. “It’s just a formality.”\nHe nods, but before they leave you hear bitter laughter. Turning to the source, you see that Solaine is laughing at you mockingly (go to 367).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "367"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "327",
+      "src": null,
+      "text": "Solaine is amused by your choice of weapon.\n“A stick?” she rumbles. “I’m not a dog to play fetch with you. But I’m happy to show you the folly of your ways. Strike me, adventurer. It will be your last chance to play the hero.”\nYou swing with all your might and connect with the werewolf’s hide. To your and Solaine’s surprise - a burst of yellow-green light flashes on contact.\nShe yowls with pain as you feel something give under your blow and you can smell scorched fur.\nThe scrapling claw does damage as if it is a magical club (1d6+1 plus your Strength modifier). Roll and take note of the damage.\nSolaine’s eyes light up with rage and pain. You continue your fight (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue combat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "328",
+      "src": null,
+      "text": "Gain Inspiration.\nYou indicate that you just want to talk.\nShe narrows her eyes and a lip curls back from her fangs as she considers your presence. Then she licks her muzzles and relaxes a little.\n“What do you want to know, adventurer?”\nYou’ve at least bought a little time to find out more about Maybelline.\nAsk her why she killed Maybelline (go to 339) or Tomlin (go to 352). Or start from the beginning and find out how she contracted the curse (go to 346).\nAlternatively, you could assure her she'll be safe if she comes peacefully (go to 343).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Why did she kill Maybelline?",
+              "nextFragmentId": "339"
+            },
+            {
+              "label": "Why did she kill Tomlin?",
+              "nextFragmentId": "352"
+            },
+            {
+              "label": "Ask about how she contracted the curse",
+              "nextFragmentId": "346"
+            },
+            {
+              "label": "Assure her she’ll be safe",
+              "nextFragmentId": "343"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "329",
+      "src": null,
+      "text": "Whatever collective uncertainty held the crowd in place vanished in the face of all that blood and the stampede began. You are buffeted by panicked townspeople blocking your way.\n“Dear gods, no!” Tomlin screams, his voice high with fear. Powered by rage and her unnatural strength, Solaine snatches him up with a clawed hand as if he weighed nothing more than a rag doll and bounded through the crowd.\nThrough the tumult, you see her leave a trail of fallen townsfolk, most merely knocked to the ground and she reaches one of the walls of the buildings nearby. She scrabbles one-handed up to the roof, her claws leaving long slashes in the whitewash and wood.\nReaching the roof, she pauses to let out a long, keening howl before sprinting across the rooftops moving to the east towards the temple.\n“Arm yourself and go after her!” Mayor Anathram yells. She takes over crowd control, directing some citizens away from the danger while calling out to rally militia members scattered among the throng of panicking townsfolk.\n“Break the curse if you can,” Roi calls out, touching a hand to his chest. “We’ll tend to the wounded.”\nHe then drops to the side of the fallen militia members. The druid begins chanting and his hands glow green as he lays them over the men’s wounds.\nNot hesitating, you sprint off through the streets of Langston toward the temple (go to 360).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the temple",
+              "nextFragmentId": "360"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "330",
+      "src": null,
+      "text": "You display the burnt clothing and many in the crowd notice the blood stains on it.\n“I’m a healer,” Solaine scoffs. “Many of those with a need for me are bleeding when they call, so it’s not unusual for me to discard old robes.”\nYou ask if it’s common for her to burn them when she discards them.\n“What else am I supposed to do with them?” she asks, her voice just edging towards shrill. “Donate bloody rags to the poor?”\nThe crowd has also noticed Solaine’s shift in tone, and people are starting to gossip. The young cleric looks out and sees heads bobbing together in whispered conversation and her cheeks flush.\n“This evidence is compelling but still circumstantial at best,” says the aide. “Have you anything else to present?”\nIf you haven’t done so yet and have them in your inventory, you can present the love letter (go to 318) or the silk ribbon (go to 355).\nOr you can let your case rest (go to 340).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present love letter",
+              "nextFragmentId": "318"
+            },
+            {
+              "label": "Present silk ribbon",
+              "nextFragmentId": "355"
+            },
+            {
+              "label": "Let your case rest",
+              "nextFragmentId": "340"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "331",
+      "src": null,
+      "text": "You do not have direct evidence of Tomlin’s misdeeds, but you have ample motive and capability. There is a rumble of disbelief through the crowd.\n“Please explain,” Mayor Anathram calls out.\nYou first point out that Tomlin seems to have returned to his old life of bachelorhood quite easily, gesturing at his female companion as you do so.\n“Seeking the comfort of friends,” he says in his own defense.\nYou mention the scraplings in his garden, that they might have even accidentally taken her life on that fateful night. They nearly took yours.\n“They’re dangerous, adventurer, I’ll give you that,” Roi says loudly. “But no way their wee claws did what I saw done to that poor girl.”\nYou also point out that he was remarkably quick to dismember the scrapling in his garden with a pitchfork.\nThe crowd remains unconvinced, but the mayor nods at the militia to take him in.\nThere’s a disbelieving response from many in the crowd, but the militia members approach anyway.\n“No!” someone cries out and all heads whip around.\nIt came from Solaine, whose face is twisted with rage and her chest heaving (go to 337).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "337"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "332",
+      "src": null,
+      "text": "When you emerge from the temple, you see that the morning sky has returned to normal. Roi and Mayor Anathram are speaking with each other, which means Roi is regaling her with a longwinded tale of his youthful exploits as part of an adventuring party.\nAs you walk the streets, you see townsfolk emerging from their homes to speak to neighbors, and the mood is bright. News of Solaine’s capture traveled quickly and the relief is palpable.\nTaking much longer at a normal pace, you return to the town hall. A group of locals is out in the square with scrub brushes and soapy water taking the blood off the cobblestones. The mayor’s aide is waiting by the entrance to the town hall, smiling as you approach victoriously.\n“This way please,” he says to you, then addresses the mayor. “I’ve prepared everything in your office, ma’am.”\nButtercup is waiting in the office as well, safe from harm’s way in the temple. Seeing your trio, he bounds up to you all and rushes past the mayor to lick Roi and prance around the dwarf in excitement.\n“Aye, aye,” Roi says as he wipes at his face. “All’s well, lad.”\nThe mayor takes her seat behind the desk as Roi shoos Buttercup back to his dog bed. She steeples her fingers as Roi finds a nearby armchair to settle into.\n“The results of your investigation will affect your rewards, adventurer,” she says. “Solaine is facing the consequences of her actions. So must you.”\nCheck your inventory for a record of who you accused: Tomlin (go to 366), Roi (go to 367), Mayor Anathram (go to 368), or Solaine (go to 369).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Accused Tomlin",
+              "nextFragmentId": "366"
+            },
+            {
+              "label": "Accused Roi",
+              "nextFragmentId": "367"
+            },
+            {
+              "label": "Accused Mayor Anathram",
+              "nextFragmentId": "368"
+            },
+            {
+              "label": "Accused Solaine",
+              "nextFragmentId": "369"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "333",
+      "src": null,
+      "text": "Solaine laughs at you and offers you a free hit.\nYou strike and the wound heals immediately leaving no trace. Then she bears down on you, readying an attack of her own.\nYour ordinary weapon does not do any damage to Solaine.\nReturn to the combat to find some other way to neutralize the werewolf. Solaine uses her next action to attack you (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to combat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "334",
+      "src": null,
+      "text": "You emerge from town hall to a gathered crowd. It seems like the whole town has arrived and surrounded the entrance, waiting for you to deliver the results of your investigation. Most of the townsfolk are unknown to you, but you are able to pick out a few that you had spoken to over the past few days.\nThe aide has set up a small table with a single document, a quill, and an inkpot. He lifts the document and starts to read out a formal accusation for the murder of Maybelline, a citizen in good standing of Langston. It details the circumstances of her life and death in some jumbled legalese, so you turn your attention to the people gathered in front, most of whom are the common folk that you haven’t had a chance to meet yet.\nTowards the front of the crowd, however, you can also see the now-familiar faces of Tomlin, Roi, Solaine, and Mayor Anathram. Accompanying the mayor, you see a few militia members standing at ease but with long clubs hanging at their belts.\nTomlin is standing at relative ease, an attractive young woman standing close enough to him to touch but barely not doing so.\nRoi smiles at you as you emerge, his nose and cheeks still ruddy with his illness but his eyes bright and clear.\nSolaine stands alone in the crowd, her white robes a stark contrast to the home-spun clothing of most of the townsfolk, and her face is drawn with apparent exhaustion.\nMayor Anathram - or Tanya the Wolf of the Road as you now know her to be - stands as rigid and imposing as ever, but she graces you with a nod nonetheless.\nHer aide steps in front of you to address the crowd.\n“These are trying times for Langston, and you are all afraid. Maybelline’s death was tragic and she was taken far before her time. And while she is now beyond our reach, we can still get justice for her death.”\nThe aide turns to you as he dips the quill in the ink. You feel the eyes of the entire town bear down on you as well as the writing tool hovers over the document.\n“Who murdered Maybelline?” the aide asks with finality.\nAccuse Tomlin the Herbalist (go to 357).\nAccuse Roi the Druid (go to 349).\nAccuse Solaine the Cleric (go to 341).\nAccuse Tanya the Wolf of the Road (go to 362).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Accuse Tomlin",
+              "nextFragmentId": "357"
+            },
+            {
+              "label": "Accuse Roi",
+              "nextFragmentId": "349"
+            },
+            {
+              "label": "Accuse Solaine",
+              "nextFragmentId": "341"
+            },
+            {
+              "label": "Accuse Tanya the Mayor",
+              "nextFragmentId": "362"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "335",
+      "src": null,
+      "text": "The hulking beast in front of you is cautious with the obviously magical weapon as it sheds its moonlight glow on the walls of the chamber.\nThe moonshard will overcome Solaine’s damage immunity and do damage normally against Solaine.\nReturn to the combat section (get to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to combat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "336",
+      "src": null,
+      "text": "Solaine sniffs at the air and sneezes powerfully. The vapors produced by the philter of remembrance snake around her head as she growls.\n“I see… I see Tomlin? On our… On that picnic,” the werewolf says. But then she shakes her head violently. “No. No, it can’t be. That’s not real.”\nSolaine stomps out of the cloud of enchanted mists towards you and snarls at you.\n“Nice try, adventurer,” she rumbles. “But your cruel tricks won’t work on me.”\nWhen you return to combat, Solaine takes her action to attack you.\nReturn to combat with Solaine (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to combat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "337",
+      "src": null,
+      "text": "“Don’t touch him!” Solaine screams at the militia members, pointing at them with a shaking hand. “He is mine! And he’s not getting away with it again!”\nThe people of Langston shift and look at each other in confusion. But that confusion gives way to horror as Solaine’s body begins to warp and shift. Those people nearest to her scream as the cleric lets out a grating cry that deepens into a throaty growl. Bone crackles and pops as she steps forward toward Tomlin. The pointing finger twists and elongates into a sharp claw, followed by the rest of her hand.\nFur sprouts all over her body, her enraged face crackles as it elongates into a fanged snout. Muscles contort and heave, tearing her white robes as she transforms into something bestial.\nObviously terrified, the militia members stand their ground and even step in to protect Tomlin from Solaine as she completes her transformation. You know what she is even before people in the crowd scream.\n“Werewolf!”\nNot wasting any more time, Solaine bounds forward at Tomlin, slashing claws at the militia members in sprays of blood. Both go flying to the ground as you overcome your shock and leap forward to help (go to 329).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "329"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "338",
+      "src": null,
+      "text": "As the militia members lead Solaine away, you see how dark the rings under her eyes have gotten, how she staggers with exhaustion, and how she clings her shredded vestments around her. The disgraced cleric is a broken woman, and it’s impossible to tell when she gave up her humanity to the beast she had become.\nAs she is escorted from the chamber, Solaine fires you a last look over her shoulder. A mysterious smile spreads across her face suddenly, and then she vanishes down the corridor on her way back to the surface.\n“Nice work, adventurer,” Roi says with his customary joviality. “It was touch and go for a bit there, but you pulled it off.”\n“Indeed,” the mayor says with an emphatic nod. “The town owes you its gratitude. And I am thankful as well.”\nYou accept both leaders’ praise and prepare to take your leave.\n“Let us walk with you,” Mayor Anathram says. “I would speak with you both before the day is done.”\n“Aye, I could do that,” Roi says. “Let’s be off.”\nThe three of you leave the now-empty lair together, bound for town hall and the end of your quest (go to 332).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "332"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "339",
+      "src": null,
+      "text": "You ask why Solaine killed Maybelline, and she stands up straight on her back feet with her hackles rising and teeth bared.\n“Because she was a lying little vixen,” she snaps. “Oh everyone loved the innocent maid who sold her family’s produce in the market. She was Langston’s golden child. But she showed me her true colors.”\nYou ask Solaine what Maybelline actually was.\n“A scheming little wench. Stealing Tomlin from me was just the beginning. I don’t know what she wanted in the end, but she was now the kind, sweet soul everyone thinks she was… She was cruel.”\nSolaine’s eyes lose some of her humanity in the memory of it.\n“She laughed at me. Mocked me for my faith, for being the servant of Langston instead of twisting it around my finger as she had. And then… then she was dead.”\nThe werewolf looks at her claws and shows her teeth again. You realize she is smiling, and you can see her humanity slipping further away.\n“And that felt… good.”\nShe looks up at you and the eyes that meet yours were not those of a devout spiritual leader. They were the eyes of a killer, and you are suddenly sure that if you don’t do something quickly you will be next.\nIf you haven’t done so yet, you can try to engage Solaine with her motive behind killing Tomlin (go to 352) or ask where her curse came from (go to 346).\nIf you feel there is no redeeming Solaine, you can try to bring her in without a fight (go to 343) or square up for battle (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about killing Tomlin",
+              "nextFragmentId": "352"
+            },
+            {
+              "label": "Ask about her curse",
+              "nextFragmentId": "346"
+            },
+            {
+              "label": "Try to bring her in (no fight)",
+              "nextFragmentId": "343"
+            },
+            {
+              "label": "Square up for battle",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "340",
+      "src": null,
+      "text": "“I think we have heard enough,” Mayor Anathram says. “Take Solaine into custody.”\n“So that’s it,” Solaine says as two militia members approach her. “Don’t you want to know how I did it?”\nThe two men pause just outside of arm’s reach. They look at each other nervously.\nThe smile that spreads across her face has no trace of the meek kindness that she’s shown so far, and it hints at a growing madness in her.\n“Come closer and I’ll show you.” (Go to 320.)",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "320"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "341",
+      "src": null,
+      "text": "You declare Solaine - cleric of the Radiant Order - the killer. A shocked murmur ripples through the gathered townsfolk, a few people even crying out their disbelief. With pursed lips, the aide writes Solaine’s name onto the document and hands it to you.\nAdd accusation against Solaine to your inventory.\nIt’s clear that the aide also doesn’t believe you. “Do you have any evidence to back up this claim?”\nYou may present any evidence you have. If you have the love letter in your inventory, go to 318. If you have burnt clothing in your inventory, go to 330.\nIf you have the silk ribbon in your inventory, go to 355.\nIf you have no evidence or do not want to present your evidence, go to 361.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present love letter",
+              "nextFragmentId": "318"
+            },
+            {
+              "label": "Present burnt clothing",
+              "nextFragmentId": "330"
+            },
+            {
+              "label": "Present silk ribbon",
+              "nextFragmentId": "355"
+            },
+            {
+              "label": "No evidence to present",
+              "nextFragmentId": "361"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "342",
+      "src": null,
+      "text": "You stop to assess the area around you to see if there are any clues about the threat Solaine poses and how to neutralize her.\nRoll Intelligence (Investigation) or Wisdom (Perception). If you roll 10 or more, go to 347. If you roll less than 10, go to 321.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (roll >= 10)",
+              "nextFragmentId": "347"
+            },
+            {
+              "label": "Failure (roll < 10)",
+              "nextFragmentId": "321"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "343",
+      "src": null,
+      "text": "You promise that if Solaine surrenders to you now, you will not hurt her.\nThe creature in front of you lets out a rumbling laugh.\n“They were ready to hang me for the girl,” she says between chuckles. “You think they're willing to forgive me now? After what I did in the square? You're a fool.”\nFlexing her powerful limbs, she advances toward you. All traces of her quiet sweetness are gone, and only the predator remains.\n“But if I get rid of you, I can escape to live - and kill - another day,” she says, starting to advance on you. “Solaine of the Radiant Order is dead, and you’re about to join her.\"\nHer eyes flash, and you know you’ll have to take some action to end Solaine’s threat to Langston (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue to battle",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "344",
+      "src": null,
+      "text": "“You really are an idiot,” Solaine says to you. All of the bright sweetness you’ve seen her so far has evaporated like morning dew. “Even if what you say about the good mayor is true, she is one of the best among us. Among all of us.”\nShe sweeps her hands out wide, her smile widening to the point it looked as if it might crack.\n“People change, adventurer,” the cleric continues before glancing over at Tomlin and his female companion. “Well, most people.”\nWith a gesture and a nod, Mayor Anathram indicates two militia members to approach the cleric.\n“What are you saying?” she asks Solaine. “Did you kill Maybelline?”\n“Yes,” Solaine says flatly. “Because like you, good mayor… I have also changed.”\nWith a laugh that quickly becomes a scream, she throws her head back as her body ripples and heaves. Bones crack and her robes tear as her limbs grow. Her hands twist into claws and her face contorts into a muzzle filled with fangs. Dark fur sprouts from her body as she staggers.\n“What is this?” the mayor demands.\n“A werewolf,” Roi says, and his voice is heartbroken. “She’s the monster.”\nIn a surge of courage, the two militia members leap for the creature. But Solaine catches both in her powerful hands, claws digging into them. The two men scream as she smashes them together to collapse into a heap, blood seeping out of their broken bodies onto the ground around them.\n“And now you,” she snarls, pointing at Tomlin (go to 329).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "329"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "345",
+      "src": null,
+      "text": "You ready the killing blow, ready to end Solaine as a threat once and for all. Her eyes widen in fear, but then she closes them in resignation and turns away from you.\nBut you are knocked down by another hairy form. You try to attack the new threat, but you are pinned on the reddish, furry bulk of a thick-set bear.\nAs you struggle against its weight, Mayor Anathram charges into the werewolf’s lair at the head of a knot of frightened - but determined - townsfolk brandishing improvised weapons.\n“Is she still alive?” the mayor asks. The bear nods, and then its form starts to shift and change back into that of Roi.\n“Sorry adventurer,” he says, stepping away from you. “But we need to take her alive. She is our friend.”\nSolaine slinks further back towards the wall, more afraid of the pity she sees in her friends’ eyes than of you.\n\n“I’ll be needing the Silverstar back,” Roi says, holding out a hand to you. Reluctantly, you hand it over.\nRemove Silverstar from your inventory.\n“Come on then, lass,” he says as he reaches the magic item towards Solaine. She bares her teeth at him but doesn’t strike as he presses the item into her forehead (go to 358).",
+      "actions": {
+        "removeItem": {
+          "itemName": "Silverstar",
+          "quantity": 1,
+          "description": "Remove Silverstar from your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "358"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "346",
+      "src": null,
+      "text": "“It was on my pilgrimage,” she says. “I returned to the Radiant Order to report and speak to my mentor. But I was attacked by a wolf one night. I drove it away with holy magic, and healed my wounds. It was frightening, but I thought little more of it.”\nWhen she returned to her order’s monastery, she fell ill. No one there could help her, but no one thought to assess her for curses. She ran a fever and was delirious. On the next full moon, she changed uncontrollably and blacked out. When she came to, she was bathed in blood in a farmer’s field surrounded by mutilated sheep.\nShe left amidst the investigation without anyone suspect and returned home, hoping to rid herself of the curse.\n“Well, most call this a curse,” she rumbles. “The curse of lycanthropy. Look what I have done. What I have the power to do.”\nShe holds up her claws, still wet with Tomlin’s blood.\n“This is a power I never had as a cleric,” she says. “I was powerless. A servant to the people of this town. Healing coughs and broken wrists. But now I have real power.”\nShe lets out a whining giggle, and you can see in her eyes that something has come loose in her mind.\n“Of course, that power is gone. And with it, the temple’s power protecting these lands. But that’s also fitting isn’t it? Could that be what Langston deserves?”\nIf you haven’t done so yet, you can ask her about her motives behind killing Maybelline (go to 339) or Tomlin (go to 352).\nIf you have no more questions, you could try to de-escalate the conflict with assurances you will take her in if she comes peacefully (go to 343) or take active measures to end her as a threat (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about killing Maybelline",
+              "nextFragmentId": "339"
+            },
+            {
+              "label": "Ask about killing Tomlin",
+              "nextFragmentId": "352"
+            },
+            {
+              "label": "Take her in peacefully",
+              "nextFragmentId": "343"
+            },
+            {
+              "label": "End her threat",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "347",
+      "src": null,
+      "text": "Tomlin’s chest and neck were torn open by powerful strikes. Unlike Maybelline, whose wounds were haphazard and widespread, there is much more purpose to Tomlin’s wounds. There is anger present in their depth and ragged edges, but these were deliberate strikes with the intent to kill.\nThe bloody paw prints that lead away from the corpse towards the temple seem to include a place where they circle back, as if Solaine took one last look at the broken body before escaping into the place where she feels safest.\nThere is nothing else of note around here, so you leave the body to the crows and follow Solaine (go to 324).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Follow Solaine",
+              "nextFragmentId": "324"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "348",
+      "src": null,
+      "text": "You land the final blow and Solaine collapses battered and bloody to the stone floor. She scrabbles at the ground as she tries to retreat from you, backing up as far as the chamber wall. Her ears flatten against her skull and she looks around her for some escape.\nSeeing none, she hunches up and whimpers.\n“I yield,” she says. “Please adventurer, I surrender. I don’t want to die.”\nYou can accept her surrender (go to 351), move to end her life (go to 345), or touch her with the Silverstar to try to break her curse (go to 358).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Accept her surrender",
+              "nextFragmentId": "351"
+            },
+            {
+              "label": "End her life",
+              "nextFragmentId": "345"
+            },
+            {
+              "label": "Use the Silverstar",
+              "nextFragmentId": "358"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "349",
+      "src": null,
+      "text": "You name Roi the druid whose grove lies just outside of town. There is a concerned murmur through the crowd and Roi’s face twists into a grimace of pain. The aid reluctantly writes the druid’s name on the accusation and hands it to you.\nAdd accusation against Roi to your inventory.\n“Really, adventurer?” he says, tears shining in his eyes. “I certainly hope you know what you’re doing.”\nThe mayor’s aide asks you to provide evidence of Roi being the killer.\nIf you have the polypox cure in your inventory and you want to present it as evidence, go to 354. If you do not have any evidence to present, go to 326.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present polypox cure evidence",
+              "nextFragmentId": "354"
+            },
+            {
+              "label": "No evidence",
+              "nextFragmentId": "326"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "350",
+      "src": null,
+      "text": "Solaine lunges at you, but you had half expected things to go wrong at any point so you’re not caught unawares. She clenches and unclenches her claws as she growls.\nYou’ve always heard that werewolves and other lycanthropes are immune to ordinary weapons, but this is your chance to put that to the test. She is watching you carefully, clearly unsure of what to expect of you.\n\nDraw with your own weapon (go to 333), draw the moonshard (go to 335), or draw the scrapling claw (go to 327). If you have any magical ability, you can also try to cast a spell (go to 322).\n\nIf Solaine drops to 0 hp, go to 348. If you drop to 0 hp, go to 356.\n\n“In this adventure, you have received certain magical items that may help you defeat Solaine if you use them. As an action, you can try to throw the philter of remembrance (go to 353) or touch her with the Silverstar (go to 364).”",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Draw your own weapon",
+              "nextFragmentId": "333"
+            },
+            {
+              "label": "Draw Moonshard",
+              "nextFragmentId": "335"
+            },
+            {
+              "label": "Draw scrapling claw",
+              "nextFragmentId": "327"
+            },
+            {
+              "label": "Cast a spell",
+              "nextFragmentId": "322"
+            },
+            {
+              "label": "Throw the philter of remembrance",
+              "nextFragmentId": "353"
+            },
+            {
+              "label": "Touch her with the Silverstar",
+              "nextFragmentId": "364"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "351",
+      "src": null,
+      "text": "You accept Solaine’s surrender, and just as you’re wondering how to restrain her, Roi and Mayor Anathram burst into the chamber leading a knot of terrified townspeople with makeshift weapons.\nThe druid looks between you and the cowed werewolf and nods with approval. “Shouldn’t have worried for you, adventurer.”\nEven the mayor seems impressed.\n“But we need to do something about this beast,” Roi says. “Use the Silverstar.”\nYou retrieve the brooch and at Roi’s prompt, you press it into Solaine even though she instinctively shies away from the silver (go to 358).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Use the Silverstar",
+              "nextFragmentId": "358"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "352",
+      "src": null,
+      "text": "You ask why she killed Tomlin, and she flinches.\n“Tomlin betrayed me,” she says, ears flattening against her huge head. “He lied to me. Used me. And he dropped me for that market hawker as soon as he could.”\nYou ask if she loved him, and she snarls.\n“Of course I did, you fool. More than anything. More than I should have. And he used that against me again and again.”\nThere is a violent anger coiling in Solaine now and she starts to pace. “If only he had chosen me, this could have been different. Everything could have been different.”\nShe starts shaking her head, clenching and unclenching her hands.\nYou can try to distract her with more questions about why she killed Maybelline (go to 339) or how she contracted her curse (go to 346).\nAlternatively, you can try to convince her to come in peacefully (go to 343) or attack Solaine to end her threat against Langston (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about Maybelline",
+              "nextFragmentId": "339"
+            },
+            {
+              "label": "Ask about the curse",
+              "nextFragmentId": "346"
+            },
+            {
+              "label": "Convince her to surrender",
+              "nextFragmentId": "343"
+            },
+            {
+              "label": "Attack Solaine",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "353",
+      "src": null,
+      "text": "You hurl the philter of remembrance at Solaine from out of range. The glass vial smashes against the floor and sparkling vapors rise up into the air to shroud the fallen cleric’s paws.\n“What is this strange smell?” she says, and then sneezes violently. “It’s so familiar…”\nRoll a Wisdom save for Solaine. The difficulty of the save is 8 plus the number of doses left in the bottle. She gets disadvantage on her save due to her sense of smell and her Wisdom modifier is +1.\nIf she fails, go to 325. If she passes, go to 336.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Fail the save",
+              "nextFragmentId": "325"
+            },
+            {
+              "label": "Pass the save",
+              "nextFragmentId": "336"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "354",
+      "src": null,
+      "text": "You produce the polypox cure recipe and inform the crowd that Roi was ill. Therefore, while he technically had no knowledge of what he had done while under the influence of polypox, he is the killer.\nThe normally jovial dwarf buries his head in his hands. “I- I don’t believe it,” he says, his voice breaking. “She was such a good lass. I couldn’t have-”\nYou read selected passages from the cure, including the uncontrollable wild shaping and the delirium. The crowd is a mix of gasps and murmurs.\n“Adventurer,” Roi says looking up, tears shining in his eyes. “I- I can’t fault your logic. And as hard as it is for me to believe, if there is no one else then it must have been me.”\nTwo militia members reluctantly step up to the dwarf’s side and start guiding him.\nThe crowd is in shock and Roi is deeply hurt. He is reluctantly taken into custody. The crowd is visibly upset now. Tomlin puts his arm around the woman he’s with and she buries her face in his chest.\n“Let him go!” Solaine cries out. Everyone turns to look at her (go to 365).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "365"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "355",
+      "src": null,
+      "text": "You present the silk ribbon you found in the temple as evidence of the deed.\n“Maybelline’s ribbon,” Tomlin shouts. “Solaine, how did you get it?”\nSolaine is at a loss for words, her mouth hanging open. Tomlin rushes you, reaching for the ribbon but stops himself.\n“I gave that to her for her birthday,” he says. “Her… last birthday. And she was wearing it on the night. On the night you killed her!”\nEyes flashing with anger, Tomlin spins on Solaine and raises a fist. Luckily, two men from the crowd rush forward and hold him back. Chest heaving he shakes them off but returns to his companion. He jumps as she touches his arm, but when he looks over at her he seems to find some composure.\nIn the meantime, the townsfolk have backed away from Solaine leaving her small and isolated. But she isn’t looking at you. Her eyes are fixed on Tomlin and her mouth is pressed into a thin line.\n“Ahem,” says the aide as he adjusts a collar. “So have you any other evidence to present?”\nIf you haven’t done so yet and have them in your inventory, you can present the burnt clothing (go to 330) or the love letter (go to 318).\nOr you can let your case rest (go to 340).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present burnt clothing",
+              "nextFragmentId": "330"
+            },
+            {
+              "label": "Present love letter",
+              "nextFragmentId": "318"
+            },
+            {
+              "label": "Let your case rest",
+              "nextFragmentId": "340"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "356",
+      "src": null,
+      "text": "With a powerful blow from Solaine’s claws, you feel something tear in your throat. You try to scream but no sound comes out. Touching the gaping wound, your hands come away covered in blood.\nYou feel your life draining away as you wobble on your feet.\n“Farewell, adventurer,” Solaine growls. “Maybe we will meet again in another life.”\nYou collapse but the world fades to black before you hit the ground.\nYou are dead.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "357",
+      "src": null,
+      "text": "You accuse Tomlin, the village herbalist, of killing Maybelline. His eyes go wide and there’s a gasp from the crowd. A few women can even be heard letting out a short scream. The young woman next to him clutches his arm. The mayor’s aide scribbles the name into his document and hands it to you.\nAdd accusation against Tomlin to your inventory.\nThe aide holds up his hands for quiet. “Do you have any evidence to support your accusation?”\nIf you have the scrapling claw in your inventory and want to present it as evidence, go to 323. If you want to proceed without evidence, go to 331.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present the scrapling claw",
+              "nextFragmentId": "323"
+            },
+            {
+              "label": "Proceed without evidence",
+              "nextFragmentId": "331"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "358",
+      "src": null,
+      "text": "There’s a loud crack and a shower of brightly sparkling motes of light around the Silverstar. Solaine jerks and howls long and low to echo through her underground lair.\nAs the lights continue to dance and spin down to earth, Solaine’s transformation proceeds in reverse. The fur covering her body retracts back into her skin, and her limbs shorten and contract into her human form. Her howl becomes a scream and she drops to her knees on the ground.\n“No, no, no!” she yells, gathering the tatters of her robes around herself. “Dear gods, no!”\nShe looks down at her small, pale hands still stained with Tomlin’s blood and then up at you. Tears are streaming down her face.\n“How dare you take that away from me,” she demands. “Now I’m just… me again.”\nShe collapses to the ground, sobbing bitterly into her red-stained hands. Roi and Mayor Anathram step back to a respectful distance as militia members flank her and gently carry off the broken cleric (go to 338).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "338"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "359",
+      "src": null,
+      "text": "You present the wanted poster you rescued from the fire as part of your case against the mayor and tell the story of Horace and Titch’s visit. You include the fact that the bandits had told Maybelline about the mayor’s secret past.\nAnd the warrant is for the capture of Mayor Tanya Anathram - formerly The Wolf of the Road - for the murder of a Three Rivers constable. The punishment is death, something she might kill to avoid.\n“Is this true?” the aide asks. “Were you once this… Wolf of the Road?”\nIn response, the mayor’s jaw clenches but she nods.\n“And were you responsible for this man’s death?”\n“The men I led killed him,” the mayor says, her voice shaking for a moment. “So yes, I was responsible.”\nThe gathered crowd makes their voices heard, however. And every one is raised in support of the mayor.\n“We don’t believe it!” cries one man. Another calls out, “We don’t care about your past!” A woman shouts, “We love you, mayor!”\nMayor Anatrham’s jaw trembles for a moment and her eyes glisten with tears. It takes her aide shouting down the crowd to finally achieve quiet.\nAs the din subsides, she looks at you and says, “You’re an idiot.”\nBefore you can respond, a single sharp high laugh rings out over the town square. Solaine is laughing at you (go to 344).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "344"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "360",
+      "src": null,
+      "text": "You run at your top speed through the empty streets of Langston, sprinting to the southwest towards the temple. Your blood is rushing in your ears and your lungs are burning as you hope that you are going in the right direction.\nThe cobblestones of the street fly past below you and the walls of the people's homes and businesses loom to either side framing the morning sky. As you run, however, the sky’s blue darkens to the red of an approaching sunset.\nAfter making a couple of turns almost by instinct, you come to the four-way intersection in front of the mayor’s home. You stop to get your bearings and catch your breath.\nA man’s scream - loud and high with terror - pierces the air from straight ahead. Then stops suddenly. You renew your pursuit, dashing again towards the southeast.\nYou pass through the cemetery on your way to the temple, and everything there is still and quiet. The only movement you can see is a gathering flock of crows or ravens around the courtyard. You’re sure you’re too late, but you redouble your speed regardless.\nBut your hopes are dashed as soon as you enter the temple courtyard.\nTomlin lies dead in a spreading pool of his own blood, dark birds already preparing to scavenge from the corpse. The morning sun hangs in a sky that seems stained by the blood on the ground.\nLooking around, Solaine is nowhere to be found. However, evidence of her passing is visible in the claw marks left on the ground, a trail of blood, and the smashed-in door to the temple.\nFollow Solaine into the temple to finish this (go to 324) or stay back and first examine the murder scene (go to 342).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Follow Solaine",
+              "nextFragmentId": "324"
+            },
+            {
+              "label": "Examine the scene",
+              "nextFragmentId": "342"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "361",
+      "src": null,
+      "text": "You announce that you do not have any evidence, but you are sure that Solaine did it.\n“Do you expect us to just take your word for it?” the aide asks incredulously. “A pillar of our community doing something so heinous as-”\n“But the adventurer is right.”\nEveryone turns to Solaine, who is now standing straight and alone as people back away from her. The mayor makes a subtle gesture to the two militia members flanking her, and they move cautiously closer to the cleric.\n“It doesn’t matter anymore,” she says firmly and clearly, and you can see madness in her growing smile (go to 320).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "320"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "362",
+      "src": null,
+      "text": "You declare Tanya Anathram - mayor of Langston - as the killer. The aide visibly jumps. He’s so startled and the mayor’s scowl feels hot enough to set you on fire. The crowd goes silent. The aide visibly pales but he still writes the mayor’s name onto the accusation. He then hands you the document.\nAdd accusation against Mayor Anathram\n“What evidence do you have of your claim?” the aide asks, cutting a nervous look to his employer.\nIf you have the wanted poster and warrant in your inventory and want to present them as evidence, go to 359.\nIf you do not have any evidence that you want to present, go to 319.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Present wanted poster/warrant",
+              "nextFragmentId": "359"
+            },
+            {
+              "label": "No evidence",
+              "nextFragmentId": "319"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "363",
+      "src": null,
+      "text": "In the dim light of the magical illumination, you quickly figure out that while the corridors twist a couple of times, they all lead to the same place: a large chamber where it seems Solaine has made a lair for herself.\nWhen you arrive, the cleric is still in werewolf form and crouching in the center of the room. She stares at her bloodied claws, huffing out canine whines. You approach cautiously, but there’s nowhere to hide so you make no attempt at stealth.\nShe notices you immediately but doesn’t move from where she is.\n\n“You shouldn’t be here,” she growls. “Go away.”\n\nTry to talk to her (go to 328) or take action to immediately end the threat (go to 350).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Try to talk to her",
+              "nextFragmentId": "328"
+            },
+            {
+              "label": "End the threat now",
+              "nextFragmentId": "350"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "364",
+      "src": null,
+      "text": "In the ebb and flow of battle, Solaine tries to slash at you with claws and you try to connect with the magic item in your hand. In the eternity that is mortal combat, you are in a stalemate. Neither having the upper hand for a split second, you wonder if you have made a grave mistake in pursuing such a dangerous beast into her lair.\nBut then through the flurry of claws and teeth, you leap forward and manage to make contact with the Silverstar. Magic thuds out of the silver brooch into Solaine, locking both of you in place.\nAs you feel the magic of the brooch pouring out, Mayor Anathram and Roi lead a group of armed townspeople into the chamber. All of them stand rapt as you press the Silverstar harder into the werewolf (go to 358).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "358"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "365",
+      "src": null,
+      "text": "“You're a fool for accusing one of the truly good men of this town,” Solaine says, then points at Tomlin. “Nothing like him.”\nThe militia members who had approached Roi back away from him and position themselves between Solaine and Roi, but no one else moves.\nSolaine continues. “In such a world, a liar like Tomlin would never face justice except at the hands of one of his victims. I will see that he answers for what he does to the women of this town. For what he did to me!”\nClenching her fists, the air is filled with snapping and crackling, as if bone was being rent. Solaine’s body ripples and then starts to elongate. Her hands furl and clench before sprouting long claws and her smile twists into a snarling muzzle.\n“Oh no,” Roi gasps, looking at you. “It was her. She was the shapechanger.”\nSolaine’s change completes with her growing bulk straining and tearing at her clerical robes.\n“Oh dear friend,” she says to the druid. “You can say it.”\n“She’s a werewolf,” Roi says, his voice cracking under sadness.\nSolaine chuckles deep in her throat. “Now, stand aside. I’ll be taking him now.”\nAs you follow her gaze, you see that she has her eyes fixed on Tomlin.\nEither too stunned or too brave to step out of the way, the militia members hold their position even when Solaine charges them. With almost casual swipes of her claws, she tears through both men and leaves them to collapse in sprays of their own blood.\nThen she leaps at Tomlin (go to 329).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "329"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "366",
+      "src": null,
+      "text": "“I must admit, I suspected Tomlin also,” Mayor Anathram says. “So I don’t fault you for error. The results were the same.”\n“Talking to that lad always left a funny taste in my mouth,” Roi says. “Like sugar and covering up something that had spoiled. But he didn’t deserve what he got.”\nThe mayor produces a heavy pouch laden with coins. She hands it to you as your fee.\nAdd 300 gp to your inventory. If you are using milestones for your character, gain 1 level. (Or if you are using experience points, get 600 XP.) You also keep any other items and treasure you have collected on your adventure.\nBut Mayor Anathram and Roi aren’t quite done with you (go to the end of the adventure).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Gold",
+          "quantity": 300,
+          "description": "Add 300 gp to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue to end of adventure",
+              "nextFragmentId": "999"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "367",
+      "src": null,
+      "text": "“I must say that one hurt, adventurer,” Roi says sadly. “But I’m willing to let bygones be bygones. You did a great thing back there, and saved many more people from whatever Solaine has become.”\n“You were not correct,” the mayor says to you. “But you did get the correct results. So please take this reward with thanks from Langston.”\nAdd 300 gp to your inventory. If you are using milestones for your character, gain 1 level. (Or if you are using experience points, get 600 XP.) You also keep any other items and treasure you have collected on your adventure.\n“You earned that,” Roi says to you. “But maybe you should switch to smashing skulls instead of sniffing clues.”\n“Indeed,” the mayor says. “But now I would like to bring up other business.”\nYou nod and Roi settles deeper into his seat, trying not to show he’s not looking at you (go to the end of the adventure).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Gold",
+          "quantity": 300,
+          "description": "Add 300 gp to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue to end of adventure",
+              "nextFragmentId": "999"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "368",
+      "src": null,
+      "text": "“Despite your end result, you are so shockingly stupid,” Mayor Anathram says. She’s clearly frustrated, but she also seems a little hurt.\n“Wasn’t the mayor the one who hired you, adventurer?” asked Roi. “Seems like she wouldn’t have hired you to find herself.”\nGiven how the mayor and the druid are teaming up on you, it’s obvious where this is going.\n“We are reducing your fee,” the mayor says. “You will now have your expenses deducted from your reward.”\nYou look at Roi and he just shrugs. The mayor produces a heavy bag of coins from her desk, counts off some coins from the top, and hands you what’s left.\nAdd 275 gold to your inventory. If your character is using milestones, gain 1 level. (If you are using experience, gain 600 XP.) You also keep any other items and treasure you have collected on your adventure.\n“Despite our… disappointment,” Roi begins with a pointed look at the mayor. “We still have the little matter of the dead needing to be tucked back in. Let’s talk more.”\nYou indicate that you’re listening (go to the end of the adventure).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Gold",
+          "quantity": 275,
+          "description": "Add 275 gp to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue to end of adventure",
+              "nextFragmentId": "999"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "369",
+      "src": null,
+      "text": "“Solaine had us all fooled,” Roi says sadly. “She was well-liked. Loved even. Such a sad turn of events.”\n“But now the people of Langston can rest a little easier,” Mayor Anathram says. “You have their gratitude. And mine.”\nShe hands you a large coin pouch, and it’s considerably heavier than you’d expected.\nAdd 350 gp to your inventory. If you are using milestones, gain 1 level. (If you are using experience, gain 600 XP.) You also keep any other items and treasure you have collected on your adventure.\n“You earned every copper of that, adventurer,” Roi says.\n“But we are hoping it does not satisfy you fully,” the mayor says. “We have further business to discuss.”\nYou stow your coin as best you can given its weight and ask the mayor to continue (go to the end of the adventure).\nTHE END OF THE ADVENTURE\nLooking back over the past few days, it feels like a much longer stay in the unassuming town of Langston. You’ve destroyed monsters big and small, cured diseases, broken curses, and likely even made a few friends.\nBut the mayor and the druid want you to remain in Langston for a while longer.\n“While it’s been challenging,” Roi says. “There is still much to do.”\n“Solaine is in custody,” Mayor Anathram says. “But it is unclear if she still poses a threat now that her curse is broken.”\nRoi continues, “And her actions have clearly severed her connection to her divine power. But she’s just so… calm. She is powerless, trapped, and just sitting in that cell. Like she’s waiting for something.”\n“There is also now the problem of the undead,” Mayor Anathram says, and she seems suddenly tired.\n“Now that there is no cleric of the Radiant Order, the dead are not staying that way,” Roi says. “And there could be serious consequences to the temple being too long without a member of the Radiant Order maintaining the town’s protections.”\n“You have fulfilled your obligations to us, adventurer,” says the mayor. “But I hope you will help us again.”\n“Come on,” Roi says with a wink. “You know whatever comes next will be fun.”\nIf you end the adventure here, you keep all inventory items and levels you’ve earned.\nSo it’s up to you, adventurer. If you bid Langston and its people farewell, stop reading here.\nOr continue to the epilogue and finish what you’ve started (go to 370).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Gold",
+          "quantity": 350,
+          "description": "Add 350 gp to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue to end of adventure",
+              "nextFragmentId": "999"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "999",
+      "chapterEnd": true,
+      "src": null,
+      "text": "THE END OF THE ADVENTURE\nLooking back over the past few days, it feels like a much longer stay in the unassuming town of Langston. You’ve destroyed monsters big and small, cured diseases, broken curses, and likely even made a few friends.\nBut the mayor and the druid want you to remain in Langston for a while longer.\n“While it’s been challenging,” Roi says. “There is still much to do.”\n“Solaine is in custody,” Mayor Anathram says. “But it is unclear if she still poses a threat now that her curse is broken.”\nRoi continues, “And her actions have clearly severed her connection to her divine power. But she’s just so… calm. She is powerless, trapped, and just sitting in that cell. Like she’s waiting for something.”\n“There is also now the problem of the undead,” Mayor Anathram says, and she seems suddenly tired.\n“Now that there is no cleric of the Radiant Order, the dead are not staying that way,” Roi says. “And there could be serious consequences to the temple being too long without a member of the Radiant Order maintaining the town’s protections.”\n“You have fulfilled your obligations to us, adventurer,” says the mayor. “But I hope you will help us again.”\n“Come on,” Roi says with a wink. “You know whatever comes next will be fun.”\nIf you end the adventure here, you keep all inventory items and levels you’ve earned.\nSo it’s up to you, adventurer. If you bid Langston and its people farewell, stop reading here.\nOr continue to the epilogue and finish what you’ve started (go to 370).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "End the adventure now",
+              "actions": "gameOver"
+            },
+            {
+              "label": "Continue to the epilogue",
+              "nextFragmentId": "370"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

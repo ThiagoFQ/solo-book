@@ -1,0 +1,1648 @@
+{
+  "fragments": [
+    {
+      "fragmentId": "237",
+      "chapterTitle": "Speaking with Solaine",
+      "src": null,
+      "text": "The sun temple is easy to find as it towers over every other in Langston, piercing the sky on the eastern edge of town. As you approach, you see that unlike the timber walls and whitewash of the rest of the town, the temple is made from limestone that shines in the morning sun even though it is scoured with centuries of rain and wind. This building was here long before the rest of the town, and it will likely continue standing long after Langston is lost to history.\nIt's early when you arrive. The entry to the temple faces west, so as you approach the morning sun seems to sink behind the spire. The courtyard in front of the temple contains an altar left open to the sun surrounded by theater-style seating covered with a tile roof. The top of the altar is adorned with the same sunburst symbol you see on the temple spire.\nAs you approach, a single large door presents itself as the obvious entrance. When you push against it, the door swings open easily to reveal a round room with benches around the walls. Passages branch off to the other cardinal points of the compass.\nHowever, the cleric is not there as you had been led to believe.\nYou can call out (go to 272) or explore one of the passages looking for her (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Call out",
+              "nextFragmentId": "272"
+            },
+            {
+              "label": "Explore a passage",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "238",
+      "src": null,
+      "text": "You move the closet and it grates against the floor. You retrieve a single ribbon that has fallen behind it and then push the furniture back into place.\nNow that you have it, you take a closer look at the ribbon (go to 247).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "247"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "239",
+      "src": null,
+      "text": "It's not Celestial and you can't understand it. However, you see some twisted echoes of Celestial in the text as you flip through the book itself.\nIt could still be Infernal (go to 292) or Abyssal (go to 300).\nIf you don't know any of these languages, you can instead use a spell or ability that lets you read other languages (go to 261), or you can open the book anyways (go to 249).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Infernal",
+              "nextFragmentId": "292"
+            },
+            {
+              "label": "Abyssal",
+              "nextFragmentId": "300"
+            },
+            {
+              "label": "Use spell or ability to read languages",
+              "nextFragmentId": "261"
+            },
+            {
+              "label": "Open the book anyway",
+              "nextFragmentId": "249"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "240",
+      "src": null,
+      "text": "You take a closer look at the door and the area around it. At a glance, there’s nothing unusual about the entrance at all. It is just a wooden door set in a stone frame with bronze hinges.\nRoll an Intelligence (Investigation) check. If you get 15 or more, go to 263. If you get less than 15, go to 287.",
+      "actions": {
+        "roll": {
+          "stat": "Intelligence",
+          "skill": "Investigation",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "263",
+              "description": "You find something unusual about the door."
+            },
+            "failure": {
+              "nextFragmentId": "287",
+              "description": "You fail to notice anything unusual."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "241",
+      "src": null,
+      "text": "You perform a visual examination of the indent on the floor.\nRoll an Intelligence (Investigation) check or Wisdom (Perception) check.\nIf you get 15 or more, go to 266. If you get less than 15, go to 283.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Intelligence (Investigation)",
+              "roll": {
+                "stat": "Intelligence",
+                "skill": "Investigation",
+                "threshold": 15,
+                "outcomes": {
+                  "success": {
+                    "nextFragmentId": "266",
+                    "description": "You discover something about the indent."
+                  },
+                  "failure": {
+                    "nextFragmentId": "283",
+                    "description": "You fail to discover anything new."
+                  }
+                }
+              }
+            },
+            {
+              "label": "Wisdom (Perception)",
+              "roll": {
+                "stat": "Wisdom",
+                "skill": "Perception",
+                "threshold": 15,
+                "outcomes": {
+                  "success": {
+                    "nextFragmentId": "266",
+                    "description": "You notice something about the indent."
+                  },
+                  "failure": {
+                    "nextFragmentId": "283",
+                    "description": "You fail to notice anything else."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "242",
+      "src": null,
+      "text": "It’s a love letter written in cringeworthy verse to express affection for Solaine. Little more than an overdone limerick, the tract is titled A Thyme for Love in the Sun and is signed by Tomlin.\nGiven that it includes lines like “your toes are dainty as the red rose” and “putting pansies forever into your handsies” you can’t bring yourself to do more than scan the poem.\nYou feel no value in taking this and you are surprised Solaine keeps it at all. Every line was worse than the last, and you feel dumber for having read it once. You put the poetry back in the envelope and return it to the nightstand and hope the gods have mercy on whoever wrote it.\nIf you haven't done so yet, you can look at the wardrobe (go to 275). Or you can leave and return to the entry hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the wardrobe",
+              "nextFragmentId": "275"
+            },
+            {
+              "label": "Return to entry hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "243",
+      "src": null,
+      "text": "At first, you think it's a beautiful bit of tilework depicting the same sun symbol adorning the rest of the temple surrounded with concentric rings of sunbeams and rays. It takes a moment for you to realize that there are no visible tiles at all, so either the whole floor was carved from a single enormous stone or magic was a big part of the building’s construction.\nLost in the shining patterns on the floor, you catch your foot on something as you are walking around. The central holy symbol isn't perfectly flat and is slightly indented. The shape of the indent is a much smaller sunburst, about the size of a gnome’s hand with its fingers outstretched.\nYou can visually examine the indent (go to 241), explore using mason's or thieves' tools (go to 308), or use a weapon to probe the indent (go to 259).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Visually examine indent",
+              "nextFragmentId": "241"
+            },
+            {
+              "label": "Use mason's or thieves' tools",
+              "nextFragmentId": "308"
+            },
+            {
+              "label": "Use a weapon to probe it",
+              "nextFragmentId": "259"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "244",
+      "src": null,
+      "text": "The stovetop looks like it hasn't been used in some time due to the dust on top of it. However, there is a considerable amount of ash on the floor.\nLooking inside the stove, you find the charred remains of some articles of clothing.\nExamine the clothes more carefully (go to 269) or put them back (go to 298).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the clothes more carefully",
+              "nextFragmentId": "269"
+            },
+            {
+              "label": "Put them back",
+              "nextFragmentId": "298"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "245",
+      "src": null,
+      "text": "You see several empty monastic cells with doors standing open. A quick count reveals that there are thirteen rooms, with six on each side of the hall and one at the far end. Only the door at the end of the hall is closed, presumably the cleric's room.\nYou head down the hallway towards the locked door. A skylight runs the length of the hall letting in the morning sunshine.\nThe floors and walls inside are the same light-colored stone as the outside of the temple, and while smoother than the outside’s weathered stone they do not have much luster. Dust and cobwebs lurk in the corners that can catch them, especially those crevices that are hard to reach. The floor does not seem to have been polished in a lifetime.\nSome of the open doors reveal aging furniture silently collecting dust while others are just as stark and bare as prison cells. Your footsteps against the hard floor create echoes of echoes that come and go from room to room. The air smells of the strange aroma of dust bathed in sunlight.\nOnce you reach the door through the gauntlet of oppressive stillness, you may knock (go to 253), open the door and walk in (go to 302), or examine the door and area around it (go to 240).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Knock on the door",
+              "nextFragmentId": "253"
+            },
+            {
+              "label": "Open the door and walk in",
+              "nextFragmentId": "302"
+            },
+            {
+              "label": "Examine the door/area around it",
+              "nextFragmentId": "240"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "246",
+      "src": null,
+      "text": "Gain Inspiration.\nYou defeat the undead creature, and what remains of it falls to the ground lifeless once again.\nYou can now examine the corpse for injuries you did not cause (go to 262) or go back to the temple to let Solaine know what you found (go to 250).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the corpse",
+              "nextFragmentId": "262"
+            },
+            {
+              "label": "Return to temple (report to Solaine)",
+              "nextFragmentId": "250"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "247",
+      "src": null,
+      "text": "The ribbon is a lavender strip of silk - like the one a girl or young woman might wear in her hair. It's tied tightly into a tangle of knots and seems to have something stitched on it.\nThe ribbon is relatively free of dust, suggesting it has not been behind the wardrobe long. However, it's also visibly blood-stained.\nAdd embroidered silk ribbon to your inventory.\nIf you haven’t done so, you can look around the bed (go to 311) or if there’s nothing else to explore here you can return to the front hall (go to 296).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Embroidered Silk Ribbon",
+          "quantity": 1,
+          "description": "A lavender blood-stained ribbon found behind the wardrobe."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Look around the bed",
+              "nextFragmentId": "311"
+            },
+            {
+              "label": "Return to front hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "248",
+      "src": null,
+      "text": "Solaine looks shocked for a moment and studies your face carefully as she brushes at her dirty robes. Apparently satisfied with what she sees, the young cleric takes a deep breath and gestures to the tapestries hanging around you both.\n“This temple was raised hundreds of years ago, long before Langston was here, these lands were ruled by the dead. The Order of Radiant Light consecrated these grounds to prevent the dead from rising, but it was not enough. Some fell magic corrupted the soil so that the dead buried in it rose again. Ashes scattered upon it returned as malevolent spirits.”\nShe pauses for a moment, clenching a fist and struggling with some overwhelming emotion. When she continues, her voice shakes slightly.\n“So to protect the land, a caretaker was installed. As long as the power of the Order of Radiant Light remained in the temple, the land would be still. At least one member of our order has been present in Langston ever since. It is our duty to keep these lands safe as much as it is Roi’s.”\nYou thank Solaine for the story.\n“But you aren’t here for a history lesson. What can I do for you?”\nIf you’re still curious, you can ask about her relationship with Tomlin (go to 315) or why the temple is so big (go to 268).\nOr if you don’t have any more questions, you can ask the cleric to see Maybelline’s body (go to 289).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about relationship with Tomlin",
+              "nextFragmentId": "315"
+            },
+            {
+              "label": "Why is the temple so big?",
+              "nextFragmentId": "268"
+            },
+            {
+              "label": "Ask to see Maybelline’s body",
+              "nextFragmentId": "289"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "249",
+      "src": null,
+      "text": "Images in the book include various forms of black sun iconography, some sketches of circles surrounded by glyphs you can't recognize, and some diagrams of nasty-looking tools that could be weapons, torture implements, or specialized butcher’s tools.\nA whole section is also devoted to what seems to be the study of corpses or bones.\nAs you're leafing through the book, you find a small scrap of paper written in common. It says \"This one.\" and it marks an entry that has images of what seem to be animated corpses.\nThere is a variety of walking dead from mere skeletal remains to corpses with their rotting flesh intact. There are even illustrations of ghouls hunched over other corpses feeding on the flesh of the dead.\nWithout context, you aren’t sure what is being said but the illustrations are ominous enough.\nIf you haven’t done so already, you can examine the book on curses (go to 281) Or if you have nothing else to do in the library, you return to the front hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the book on curses",
+              "nextFragmentId": "281"
+            },
+            {
+              "label": "Return to front hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "250",
+      "src": null,
+      "text": "Solaine is surprisingly still in the front entry hall. She is staring up at a tapestry showing holy warriors radiating sunbeams destroying an army of skeletons.\nShe jumps and stifles a shriek when you rush into the temple’s entry hall.\n“You’re… back? So soon, I mean? What did you learn?”\nWhen you tell her what you just saw, and that you had to kill poor Maybelline a second time.\n\"It shouldn't be possible,\" Solaine whispers over and over as she clutches her holy symbol.\nShe ignores you and the silence stretches into an awkward length of time. You can interrupt her reverie (go to 306), wait for her to snap out of it (go to 273), or just leave (go to 252).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Interrupt her reverie",
+              "nextFragmentId": "306"
+            },
+            {
+              "label": "Wait",
+              "nextFragmentId": "273"
+            },
+            {
+              "label": "Just leave",
+              "nextFragmentId": "252"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "251",
+      "src": null,
+      "text": "Add love letter to your inventory.\nIf you haven't done so yet, you can examine the black tome more closely (go to 314).\nOr you can leave the library and look for Solaine elsewhere in the temple (go to 296).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Love Letter",
+          "quantity": 1,
+          "description": "A love letter from the library."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the black tome",
+              "nextFragmentId": "314"
+            },
+            {
+              "label": "Leave the library",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "252",
+      "src": null,
+      "text": "You leave Solaine anxiously talking to herself at the temple and hurry back to town hall. The mayor’s aide greets you at the door and escorts you to her office.\n“Did you learn anything new?” she says instead of a greeting as she is writing in some document with a wooden ink pen.\nYou let her know that Maybelline’s corpse rose to attack you. The mayor sets down her pen and gives you her whole attention. You explain everything you saw in the cemetery.\n“That shouldn't be possible!” blurts the aide in the first real emotion you’ve seen him express. “The temple and its cleric are meant to protect the town. Is the magic fading? What of Solaine? What is she doing about it?”\nYou say that you left her in the temple and it’s not clear what she will do next.\n“Compose yourself,” the mayor says to her aide before addressing you. “With this new threat, we must complete the murder investigation.”\nThe mayor orders the aide to call up the militia to patrol the graveyard, especially at night. And draw up a proclamation announcing the accusation of Maybelline’s murderer.\n“First Maybelline and now this,” the aide mumbles as he leaves the office. “Maybe it’s time to go to school in the city like Mother wants.”\n“We could use your help patrolling the streets tonight,” the mayor says. “If you can manage after your ordeal today.”\nGet a good night’s sleep (go to 282) or go on patrol with the militia (go to 301).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Get a good night's sleep",
+              "nextFragmentId": "282"
+            },
+            {
+              "label": "Go on patrol",
+              "nextFragmentId": "301"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "253",
+      "src": null,
+      "text": "There is no answer.\nOpen the door and walk in (go to 302) or examine the door and the area around it (go to 240).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Open the door and walk in",
+              "nextFragmentId": "302"
+            },
+            {
+              "label": "Examine the door/area",
+              "nextFragmentId": "240"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "254",
+      "src": null,
+      "text": "Gain Inspiration.\nThere is an undercurrent of fear in the cleric’s refusal to see the body, but the source of the fear is unclear. You mention that it’s fine and that there is nothing to be afraid of.\n“Afraid? Oh goodness no,” she says. “I- I was just thinking of the poor family is all. And she is so badly hurt. But if you insist, then I suppose I can’t stop you. Just be careful! Don’t damage the body.”\nShe then gives you directions to the cemetery adjoining the temple and says that the body is lying in rest in the mausoleum. The altar there is enchanted to prevent the body’s decay as it waits a week for interment.\nYou thank her and leave. She smiles faintly and turns her attention to gazing at the tapestries. As you reach the door, you can faintly hear Solaine begin shuffling back and forth, muttering under her breath again. You leave her to her one-sided conversation and head out of the cemetery (go to 293).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the cemetery",
+              "nextFragmentId": "293"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "255",
+      "src": null,
+      "text": "These are almost certainly burned holy vestments, but they were not in good condition when they went into the fire. Many of the seams burst long ago, as you can see charred threads. And on one cuff, you can find a few droplets of what could be blood.\nAs you handle the cloth, however, it crumbles in your hands.\nIf you haven't done so yet, you can look at the larder (go to 310), or the dining room (go to 277).\nIf you're finished in the kitchen and dining room, you can go back to the entryway (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the larder",
+              "nextFragmentId": "310"
+            },
+            {
+              "label": "Look at the dining room",
+              "nextFragmentId": "277"
+            },
+            {
+              "label": "Return to entryway",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "256",
+      "src": null,
+      "text": "Solaine remains unconvinced that it’s a good idea for you to examine the body.\n“It’s just not appropriate,” she says. “I couldn’t do that to the poor girl’s family.”\nWith no other choice available, you present the mayor’s letter to her. She reads through it, a frown creasing her brow. Finally, she sighs and hands it back to you.\n“I suppose I have no choice in the matter then,” she says. “You’ll find Maybelline in the cemetery’s mausoleum. An altar there is enchanted to preserve her until her burial. You will find the body there.”\nYou thank Solaine and say goodbye. She smiles a moment and nods, then turns her attention to the tapestries in the entry hall as you leave the temple.\nGo to the cemetery (go to 293).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the cemetery",
+              "nextFragmentId": "293"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "257",
+      "src": null,
+      "text": "Gain Inspiration.\nThe tapestries depict an ancient order of sun-worshippers. They erected this tower hundreds - maybe even thousands - of years ago to prevent some dark magic or undead plague.\nBased on other similar tales, as long as one of their order remains present and dedicated to the light, the area is sanctified and no monsters will rise from the grave.\nIf you haven't done so, you can examine the beautiful mosaic on the floor (go to 243).\nIf there's nothing left to examine, you must simply resign yourself to waiting for the cleric (go to 294).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the mosaic",
+              "nextFragmentId": "243"
+            },
+            {
+              "label": "Wait for the cleric",
+              "nextFragmentId": "294"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "258",
+      "src": null,
+      "text": "A large door to the north opens into a sizable library with several reading tables in the middle of the room. The three walls you can see are completely covered in bookshelves. A small stack of books and scrolls also rests on one table. No one is there.\nYou approach a pile of books and scrolls made up of mostly religious texts and rituals, but you identify a few tomes of history as well.\nIt seems to be what you'd expect a cleric to reference around the time of a funeral, including the source Solaine referenced in the funeral, as well as a treatise on the treatment of common curses.\nStanding out among the leather-bound tomes is a single black book that is bound with some other skin. A tarnished metal lock lies open on this tome and its title is written in a script other than Common.\nRead the book on curses (go to 281) or examine the black book (go to 314).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Read the book on curses",
+              "nextFragmentId": "281"
+            },
+            {
+              "label": "Examine the black book",
+              "nextFragmentId": "314"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "259",
+      "src": null,
+      "text": "You wedge a sharp tip or edge into the indent or tap it with a heavy bit of a bludgeoning weapon. You can feel the mechanism shudder, so something is happening.\nRoll a Dexterity check. If you roll 15 or more, go to 316. If you roll below 15, go to 285.",
+      "actions": {
+        "roll": {
+          "stat": "Dexterity",
+          "threshold": 15,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "316",
+              "description": "You successfully trigger the mechanism."
+            },
+            "failure": {
+              "nextFragmentId": "285",
+              "description": "You fail to trigger the mechanism correctly."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "260",
+      "src": null,
+      "text": "No matter how hard you try, you just can't get the closet to budge.\nIf you haven't yet, you can examine the bed and nightstand (go to 311). Or if you're finished in the sleeping chambers, you can return to the front hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine bed and nightstand",
+              "nextFragmentId": "311"
+            },
+            {
+              "label": "Return to front hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "261",
+      "src": null,
+      "text": "With your new-found magical clarity, you now know the book is written in Infernal and is called Turning from the Light. You can now read the book (go to 284).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Read the book now",
+              "nextFragmentId": "284"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "262",
+      "src": null,
+      "text": "Besides the wounds you've inflicted, the body seems to have been mauled by a wild animal. The claw marks are broad and deep, not what you'd expect from bony claws or even most beasts of the forest.\nThere's a rage to the pattern of claw marks as well, with many crisscrossing and seemingly at random.\nThere is also the bouquet of pink flowers with a tag that the creature discarded that you can examine (go to 307) or you can go back to the temple to speak with Solaine (go to 250).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the bouquet",
+              "nextFragmentId": "307"
+            },
+            {
+              "label": "Return to temple, speak with Solaine",
+              "nextFragmentId": "250"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "263",
+      "src": null,
+      "text": "The only things that are out of place are that the door's latch seems unusually scratched and a bit bent. It’s as if someone who was both unusually strong and unfamiliar with how to operate the latch had grown frustrated with the door. The scratches are reminiscent of either claw marks or tool marks, but it’s hard to tell which.\nThere is also a smear of what appears to be dark soil on the threshold. You can’t tell anything more about who - or what - left the earth on the ground but it smells less of fertile soil than it does of rot and mildew.\nYou can knock (go to 253) or try to open the door (go to 302).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Knock on the door",
+              "nextFragmentId": "253"
+            },
+            {
+              "label": "Open the door",
+              "nextFragmentId": "302"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "264",
+      "src": null,
+      "text": "As you approach, you see that the earth was hastily dug up. But from underneath.\nPoking up through the earth and bits of rotted casket, you can see a skeleton frozen in what seems like an attempt to free itself from the earth and reach the sky. It's still, but its skull is cracked and sits at a lopsided angle. A broken stone from the path lies half buried in the freshly dug earth.\nBased on the amount of decomposition and the headstone, this person has been dead for decades. However, besides the fact that the skeleton is half-hanging out of a mound of fresh black earth, bits of thin wood and dirt on the skeleton’s fingers indicate that it dug its way out. It seems these remains had at least a brief respite from being fully dead.\nWhatever magic reanimated the skeleton is gone, however. There is a large crack in its skull and a broken piece of paving stone nearby half-buried in the unusually dark soil, as if someone threw the flat stone a second time.\nThough odd, you can’t see anything threatening about the disturbed grave. It’s time to do what you came for and examine Maybelline’s body (go to 276).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine Maybelline’s body",
+              "nextFragmentId": "276"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "265",
+      "src": null,
+      "text": "As you back away, you must shift your weight somehow to unstick whatever mechanism is keeping the indent partially open. With a faint \"click\" the sun-shaped opening returns to its hidden state. The seams vanish entirely.\nSomething in the floor also grinds into place. Despite your best efforts, nothing remains of the indent in the floor. If you haven’t done so yet, you can look at the tapestries (go to 290).\nIf you've already explored everything then you can settle in to continue waiting for the cleric (go to 294).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the tapestries",
+              "nextFragmentId": "290"
+            },
+            {
+              "label": "Wait for the cleric",
+              "nextFragmentId": "294"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "266",
+      "src": null,
+      "text": "Gain Inspiration.\nHairline cracks are visible radiating out from the indent. They are even and manufactured, as if the floor might open.\nAnd upon closer inspection, this looks like the right size and shape to accommodate a sun-shaped amulet like the one you saw the cleric wearing during the funeral.\nYou can either try to press on the sunburst shape (go to 303) or leave it alone (go to 265).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Press the sunburst shape",
+              "nextFragmentId": "303"
+            },
+            {
+              "label": "Leave it alone",
+              "nextFragmentId": "265"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "267",
+      "src": null,
+      "text": "This passage is essentially a foyer leading to a pair of double doors with one left open on stuck hinges. Inside is a large dining hall containing five large round tables of smooth wood, each surrounded by eight chairs. The walls are bare except for tall windows with frosted glass letting in the morning sunlight.\nAt the far end of the room, there’s a door that leads into an adjoining kitchen. Through the open door, you can’t see any windows in the kitchen but it is still well-lit.\nYou can either explore the dining room (go to 277) or look in the kitchen (go to 280).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Explore the dining room",
+              "nextFragmentId": "277"
+            },
+            {
+              "label": "Look in the kitchen",
+              "nextFragmentId": "280"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "268",
+      "src": null,
+      "text": "Solaine looks around as if seeing the temple for the first time.\n“Oh, it is rather large, isn’t it?” she says with a smile. “Apparently, there was a time that being caretaker of the temple wasn’t a solitary post. There was a whole community full of protectors. But that… just isn’t the case anymore.”\nYou ask how that changed so much over time.\n“Most people don’t even know why the temple is here anymore,” she says, gesturing up at the tapestries hanging on the walls. “But the temple is why Langston is here. The temple keeps the dead in their graves. Or it has until now anyway…”\nShe trails off and you’re about to ask her more before she looks back at you with an unusually big smile.\n“And why it will continue to do so for as long as the Order of Radiant Light remains in place here at the temple. It only needs one of us to fulfill the terms of the spell. So I’m here alone, only going on a pilgrimage to my order’s enclave and returning before the magic can fade.”\nShe pauses, rubbing her hands on her robe but still smiling at you. “I won’t lie, though. It does get lonely from time to time, so thanks so much for stopping by. What else can I do for you?”\nIf there’s still more you want to know, you could ask about Solaine’s connection to Tomlin (go to 315) or about how undead might be connected to the temple (go to 248).\nIf you have nothing else you want to know, then you just ask about seeing Maybelline’s body (go to 289).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about Solaine’s connection to Tomlin",
+              "nextFragmentId": "315"
+            },
+            {
+              "label": "How might undead be connected to the temple?",
+              "nextFragmentId": "248"
+            },
+            {
+              "label": "Ask to see Maybelline’s body",
+              "nextFragmentId": "289"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "269",
+      "src": null,
+      "text": "You take a closer look at the burnt clothes. Roll a Wisdom (Perception) or related tool proficiency check.\nIf you roll 10 or more, go to 255. If you roll under 10, go to 313.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Wisdom (Perception) >= 10",
+              "nextFragmentId": "255"
+            },
+            {
+              "label": "Roll < 10",
+              "nextFragmentId": "313"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "270",
+      "src": null,
+      "text": "You take a seat and wait for a bit, even looking down the various passages to see if she somehow managed to sneak by you. But the cleric still has not returned.\nYou entertain yourself by looking around you. The gold-inlaid mosaic on the floor is spectacular. You kick at the gold for a moment and realize it has been magically fused to the floor itself in the same sunburst motif that is used throughout the temple.\nFurther up, aging tapestries hang on the walls depicting some epic event involving holy magic and evil undead. The tapestries rise up the walls of the tower alternating with the windows overflowing with morning sunlight that dances in floating motes of dust.\nTo pass the time, you can examine the tapestries (go to 290) or take a closer look at the mosaic on the floor (go to 243).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the tapestries",
+              "nextFragmentId": "290"
+            },
+            {
+              "label": "Look at the mosaic",
+              "nextFragmentId": "243"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "271",
+      "src": null,
+      "text": "The tapestries depict holy figures wielding brightly shining light against some undead menace, but you lack context for the events you're seeing.\nIf you haven't done so, you can examine the beautiful mosaic on the floor (go to 243).\nIf there's nothing left to examine, you must simply resign yourself to waiting for the cleric (go to 294).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the mosaic on the floor",
+              "nextFragmentId": "243"
+            },
+            {
+              "label": "Wait for the cleric",
+              "nextFragmentId": "294"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "272",
+      "src": null,
+      "text": "Your voice echoes down the corridors and through the empty temple, but no one replies. It appears that you are alone in the temple, but you will have to explore to say for sure (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Explore the temple",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "273",
+      "src": null,
+      "text": "Solaine stands in relative silence for a moment before looking up at you, seemingly startled that you’re still there.\n“You should speak to the mayor,” she says. “And I must return to my studies. Yes, the answer should be in there. It must be in there.”\nShe rushes into the library down the northern passage and the door bangs shut behind her.\nWith nothing else happening here at the temple, you shrug and make your way to town hall to speak to the mayor (go to 252).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to town hall",
+              "nextFragmentId": "252"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "274",
+      "src": null,
+      "text": "You try to make Solaine see reason. You must see the body, and you go about making that very clear.\nRoll a Charisma (Persuasion) check against DC 12. If you get 12 or more, go to 304. If you get under 12, go to 256.",
+      "actions": {
+        "roll": {
+          "stat": "Charisma",
+          "skill": "Persuasion",
+          "threshold": 12,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "304",
+              "description": "You persuade Solaine successfully."
+            },
+            "failure": {
+              "nextFragmentId": "256",
+              "description": "You fail to persuade her."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "275",
+      "src": null,
+      "text": "The wardrobe is full of various religious vestments. Interestingly, one of the robes shows evidence of recent - and considerable - repair.\nYou also notice that the closet is not flush against the wall, and you can see something that seems to have fallen or been kicked behind the heavy piece of furniture.\nMove the wardrobe to look behind it (go to 299) or use some magical means to lift the barely-seen object out from behind the heavy piece of furniture (go to 312).\nOr if you haven't yet, you can check the bed and bedside table (go to 311). Alternatively, you can leave the chambers and return to the entry hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Move the wardrobe",
+              "nextFragmentId": "299"
+            },
+            {
+              "label": "Use magic to retrieve the object",
+              "nextFragmentId": "312"
+            },
+            {
+              "label": "Check bed and bedside table",
+              "nextFragmentId": "311"
+            },
+            {
+              "label": "Return to entry hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "276",
+      "src": null,
+      "text": "The mausoleum is a stone structure with a large, white limestone altar in the middle of the room. There are no windows, but it is lit with recessed orbs set into the ceiling casting bright light throughout the structure.\nThe body of a young woman is lying on the white slab. Even at this distance, you can see deep gouges across the woman’s face, neck, and forearms. She clutches a ragged bouquet of pink flowers in her hands.\nA white sheet, presumably used to cover the body, is lying on the ground at the base of the altar. You freeze as the body slowly turns its mangled face to look at you.\nWith a snarl, Maybelline’s corpse sits up from the altar and begins to stagger toward you (go to 286).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "286"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "277",
+      "src": null,
+      "text": "The dining room is an expansive room lit with natural light. Each of the large round tables is neatly stowed in a state of disuse. Judging from the layer of dust on all the furniture, no one has sat at these tables to eat or converse in a very long time.\nThe sense of loneliness in the unused space of this room is palpable, but there is no sign of Solaine or any activity here.\nYou can either explore the kitchen (go to 280) or return to the main entrance (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Explore the kitchen",
+              "nextFragmentId": "280"
+            },
+            {
+              "label": "Return to main entrance",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "278",
+      "src": null,
+      "text": "You cannot tell why the cleric has refused to let you see the body, so you produce the mayor’s letter. She takes it and reads with a slight scowl. Finally, Solaine sighs.\n“If you must, then you can go. The body is in the mausoleum lying in wait. The poor girl is in no state to be seen, but the altar there is enchanted to prevent decay.”\nYou thank her and turn to leave. She turns her attention from you and to the tapestries overhead.\n“Be careful, adventurer,” Solaine says as you leave the entry hall for the cemetery (go to 293).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the cemetery",
+              "nextFragmentId": "293"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "279",
+      "src": null,
+      "text": "You decide to respect the cleric’s privacy and let her finish the letter someday.\nIf you haven't done so yet, you can examine the black tome more closely (go to 314).\nOr you can leave the library and look elsewhere in the temple (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the black tome",
+              "nextFragmentId": "314"
+            },
+            {
+              "label": "Leave the library",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "280",
+      "src": null,
+      "text": "The kitchen is windowless, but glowing orbs set into the ceiling provide a warm, yellow light. The kitchen includes an indoor water pump over a washbasin, a dark iron stove, and a single setting of a plate, a bowl, and cutlery neatly stacked by the washbasin.\nThe stove is stacked with one each of a pot and a pan and a cauldron hangs in the unlit hearth. The stove itself does not seem to have seen much use as it’s getting some patches of rust on its top, but there’s ash and soot around the door so someone has lit it recently at least.\nA heavy wooden door set into a darker granite frame looks like it could be a larder or cool storage of some kind.\nTake a closer look at the stove (go to 244) or the larder (go to 310).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the stove",
+              "nextFragmentId": "244"
+            },
+            {
+              "label": "Look at the larder",
+              "nextFragmentId": "310"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "281",
+      "src": null,
+      "text": "This book is titled simply Compendium of Curses: 17th Edition. It is bound in leather and is ridiculously thick with hundreds - maybe thousands - of entries.\nThe scribe who wrote the tome included helpful illustrations of the curses’ effects, diagrams of wards against those curses, and embellished sections outlining cures where they could be had.\nOpen the book at random to a curse (go to 305) or try to determine the cleric's interest (go to 288).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Open the book at random",
+              "nextFragmentId": "305"
+            },
+            {
+              "label": "Determine the cleric's interest",
+              "nextFragmentId": "288"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "282",
+      "src": null,
+      "text": "You have a meal and have a good night's sleep. You are woken by one or more wolves howling in the distance, but it is just the regular sounds of the forest and you quickly fall back asleep.\nGain the benefits of a long rest.\nWhen you wake up, you eat and then make your way to the town hall to meet with the mayor. As you make the trip, you feel like you’re seeing the rhythm of life here in Langston.\nThere is no breakfast delivered to your door and you go downstairs to find the mayor sitting at one of the tables in the tavern’s common room (go to 317).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "317"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "283",
+      "src": null,
+      "text": "The indent is still a mystery to you.\nYou can either try to press on the sunburst shape (go to 303) or leave it alone (go to 265).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Press on the sunburst shape",
+              "nextFragmentId": "303"
+            },
+            {
+              "label": "Leave it alone",
+              "nextFragmentId": "265"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "284",
+      "src": null,
+      "text": "Gain Inspiration.\nThe book describes in great detail how to regain divine powers when turning away from your light- or sun-based deity.\nIt describes rites and rituals to make a pact with infernal forces, including which sacrifices to make and which tools you would use. These tools are illustrated in graphic detail as jagged, horrific implements of pain and terror.\nA long section also describes the anatomy of humanoids for the purpose of either killing them or keeping them alive along with a step-by-step for conducting an effective autopsy. The same section has instructions on creating - and modifying - undead servants. However, certain parts of this section are also beyond your understanding.\nAs you're leafing through the book, you find a small scrap of paper written in common. It says \"This one.\" and it marks an entry that has images and text of zombies.\nNow that you have read the nightmare-inducing instructions of the black tome, you can turn your attention to the book of curses if you haven’t done so already (go to 281).\nOr if you have nothing else to do in the library, you can return to the front hall (go to 296).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the book of curses",
+              "nextFragmentId": "281"
+            },
+            {
+              "label": "Return to the front hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "285",
+      "src": null,
+      "text": "You feel a thrum of magic energy run through you.\nRoll a Dexterity saving throw against DC 10. If you fail, take 1d4 radiant damage.\nYou can either try to manipulate the sunburst shape (go to 303) or leave it alone (go to 265).",
+      "actions": {
+        "roll": {
+          "stat": "Dexterity",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "description": "You avoid the magical backlash."
+            },
+            "failure": {
+              "description": "Take 1d4 radiant damage."
+            }
+          }
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Manipulate the sunburst shape",
+              "nextFragmentId": "303"
+            },
+            {
+              "label": "Leave it alone",
+              "nextFragmentId": "265"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "286",
+      "src": null,
+      "text": "You can’t let this creature get loose in the town, so you ready yourself to meet it in battle. The undead creature drops the bouquet of flowers as it reaches for you.\nIf you reduce the zombie to 0 hp, go to 297. If you drop to 0 hp, go to 291.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Zombie drops to 0 hp",
+              "nextFragmentId": "297"
+            },
+            {
+              "label": "You drop to 0 hp",
+              "nextFragmentId": "291"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "287",
+      "src": null,
+      "text": "You poke around the door, its latch, and the frame. You find nothing of note.\nYou can knock (go to 253) or try to open the door (go to 302).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Knock on the door",
+              "nextFragmentId": "253"
+            },
+            {
+              "label": "Open the door",
+              "nextFragmentId": "302"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "288",
+      "src": null,
+      "text": "On a page containing Lwelyn’s grim visage and lycanthropy, you can see a single sheet of paper containing a note written in an elegant looping hand. Despite the elegance, however, there are some words jaggedly crossed out, and small watermarks mar certain words. It looks like the letter writer was crying as they wrote.\nThe letter says:\nDearest Tomlin,\nI write to you now as a truly changed woman. I have returned from my pilgrimage needing you - your strength and your love - more than ever. The journey to my order and back was harrowing, to say the least.\nYet when I arrived in Langston, instead of a lover I have a wedding to officiate. And while I can find it in my heart to love and forgive you, I fear that the darkness blooming in my heart will not forgive her.\nBecause I must tell you -\nAnd that’s where the letter ends. There are words throughout that are scribbled out as if the author has been overcome with some emotion as they were writing.\nKeep the letter (go to 251) or put it back (go to 279).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Keep the letter",
+              "nextFragmentId": "251"
+            },
+            {
+              "label": "Put it back",
+              "nextFragmentId": "279"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "289",
+      "src": null,
+      "text": "You say that you’re here to examine Maybelline’s body. The mayor has informed you that the body is due to be buried tomorrow and that this may well be your last chance to gather some clues as to the identity of the killer.\n“No,” Solaine says with an emphatic shake of her head. “Definitely not. It’s- It’s just not necessary and an affront to the family of the deceased. I’m very sorry, but I can’t let you do that.”\nYou’re confused. This was to be the purpose of your visit.\nYou can try to understand her resistance (go to 295) or try to convince her to let you see Maybelline (go to 274).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Try to understand her resistance",
+              "nextFragmentId": "295"
+            },
+            {
+              "label": "Convince her to let you see Maybelline",
+              "nextFragmentId": "274"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "290",
+      "src": null,
+      "text": "These tapestries show a holy order of sun clerics raising the temple and banishing the undead.\nThe story begins in darkness, with skeletons and other undead monsters rising out of the midnight-black earth to devour the common folk. And then glowing holy figures appear in the next wall hanging, impaling the restless dead with the beams of light radiating off of them.\nThe next tapestry depicts white-robed figures standing in a ring summoning a shaft of light down from the sun and striking the earth, replacing the deep darkness of the ground with a ring of green plants.\nThe final tapestry shows the temple you are standing in amidst houses and other buildings with the sun in a bright blue sky behind it. Beneath the bright scene, however, is a band of black earth in which floats dark red eyes lying in wait.\nYou attempt to compare what you're seeing to your knowledge (go to 309).\nAlternatively, you could either examine the mosaic if you haven’t done so yet (go to 243) or settle in to continue waiting for the cleric (go to 294).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Compare to your knowledge",
+              "nextFragmentId": "309"
+            },
+            {
+              "label": "Examine the mosaic",
+              "nextFragmentId": "243"
+            },
+            {
+              "label": "Wait for the cleric",
+              "nextFragmentId": "294"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "291",
+      "src": null,
+      "text": "You are overwhelmed by the animated corpse’s final blow and you fall to the ground. As the darkness closes in, you can only hope that it overtakes you before the creature starts to feed.\nYou are dead.",
+      "actions": "gameOver"
+    },
+    {
+      "fragmentId": "292",
+      "src": null,
+      "text": "The book is written in Infernal. The title is Turning from Light. You open the tome and start reading quickly (go to 284).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "284"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "293",
+      "src": null,
+      "text": "Following Solaine’s directions, you enter the cemetery from the north. With the bright morning sun streaming over the graveyard from behind you, the hard edges of headstones are limned with golden light. Flagstone-paved paths wind between rows of graves covered with green grass.\nFrom what you can see, the mausoleum stands in the center of the graveyard. Built of the same light-colored stone as the temple, it stands vigil over the more varied headstones and monuments that mark individual resting places. Flowers in various stages of freshness dot headstones and plots throughout the cemetery with a larger, fresher collection on the mausoleum steps.\nOff to the left, you see one of the graves is disturbed in a strange eruption of deep black earth. It doesn’t look like a grave that’s been dug, but you can’t tell from here what it is.\nYou can look at the dug-up grave (go to 264) or if you just want to get straight to Maybelline’s body, you can go to the mausoleum (go to 276).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the dug-up grave",
+              "nextFragmentId": "264"
+            },
+            {
+              "label": "Go to the mausoleum",
+              "nextFragmentId": "276"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "294",
+      "src": null,
+      "text": "Solaine finally returns to the temple through the main doors, face ashen and muttering under her breath. The hem of her white robe is stained black with what looks like soil, some of it falling in clumps off her slippers.\nYou startle her when you stand to greet her.\n“Oh!” A flash of fear and anger passes over her face before she composes herself. She continues in a more measured, even cheerful tone. “Who are you? And what can I do for you?”\nYou let her know that you have been invited. You show her the note.\n“Ah yes, of course,” she says with a warming smile. “Of course. You’re the adventurer the mayor spoke of. Have you been waiting long?”\nYou give a polite but non-committal answer.\n“That’s good,” the cleric says, obviously not having listened to your reply. “I’m Solaine, the caretaker of this temple. It’s not often I receive guests, so is there anything I can do for you before we get to the business at hand?”\nSolaine asks what you need to know, and looks at you expectantly. You can’t resist her obvious and earnest desire for some conversation.\nAsk about Tomlin (go to 315), get more details on the undead connection (go to 248), or just wonder aloud to her why this temple is so big (go to 268).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about Tomlin",
+              "nextFragmentId": "315"
+            },
+            {
+              "label": "More details on undead connection",
+              "nextFragmentId": "248"
+            },
+            {
+              "label": "Why is the temple so big?",
+              "nextFragmentId": "268"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "295",
+      "src": null,
+      "text": "You observe Solaine carefully, trying to determine why she does not want you examining the body.\nRoll a Wisdom (Insight) check. If you get 12 or higher, go to 254. If you get under 12, go to 278.",
+      "actions": {
+        "roll": {
+          "stat": "Wisdom",
+          "skill": "Insight",
+          "threshold": 12,
+          "outcomes": {
+            "success": {
+              "nextFragmentId": "254",
+              "description": "You sense the cleric's true fear."
+            },
+            "failure": {
+              "nextFragmentId": "278",
+              "description": "You fail to sense her reason."
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "296",
+      "src": null,
+      "text": "From where you’re standing in the central hall, the passage to the north appears to be a library of some kind, and the passage to the south opens into the dining hall. This means that the western passage must lead to some kind of rectory or series of chambers.\nIf you haven’t done so yet, you can explore the library (go to 258), the living quarters (go to 245), or the dining hall (go to 267).\nOr you can take a seat to wait for the cleric to arrive (go to 270).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Explore the library",
+              "nextFragmentId": "258"
+            },
+            {
+              "label": "Explore living quarters",
+              "nextFragmentId": "245"
+            },
+            {
+              "label": "Explore the dining hall",
+              "nextFragmentId": "267"
+            },
+            {
+              "label": "Wait for the cleric",
+              "nextFragmentId": "270"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "297",
+      "src": null,
+      "text": "Maybelline’s corpse rolls a Constitution saving throw against DC 5 + the last damage you dealt.\nIf you are a divine spellcaster, you can expend a spell slot to make the zombie automatically fail its save.\nIf it fails, go to 246. If it passes, it drops to 1 hp instead and go back to 286.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Fail the save",
+              "nextFragmentId": "246"
+            },
+            {
+              "label": "Pass the save (drop to 1 hp)",
+              "nextFragmentId": "286"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "298",
+      "src": null,
+      "text": "You figure there must be a good reason for there to be burnt clothes in the kitchen of a sun temple. You leave them where you found them.\nIf you haven't done so yet, you can look at the larder (go to 310) or the dining room (go to 277).\nIf you're finished in the kitchen and dining room, you can go back to the entryway (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the larder",
+              "nextFragmentId": "310"
+            },
+            {
+              "label": "Look at the dining room",
+              "nextFragmentId": "277"
+            },
+            {
+              "label": "Return to entryway",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "299",
+      "src": null,
+      "text": "Roll a Strength check to push the closet aside and see what's there.\nIf you get 12 or more, go to 238. If you get less than 12, go to 260.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Strength >= 12",
+              "nextFragmentId": "238"
+            },
+            {
+              "label": "Strength < 12",
+              "nextFragmentId": "260"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "300",
+      "src": null,
+      "text": "It's not Abyssal and you can't understand, but there are some similarities. The text here is more orderly and structured than the language of demons.\nIt could still be Celestial (go to 239) or Infernal (go to 292).\nIf you don't know any of these languages, you can instead use a spell or ability that lets you read other languages (go to 261), or you can try to open the book anyways (go to 249).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Check Celestial",
+              "nextFragmentId": "239"
+            },
+            {
+              "label": "Check Infernal",
+              "nextFragmentId": "292"
+            },
+            {
+              "label": "Use spell or ability (read languages)",
+              "nextFragmentId": "261"
+            },
+            {
+              "label": "Open the book anyway",
+              "nextFragmentId": "249"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "301",
+      "src": null,
+      "text": "Gain Inspiration.\nYou offer to join the militia as they guard the town against the undead.\nFortunately for you and your group of club and pitchfork-wielding companions, you find no more zombies or skeletons. However, you do find the remains of two bodies seemingly torn apart. The wounds are identical to those that killed Maybelline.\nYour party returns sometime in the deepest darkness of the wee hours when the waning moon has set and the only light outside of town are the stars shining through the patch clouds.\nYou stumble exhausted to your room and flop into your bed without undressing, barely enough energy to let your gear clatter to the floor as you fall asleep.\nIt feels like you blink and the sun is streaming through the window and it’s time to haul yourself out of bed.\nGain the benefits of a short rest.\nChecking outside your door, there is no breakfast this morning so you gather your things to search for some food. You find the mayor sitting beside a bowl of plain oatmeal and a cup of tea waiting for you (go to 317).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "317"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "302",
+      "src": null,
+      "text": "The door is unlocked and swings open easily. The room inside is not completely empty, but it is sparse.\nIt consists of a single bed, a bare chair, a bedside table with an envelope on it, and a wardrobe constructed of pale wood.\nYou can take a closer look at the bed and bedside table (go to 311) or the wardrobe (go to 275).\nIf you haven’t done so yet, you can also close the door and examine the entrance for clues (go to 240).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine bed & bedside table",
+              "nextFragmentId": "311"
+            },
+            {
+              "label": "Examine the wardrobe",
+              "nextFragmentId": "275"
+            },
+            {
+              "label": "Close door, examine entrance",
+              "nextFragmentId": "240"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "303",
+      "src": null,
+      "text": "Gain Inspiration.\nAs you further probe the indent, you feel a buildup of magical energy.\nRoll a Dexterity saving throw against DC 10. If you fail, take 1d4 radiant damage.\nWith a faint click, the sun-shaped opening returns to its hidden state. The seams vanish entirely.\nSomething beneath the floor also grinds into place. Despite your best efforts to find it, nothing remains of the indent in the floor. It requires some key or object to open. Despite your curiosity, you will have to move on to the tapestries (go to 290).\nIf you've already explored everything you want to, then you can settle in to continue waiting for the cleric (go to 294).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "roll": {
+          "stat": "Dexterity",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "description": "You avoid the radiant damage."
+            },
+            "failure": {
+              "description": "Take 1d4 radiant damage."
+            }
+          }
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Move on to the tapestries",
+              "nextFragmentId": "290"
+            },
+            {
+              "label": "Wait for the cleric",
+              "nextFragmentId": "294"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "304",
+      "src": null,
+      "text": "Gain Inspiration.\nYou press Solaine with the need to investigate the girl’s death, and how important it is to see the body. It won’t take long, and then you would be very grateful. So would the rest of the town.\n“Well,” she says. “I suppose it is the right thing to do, isn’t it? I’m sure that you - I mean it will be fine.”\nShe gives you directions to the mausoleum where the body is being stored. It will be lying on an altar whose enchantment keeps the body from decaying.\nShe warns you that while pretty in life, Maybelline injuries are not for the faint of stomach.\n“Good luck,” she says and turns away to gaze up at the tapestries as you leave the temple.\nYou go to the cemetery (go to 293).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Go to the cemetery",
+              "nextFragmentId": "293"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "305",
+      "src": null,
+      "text": "The first curse you flip to is Hildebrand’s Horrendous Hiccups, which is just never-ending hiccups for the rest of your life. The cure apparently is a dram of water from the Shadowfell.\nThe next curse you flip to Primordial Rot. This one creates an effect of some creeping incursion from one of the elemental planes. So an arm slowly burns or a leg turns to stone. Opening your mouth might cause winds to gust out of your lungs or acrid water to spray from your stomach. The exact symptoms seem to be highly varied - but all horrific - with the cure being a special ritual to be performed by a divine magic user.\nYou keep flipping from curse to curse. Temporal Slide. Lovebane. Century Sleep.\nYou are so engrossed in the sometimes comical - sometimes devastating - effects of the curses that you nearly miss the sheet of paper that has been inserted into the book (go to 288).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Check the inserted sheet",
+              "nextFragmentId": "288"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "306",
+      "src": null,
+      "text": "Your voice startles Solaine and she stares at you in deadpan horror.\n\"The dead shouldn't be rising. They can't. Not while I... Not while there is a member of the Radiant Order in the temple.\"\nYou tell her that the mayor needs to know so that Langston can be protected.\n“Of course, yes,” Solaine says, still staring off into the middle distance. “If you would, please, let the mayor know. That would be very helpful.”\nYou open your mouth to ask if Solaine is all right, but she cuts you off.\n“Now, if you wouldn’t mind, I need to return to the library. And you need to speak to the mayor. Thank you so much.”\nAlone in the silence of the temple’s entry hall, there’s nothing more for you to do but return to the mayor at town hall (go to 252).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to the mayor",
+              "nextFragmentId": "252"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "307",
+      "src": null,
+      "text": "It’s a bouquet of daisies accented with pretty pink flowers, but they’re the only ones here in the mausoleum. You check the tag and it simply reads, “Rest well, Maybelline.” It’s signed by Tomlin the herbalist.\nThe flowers are crushed and broken, the only ones that the zombie picked up from outside the mausoleum.\nWith all the information you’ve collected, you need to go back to the temple and let her know what’s happening (go to 250).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Return to the temple",
+              "nextFragmentId": "250"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "308",
+      "src": null,
+      "text": "Roll a proficiency check with either mason's tools or thieves' tools.\nIf you get less than 10, go to 316. If you get 10 or more go to 285.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Roll < 10",
+              "nextFragmentId": "316"
+            },
+            {
+              "label": "Roll >= 10",
+              "nextFragmentId": "285"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "309",
+      "src": null,
+      "text": "You look up at the tapestries and think they might remind you of something.\nRoll an Intelligence (History) or Intelligence (Religion) check against DC 15.\nIf you pass, go to 257. If you fail, go to 271.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (History or Religion >= 15)",
+              "nextFragmentId": "257"
+            },
+            {
+              "label": "Failure (roll < 15)",
+              "nextFragmentId": "271"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "310",
+      "src": null,
+      "text": "You open up the larder and it’s noticeably cooler in here. Despite the cool darkness, you see wilted vegetables and sprouting potatoes. A moldy heel of bread sits alone on a shelf as if forgotten.\nHowever, there are several large cuts of meat hanging from hooks and wrapped in rough cloth. There’s beef, a goat’s leg, and two whole chickens. Given the state of some of the rest of the food, this looks surprisingly fresh. As you look closer, the raw meat seems to have small but ragged bite marks in it.\nHowever, the cleric’s unusual diet does not offer you any clues about where she is at the moment, so you will need to keep looking.\nIf you haven’t already, you can take a closer look at the stove (go to 244) or the dining room (go to 277).\nIf there's nothing else of interest here, you can return to the front hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the stove",
+              "nextFragmentId": "244"
+            },
+            {
+              "label": "Look at the dining room",
+              "nextFragmentId": "277"
+            },
+            {
+              "label": "Return to front hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "311",
+      "src": null,
+      "text": "The single bed with linen sheets and a thick wool blanket is neatly made. In fact, it's so neat that you wonder if it slept in last night. It's a very normal-looking bed in every way, even if it doesn't look that comfortable.\nThere is an envelope on the nightstand. It is worn, especially along the crease, and has clearly been opened many times. You can take the envelope and examine its contents (go to 242).\nIf you haven’t done so yet, you can also take a closer look at the wardrobe (go to 275). Or if there’s nothing else of interest in the cleric’s chambers, you can return to the front hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Examine the envelope",
+              "nextFragmentId": "242"
+            },
+            {
+              "label": "Look at the wardrobe",
+              "nextFragmentId": "275"
+            },
+            {
+              "label": "Return to front hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "312",
+      "src": null,
+      "text": "You use a spell or ability to retrieve whatever has fallen behind the heavy storage unit. It’s a ribbon.\nYou examine the ribbon carefully (go to 247).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "247"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "313",
+      "src": null,
+      "text": "The clothes seem to be made from white cloth now charred and blackened. You also find some fresh-looking stitches here and there but can’t quite make out the pattern.\nIf you haven't done so yet, you can look at the larder (go to 310) or the dining room (go to 277).\nIf you're finished in the kitchen and dining room, you can go back to the entry hall (go to 296).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Look at the larder",
+              "nextFragmentId": "310"
+            },
+            {
+              "label": "Look at the dining room",
+              "nextFragmentId": "277"
+            },
+            {
+              "label": "Return to entry hall",
+              "nextFragmentId": "296"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "314",
+      "src": null,
+      "text": "The black tome is bound in something similar to leather but rougher, almost like sharkskin but with less regular spines and bumps. It smells faintly of brimstone and is oily to the touch, though your fingers come away from the material dry.\nThe title of the book is written in a language that is very distant from Common. It appears to be a language from some other world. The jagged symbols are imprinted on the title in an unsettlingly deep red.\nYou can try to understand the language if you know Celestial (go to 239), Infernal (go to 292), or Abyssal (go to 300).\nIf you don’t know any of these languages, you could use a spell or ability that lets you read other languages (go to 261), or you can just open the book anyways (go to 249).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Celestial",
+              "nextFragmentId": "239"
+            },
+            {
+              "label": "Infernal",
+              "nextFragmentId": "292"
+            },
+            {
+              "label": "Abyssal",
+              "nextFragmentId": "300"
+            },
+            {
+              "label": "Use a spell/ability to read languages",
+              "nextFragmentId": "261"
+            },
+            {
+              "label": "Open the book anyway",
+              "nextFragmentId": "249"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "315",
+      "src": null,
+      "text": "“Ah, Tomlin,” Solaine says, her features falling for a moment before she puts a sad smile back on her face. “Well, it’s common knowledge that we were lovers at one point. Though that’s hardly an exclusive honor I have.”\nShe gives a bright laugh, checking to see if you’re laughing too.\n“Still he said that he would wait for me - and that I was his only love - when I was called back to my order’s enclave it seems he found his second only love.”\nThe cleric takes a moment to collect herself. “The pilgrimage back to the Order of Radiant Light was difficult. The trip back… more difficult. But thinking of him made this lonely temple more bearable. Sadly, it was not to be…”\nShe takes another deep breath.\n“I returned to the man I loved being betrothed to another. It was devastating. But I overcame it. After all, my duty is to all of Langston.”\nYou ask why she is telling you all of this.\n“This is all common knowledge around town,” she says with an unusually broad smile. “Better you hear it from me than the town gossip. So with that out of the way, what can I do for you today, adventurer?”\nYou can ask about the connection between the temple and undead (go to 248) or ask about the size of the temple (go to 268).\nOr if you don’t have any other questions for Solaine, you can ask to see Maybelline’s body before it’s interred (go to 289).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about undead connection",
+              "nextFragmentId": "248"
+            },
+            {
+              "label": "Ask about temple size",
+              "nextFragmentId": "268"
+            },
+            {
+              "label": "See Maybelline’s body",
+              "nextFragmentId": "289"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "316",
+      "chapterEnd": true,
+      "src": null,
+      "text": "Gain Inspiration.\nCracks open momentarily along the lines of the concentric circles. It looks like a mechanism that would sink into the floor.\nYou can either try to manipulate the sunburst shape (go to 303) or leave it alone (go to 265).",
+      "actions": {
+        "inspiration": {
+          "type": "gainInspiration"
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Manipulate the sunburst shape",
+              "nextFragmentId": "303"
+            },
+            {
+              "label": "Leave it alone",
+              "nextFragmentId": "265"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

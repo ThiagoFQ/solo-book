@@ -844,19 +844,43 @@
       "src": null,
       "text": "Despite the scare you just had, you see it as just another day in the life of a hero for hire. You check that the door and window are locked, draw the curtains, and crawl back into bed.\nIn the dark with just the sound of your own beating heart, it’s harder than you had thought to find sleep.\nRoll either a Constitution or Wisdom saving throw. If you get 12 or more, get the benefits of a long rest. If you get under 12, only get the benefits of a short rest.\nWhen dawn breaks, you climb out of bed and prepare for the day (go to 107).",
       "actions": {
-        "roll": {
-          "stat": "ConstitutionOrWisdom",
-          "threshold": 12,
-          "outcomes": {
-            "success": {
-              "description": "You gain the benefits of a long rest.",
-              "nextFragmentId": "107"
+        "choice": {
+          "options": [
+            {
+              "label": "Roll a Constitution saving throw",
+              "roll": {
+                "stat": "Constitution",
+                "threshold": 12,
+                "outcomes": {
+                  "success": {
+                    "description": "You gain the benefits of a long rest.",
+                    "nextFragmentId": "107"
+                  },
+                  "failure": {
+                    "description": "You only gain the benefits of a short rest.",
+                    "nextFragmentId": "107"
+                  }
+                }
+              }
             },
-            "failure": {
-              "description": "You only gain the benefits of a short rest.",
-              "nextFragmentId": "107"
+            {
+              "label": "Roll a Wisdom saving throw",
+              "roll": {
+                "stat": "Wisdom",
+                "threshold": 12,
+                "outcomes": {
+                  "success": {
+                    "description": "You gain the benefits of a long rest.",
+                    "nextFragmentId": "107"
+                  },
+                  "failure": {
+                    "description": "You only gain the benefits of a short rest.",
+                    "nextFragmentId": "107"
+                  }
+                }
+              }
             }
-          }
+          ]
         }
       }
     },

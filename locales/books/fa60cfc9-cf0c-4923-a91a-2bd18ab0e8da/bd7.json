@@ -1,0 +1,652 @@
+{
+  "fragments": [
+    {
+      "fragmentId": "370",
+      "chapterTitle": "Epilogue",
+      "src": null,
+      "text": "Dawn breaks bleak and gray over the still homes of Langston. You are just returning from leading an uneventful night on patrol, but not all of them have been so quiet.\nThe town has taken measures to quarantine the cemetery. The townsfolk are walking the rows of headstones with clubs to destroy any dead as they claw their way out of graves. However, Langston has stood in this spot for hundreds of years and has not always used the same cemetery to inter their dead. Over the past week since capturing Solaine, you have already dealt with the animated remains of two people and several housepets.\nThe innkeeper greets you warmly as you stagger into The Pickled Hen with the townsfolk you led through the streets last night. He silently sets a hot meal in front of you and your companions as more militia members filter into the temporary headquarters for undead hunters.\nA few bits into your breakfast, the mayor strides in at the head of her own patrol. If you look closely, you can barely see the tired lines around her mouth and eyes. Her rigid bearing seems unaffected by the late nights.\nShe directs her team to get something to eat and then joins you. You ask her if there’s been any word from the messenger.\n“None,” she says as she receives a tray of her own. “The Radiant Order is several days hard ride. We can expect the cleric to arrive soon.”\nThe two of you eat in silence for a few bites before the tavern door slams open and a bloodied Roi rushes in.\n“In here, lads,” he says. He sweeps everything off the table nearest to the door as two men from town carry the limp form of an injured woman. “Set her down and give me some space.”\nYou rush to his side as he lays his hands on the woman and begins chanting. A green glow emanates from around his hands before sputtering and dying. He curses in several languages.\n“Adventurer, we were caught by three skeletons down on the main street,” he says. “But I’m out of healing magic. Go to Tomlin’s house. He must have made some healing potions before he died.”\nYou look at the mayor and she gives you a single nod. You bolt out the door on your way to the herbalist’s cottage (go to 380). Or if you have your own healing abilities, you can offer to use them (go to 398).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to Tomlin’s house",
+              "nextFragmentId": "380"
+            },
+            {
+              "label": "Use your own healing abilities",
+              "nextFragmentId": "398"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "371",
+      "src": null,
+      "text": "You tell Roi that you can indeed read Abyssal and he is suitably impressed. However, looking over the writing you see that it is actually an incantation of some kind and is written in a dialect you don’t know. There are also a number of apparent errors, making it even harder to interpret.\nAfter reading through the text a few times, however, you can clearly see that it is a pact with some demonic entity. There appears to be a name, but you cannot make sense of it. So in exchange for something involving the dead of Langston, it seems that whoever wrote this incantation gets the love and devotion of the target.\n“So it’s a love spell,” Roi says. “A powerful one, I wager, if the run-off is also affecting her parents. I don’t know if she’ll help, but we need to ask Solaine about this.”\nIf you haven’t yet, you can still go to Maybelline’s room (go to 381) or the kitchen (go to 374).\nOr if you feel there’s nothing left to learn here, you can return to town and speak to Solaine (go to 372).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Go to Maybelline’s room",
+              "nextFragmentId": "381"
+            },
+            {
+              "label": "Go to the kitchen",
+              "nextFragmentId": "374"
+            },
+            {
+              "label": "Return to town, talk to Solaine",
+              "nextFragmentId": "372"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "372",
+      "src": null,
+      "text": "You and Roi bid farewell to Maybelline’s parents, and her mother still half-heartedly offers you tea while her father barely looks up. It’s honestly impossible to tell whether it’s the magical effects Roi can feel, or if it’s just the trauma of recent events.\n“Well, adventurer,” Roi says outside. “I think we haven’t any time to lose. Get on.”\nBefore you can question what he means, Roi’s form shifts into that of a powerful-looking pony. He tosses his red mane and prances alongside you letting you climb on. Once you’ve gotten a grip on his neck, he takes off toward town at a gallop.\nHe sprints into town and clatters down through the cobblestone streets to the jailhouse near the town hall. You climb off of Roi and he reverts to his dwarven form. Both of you enter the jail together.\nInside it is gloomy, with little natural light coming in through the open door. Most of the light comes from the several oil lamps burning around a single jail cell. It looks like it’s mostly used for drunks and traveling vagabonds to spend the night, but currently the only occupant is Solaine.\nShe looks strange without her vestments, instead being dressed in a plain gray dress likely donated by a kind woman in town. She is sitting calmly on the edge of a cot in her cell, hands over her knees and eyes on the wall. Still, her eyes dart to you and Roi as you enter.\n“Roi, my dear friend,” she says calmly. There’s a chill in her voice. “Thank you for visiting again. To what do I owe the pleasure?”\n“Solaine, darling,” Roi says as he nervously wrings his hands. “It pains me to ask, but I was wondering if I could please ask for your advice.”\nSolaine looks between you and the druid. “Adventurer, you may have beaten me but I am not broken. I will help only because you’re asking, Roi.”\nYou can ask her about anything you have in your inventory: the blackened garlands (go to 375), the unhallowed herbs (go to 388), or the lock of hair (go to 382).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about blackened garlands",
+              "nextFragmentId": "375"
+            },
+            {
+              "label": "Ask about unhallowed herbs",
+              "nextFragmentId": "388"
+            },
+            {
+              "label": "Ask about lock of hair",
+              "nextFragmentId": "382"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "373",
+      "src": null,
+      "text": "You can’t quite get the mechanism to catch. Normally you might try again, but you have a brave woman bleeding out back at the inn.\nIf you haven’t tried yet, you can break down the door (go to 390) or break a window (go to 377).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Break down the door",
+              "nextFragmentId": "390"
+            },
+            {
+              "label": "Break a window",
+              "nextFragmentId": "377"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "374",
+      "src": null,
+      "text": "Maybelline’s parents barely seem to register your presence as you move from the common area into their kitchen. Your first impression is that it is a kitchen like that found in any farmhouse anywhere in the land.\nDried herbs hang from the rafters within reach. A cast iron pan sits on the stovetop smooth with many years of seasoning. There are simple cooking utensils and enough plates and cups to accommodate the small family who lives there.\nBut you and Roi look around all the same. Wrapped in an oilcloth at the back of the pantry, you find a hidden parcel of herbs and flowers.\nAll of the plants are oddly proportioned. Most are covered in thorns that seem just a little too sharp, and leaves and flowers alike are rimmed with unnatural shades of purple and green. One of the blossoms is a deep, midnight black and another has a splash of color almost like a blood stain.\nRoll an Intelligence (Nature) check. If you get 15 or more, go to 393. If you get less than 15, go to 384.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (>=15)",
+              "nextFragmentId": "393"
+            },
+            {
+              "label": "Failure (<15)",
+              "nextFragmentId": "384"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "375",
+      "src": null,
+      "text": "You hold up the wilted and blackened garlands for Solaine to look at.\n“They look like wedding garlands,” she says. “And I have seen many in this town. As the officiant of course. And these were healthy until you brought them close to each other?”\nYou nod and Roi backs you up.\n“It sounds like these were used as an anchor for some enchantment, but there was a pact written in bad faith.” She chuckles drily at her own attempt at a pun. “There was likely some clause that said if these two objects ever came into contact, the spell would be broken. A condition that sows chaos like that sounds like a demonic entity.”\nYou return the garlands to your pack.\n“Thanks, lass,” Roi says. “How are you holding up?”\n“The same as yesterday,” Solaine says. “So where did you find these garlands?”\nYou tell her that one was found in Tomlin’s home and one in Maybelline’s home.\n“But-” she says, her cool exterior beginning to crack. “That would mean that either Maybelline or Tomlin was the victim of an enchantment. A love spell of some kind. What else did you find?”\nIf you haven’t done so yet and have them in your inventory, you can ask Solaine about the unhallowed herbs (go to 388) or the lock of hair (go to 382).\nOr if there isn’t anything else you need to discuss with Solaine, you can thank her and bid her goodbye (go to 399).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about unhallowed herbs",
+              "nextFragmentId": "388"
+            },
+            {
+              "label": "Ask about lock of hair",
+              "nextFragmentId": "382"
+            },
+            {
+              "label": "Nothing else to discuss",
+              "nextFragmentId": "399"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "376",
+      "src": null,
+      "text": "You and Roi enjoy a companionable walk out of Langston in which you’ve come to terms with the events of the past couple of weeks. You briefly discuss Solaine with Roi voicing some concerns for her health and mental state.\n“The poor lass was so sweet before,” he says. “And there’d be people taking advantage of that, but she was an important part of this community. It came as quite a shock to the town when Tomlin left her for Maybelline, especially so quickly.”\nAs you and Roi make your way through the country roads, the clouds continue to roll in and a light drizzle starts to fall. You’re damp and chilled by the time you reach your destination. Roi knocks gently at a farmhouse door.\nMaybelline’s mother opens the door and peeks out, but when she sees you and Roi she gives you both a wide smile that doesn’t reach her tired eyes. She looks thin, as if stretched too far, but that’s to be expected given the recent events that have affected her family.\n“If it isn’t Roi and the adventurer who brought that priest to justice,” she says. “You must be freezing. Come in and warm yourselves by the fire. I already have a kettle on for tea.”\nShe escorts you into a communal living area with a fire crackling gently in the hearth. Maybelline’s father is sitting in a rocking chair mending a harness for some beast of burden. He looks up, meets your eye, and nods. His eyes are rimmed with red and dark circles encase his eyes.\nAs Maybelline’s mother bustles off towards the kitchen, Roi leans close to you and says under his breath, “Something is off here. I know these lands better than anyone, and something is wrong with the farm.”\nYou nod just as Maybelline’s mother comes in from the kitchen with a teapot and four cups. While she busies herself with the tea, you pull out the garland you found at Tomlin’s house and present it to Maybelline’s parents. Their faces darken when they see it.\n“The adventurer found this in the home of your future son-in-law,” Roi says. “So I thought you might want it. For closure.”\n“That looks so familiar,” Maybelline’s mother says, squinting at the garland. “I think Maybelline made that herself. But weren’t there two?”\n“There were definitely two,” the father says. “I remember Maybelline making them. She was humming and singing these funny little songs the whole time. Did you not find the other one?”\nRoi shoots you a loaded look. “This garland is… unusual,” he says. “Do you know where the other one is?”\n“I don’t,” says the father, and you can now see he’s just ineffectually picking at the harness in his lap. “But you can take a look around if you think it will help.”\nMaybelline's mother still hasn’t poured any tea, and she is just staring at the steaming teapot. She looks up just remembering you’re there. “Oh, yes. Please. Anything you think might help.”\nShooting Roi a concerned look, you consider where you should look for the other garland and maybe a clue to the couple’s strange behavior. You could check Maybelline’s bedroom (go to 381), the kitchen (go to 374), or see if there are any of these flowers in the garden (go to 392).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Check Maybelline’s bedroom",
+              "nextFragmentId": "381"
+            },
+            {
+              "label": "Check the kitchen",
+              "nextFragmentId": "374"
+            },
+            {
+              "label": "Check the garden",
+              "nextFragmentId": "392"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "377",
+      "src": null,
+      "text": "There are no elegant solutions. You smash a window and crawl through the broken glass.\nRoll a Dexterity save. If you roll under 10, take 1d4 damage as you cut yourself on broken glass.\nYou drop through the window into Tomlin’s cottage (go to 386).",
+      "actions": {
+        "roll": {
+          "stat": "Dexterity save",
+          "threshold": 10,
+          "outcomes": {
+            "success": {
+              "description": "You avoid the shards of glass and take no damage.",
+              "nextFragmentId": "386"
+            },
+            "failure": {
+              "damage": {
+                "amount": "1d4",
+                "type": "piercing",
+                "description": "You cut yourself on the broken glass."
+              },
+              "description": "You take 1d4 damage from the broken glass.",
+              "nextFragmentId": "386"
+            }
+          }
+        }
+      }
+    },
+    {
+      "fragmentId": "378",
+      "src": null,
+      "text": "You identify the magic as some ancient love spell, though you have no idea how it might have come to be here in Maybelline’s home. It seems as though the two garlands connect two people, but it’s odd that bringing them together would cause the spell to break.\nThat seems like a condition for a pact with a dark force with a cruel sense of humor. This is mostly conjecture, however, as you are unfamiliar with the actual spell used to create this effect.\nWhen you explain all this to Roi, he sucks at his teeth for a moment. “Well, Solaine may know something. She spent a lot of time studying these dark arts. Wouldn’t hurt to ask, would it?”\nAdd blackened garlands to your inventory.\nIf you haven’t done so yet, you can still explore the kitchen (go to 374) or see if you can find where the flowers came from in the garden (go to 392).\nOr if there’s nothing else for you to do here, you can say goodbye to Maybelline’s family and to speak to Solaine (go to 372).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Blackened Garlands",
+          "quantity": 1,
+          "description": "Add blackened garlands to your inventory."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Explore the kitchen",
+              "nextFragmentId": "374"
+            },
+            {
+              "label": "Check the garden",
+              "nextFragmentId": "392"
+            },
+            {
+              "label": "Say goodbye, speak to Solaine",
+              "nextFragmentId": "372"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "379",
+      "src": null,
+      "text": "You search through Tomlin’s ingredients and what he’s made from them, but you can’t make any sense of how he’s organized things. You only find two healing potions among a number of other items.\nAdd 2 potions of healing to your inventory.\nAmong what you found is an unusual garland like something some couples wear in their wedding. Woven out of wildflowers, it shimmers slightly in the light and the flowers themselves seem fresh even though the herbalist’s cottage has apparently been locked since Tomlin’s death.\nHoping it can also be helpful to Roi, you take the odd garland as well.\nAdd Tomlin’s garland to your inventory.\nThough you feel it’s likely there are things that you missed, time is running out so you sprint back to The Pickled Hen (go to 391).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Potion of Healing",
+          "quantity": 2,
+          "description": "Add 2 potions of healing to your inventory."
+        },
+        "gainItem2": {
+          "itemName": "Tomlin’s Garland",
+          "quantity": 1,
+          "description": "A magically fresh wedding garland found in Tomlin’s cottage."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Return to The Pickled Hen",
+              "nextFragmentId": "391"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "380",
+      "src": null,
+      "text": "You’re left gasping for breath when you arrive at Tomlin’s cottage. It seems like such a long time ago you were here helping him rid his garden of scraplings, though in reality it’s been a little more than a week.\nThe cottage is corpse-like in that it looks exactly the same as the last time you were here, but the dark windows and quiet of the gray dawn give the place a disconcerting stillness. The person who brought this place to life is gone, and a shiver runs up your spine at the realization.\nBut within could be the key to saving someone else, so you set aside any discomfort of stealing from a dead man and try to find a way in. You try the front door and it’s locked.\nThe trellises are high and thick with vines, and you know first-hand how hard they are to climb (even if the back door would be unlocked). It’s not worth the time as someone lies bleeding to death on a tavern table.\nThat leaves you the option of picking the lock on the front door (go to 387), breaking down the front door (go to 390), or breaking a window and crawling in (go to 377).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Pick the lock",
+              "nextFragmentId": "387"
+            },
+            {
+              "label": "Break down the door",
+              "nextFragmentId": "390"
+            },
+            {
+              "label": "Break a window",
+              "nextFragmentId": "377"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "381",
+      "src": null,
+      "text": "You ask if it’s all right to take a look in Maybelline’s room and her father just points.\nYou and Roi look around carefully but thoroughly. You find a twin to the garland you found in Tomlin’s cottage tucked under Maybellline’s pillow. It has the same shimmer you saw with the first one.\nYou hand Roi Tomlin’s garland while picking up Maybelline’s. You feel that the ring of wildflowers tugs slightly towards its counterpart as if the two were trying to touch. It’s hard to explain where it might be coming from, but there’s a sense of longing coming from the braided wildflowers in your hand.\n“You feel that too, eh?” Roi says. “This is looking more and more like some kind of enchantment. But nothing like any spell I’ve ever seen before.”\nThe pull continues, an insistent force pulling the wedding garlands towards each other.\n“Come here, adventurer. I want to try something.” Roi reaches out Tomlins's wedding garland to touch Maybellines. “Just don’t fall in love with me, eh?”\nYou let the two strings of woven flowers touch each other, and the tugging sensation abruptly stops. The shimmer becomes a flash, and when your vision clears both you and the druid are holding blackened chains of rotting flowers.\nRoll an Intelligence (Arcana) check. If you roll 15 or more, go to 378. If you roll under 15, go to 395.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (>=15)",
+              "nextFragmentId": "378"
+            },
+            {
+              "label": "Failure (<15)",
+              "nextFragmentId": "395"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "382",
+      "src": null,
+      "text": "You pull out the braided lock of hair and scrap of paper and hold it out to Solaine. She recoils, her hand reaching for a holy symbol that is no longer there.\n“That's… that’s Tomlin’s hair,” she hisses. “Where did you get that?”\nWhen you tell her it was buried in Maybelline’s garden, she reacts with shock and anger.\n“It’s pact magic,” she snarls. “An enchantment written in the language of demons, so there is a price to be paid. Are her parents all right?”\n“They’re acting a bit strange, and there was something wrong with the place,” Roi says with a shiver. “As if the soil itself were crying out in pain.”\n“Now that you’ve removed this from their property, they shouldn’t feel any more effects within a couple of days,” Solaine says. Then she mutters absently half at Roi, “So that’s what she meant by ‘powerful friends.’ I just thought she was talking about some other yokel.”\nYou ask Solaine what it means, and she looks away from the spell to lock eyes with you.\n“It means that I killed the man who loved me,” she says. “But I also got my revenge on the woman who made me do it.”\nUnder the smoldering anger of her look, you take a step back from the cell bars. But as quickly as she turned, Solaine takes a deep breath and apparently sheds her dark rage as she turns to her friend.\n“We’re done here,” she says (go to 399).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "399"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "383",
+      "src": null,
+      "text": "The door’s hinges bend and the wood around the latch splinters as you break in the door.\nYou have no time to admire your handiwork, however, as you rush into the cottage looking for anything that can help (go to 386).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Search the cottage",
+              "nextFragmentId": "386"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "384",
+      "src": null,
+      "text": "You don’t recognize the herbs, but Roi does and he seems to be avoiding touching them.\n“Those plants are not… natural,” he says. “They only grow in unhallowed soil, and while I’m not entirely sure, burning them can also open up communications with demons, devils, and the like.”\nYou ask if this is the right mix to do so, and Roi just shrugs. “No idea, but Solaine might. She’s an expert in these things, even without that library of hers.”\nAdd unhallowed herbs to your inventory.\nIf you haven’t yet, you can still look in Maybelline’s room (go to 381) or visit the garden to see if there are the same flowers as Tomlin’s garland (go to 392).\nOr if you’re ready to speak to Solaine, you can return to town with Roi (go to 372).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Unhallowed Herbs",
+          "quantity": 1,
+          "description": "Herbs grown in unhallowed soil for demon communication."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Check Maybelline’s room",
+              "nextFragmentId": "381"
+            },
+            {
+              "label": "Check the garden",
+              "nextFragmentId": "392"
+            },
+            {
+              "label": "Return to town & talk Solaine",
+              "nextFragmentId": "372"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "385",
+      "src": null,
+      "text": "You can’t read Abyssal and there’s no way you can interpret what’s on the page.\n“It may not work,” Roi says. “But maybe we could ask Solaine? She speaks Abyssal and will probably even know what that does.”\nYou tuck away the little braid and the scrap of paper to bring to Solaine later.\nAdd lock of hair to your inventory.\nIf you haven’t done so already, you can still check out Maybelline’s room (go to 381) or explore the kitchen for anything amiss (go to 374).\nOr if you feel there’s nothing left to learn here, you can return to town and speak to Solaine (go to 372).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Lock of Hair",
+          "quantity": 1,
+          "description": "A small braid of Tomlin’s hair with demonic runes, found in Maybelline’s garden."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Check Maybelline’s room",
+              "nextFragmentId": "381"
+            },
+            {
+              "label": "Explore the kitchen",
+              "nextFragmentId": "374"
+            },
+            {
+              "label": "Return to town, talk to Solaine",
+              "nextFragmentId": "372"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "386",
+      "src": null,
+      "text": "The interior of Tomlin’s house looks like the last time you saw it only frozen in time. No cauldron bubbles and no remedies are being distilled. With only the weak light from outside, the cottage is gloomy despite the brightly colored ingredients drying and a mustiness is already moving in under the smell of herbs and flowers.\nThough you feel a twinge of sadness for Tomlin’s passing, you quickly collect yourself and start rifling through his belongings looking for any unsold healing potions.\nRoll an Intelligence (Investigation) check. If you get 12 or more, go to 396. If you get less than 12, go to 379.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (>=12)",
+              "nextFragmentId": "396"
+            },
+            {
+              "label": "Failure (<12)",
+              "nextFragmentId": "379"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "387",
+      "src": null,
+      "text": "You take out your thieves' tools and get to work on the lock of the door. It’s not very sophisticated, but time is of the essence and you need to work quickly.\nRoll a proficiency check with your thieves’ tools. If you get 10 or more, go to 394. If you roll less than 10, go to 373.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (>=10)",
+              "nextFragmentId": "394"
+            },
+            {
+              "label": "Failure (<10)",
+              "nextFragmentId": "373"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "388",
+      "src": null,
+      "text": "You pull out the bundle of unhallowed herbs and show Solaine.\n“Well, plants are more Roi’s specialty,” she says. “But I recognize these. They are distinctive for sure and I often find them growing in the cemetery. What are they?”\nRoi clears his throat. “Though I don’t know how to process them, these are the ingredients of a communion incense.”\n“Communion with… what?” Solaine’s eyes narrow as though she already knows the answer. She takes a tentative sniff at the herbs.\n“Not the sort of company I’d like to keep,” Roi says and Solaine nods.\n“So the girl was telling the truth,” Solaine says, her gaze growing distant. “She really did put Tomlin under her power. I thought she was just mocking me. What did she trade for Tomlin?”\nThe former cleric’s eyes snap up to you. Roi takes a step back from her intensity.\n“What else? Did you find anything else?”\nIf you have them in your inventory and haven’t done so yet, you can ask Solaine about either the blackened garlands (go to 375) or the lock of hair (go to 382).\nOr if there’s nothing else, you can thank her and bid her goodbye (go to 399).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Ask about blackened garlands",
+              "nextFragmentId": "375"
+            },
+            {
+              "label": "Ask about lock of hair",
+              "nextFragmentId": "382"
+            },
+            {
+              "label": "Thank her, leave",
+              "nextFragmentId": "399"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "389",
+      "src": null,
+      "text": "You are enjoying your second uneventful nightly patrol and just finishing up the first watch. You are outside The Pickled Hen and light is streaming out the tavern windows along with good-natured banter from the militia members you were leading. The innkeeper has been kind enough to keep the common room open late into the night for the militia to eat and socialize after patrols.\nYou’ve taken a moment to look out over the sleeping town. The clouds cleared while you slept and now a full moon hangs in the starry sky above. The lamplighters have stayed home while the risk of undead remains high, so the moon’s cool white light is the only illumination.\nIn the dappled shadows of the night, you almost miss the small movement across the street from the tavern. At first, you think it’s just your eyes playing tricks on you, but you could swear you see a woman standing in the shadows wearing a plain, roughspun dress. The moonlight is playing tricks around her features keeping her swathed in shadows. You can’t even begin to make out the face except for a small, wry smile and light-colored hair tied back in a tight bun.\nBut then you blink and she’s gone. You approach where you think you saw the odd figure, and find nothing except a faint chill hanging in the air.\nYou remember that there are still undead wandering the streets and it would not be good to be caught alone. You return to the inn for a hot meal, a cool drink, and a good night’s rest (go to 400).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "400"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "390",
+      "src": null,
+      "text": "You assess the door and you’ve seen sturdier, but it’s still going to take some doing to break down.\nRoll a Strength check to break down the door. If you get 10 or more, go to 383. If you get less than 10, go to 397.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Success (>=10)",
+              "nextFragmentId": "383"
+            },
+            {
+              "label": "Failure (<10)",
+              "nextFragmentId": "397"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "391",
+      "src": null,
+      "text": "You burst into The Pickled Hen and the bedlam of Roi’s arrival has calmed down. The injured militia member is lying on a table, her wounds wrapped in bandages already stained through with blood. Roi is speaking quietly to Mayor Anathram.\n“There were three of them this time,” he said. “Just skeletons, but one of them got past me and caught the poor lass good. Still no word on when the new cleric will arrive?”\n“None,” the mayor says. “Have you learned anything from Solaine?”\n“Nothing,” Roi says. “Just the same story that the land itself is cursed and that the temple puts the dead to rest, but only if there’s a member of the Radiant Order caring for it.”\nThe mayor nods her acknowledgment at Roi’s report and then notices you. “Did you find any potions?”\nYou say that you did and hand one over.\nRemove 1 potion of healing from your inventory.\nRoi takes it and administers it to the wounded woman on the table. Stiff with pain despite being unconscious, she visibly relaxes as the druid pours the healing elixir into her mouth.\n“That should do her,” he says. “She’ll at least be stable until I can recover my healing spells. How was your patrol, adventurer?”\nYou report to Roi and Mayor Anathram that your night’s patrol was uneventful, but you also show Roi the garland you found at Tomlin’s house.\n“Hmm,” he says as he examines it. “This is a wedding garland. Not unusual in itself. Mostly made of flowers that symbolize love, but also some poisonous blooms in the mix. And these red ones? They only bloom in the spring, so they should be dead and gone long ago.”\nHe turns the garland over, watching the magical shimmer. The mayor looks on dispassionately.\n“Well, I don’t see any harm in it,” he says. “I think we could do with a diversion, eh adventurer? Let’s bring this back to Maybelline’s folks. It’ll give them a little memento and something for us to do while we wait for the new priest.”\nWithout waiting for your reply, the energetic druid whisks you away from the tavern and on your way out of town (go to 376).",
+      "actions": {
+        "removeItem": {
+          "itemName": "Potion of Healing",
+          "quantity": 1,
+          "description": "Remove 1 potion from your inventory to heal the militia member."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Head out of town",
+              "nextFragmentId": "376"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "392",
+      "src": null,
+      "text": "You and Roi go out into the family garden, and Maybelline’s parents seem to not even notice you leave. They have a plot behind the farmhouse. You can see vegetables like string beans and tomatoes planted in neat rows, but the soil around them is teeming with weeds and most of the plants seem scraggly with neglect. A few flowers are also in bloom, but not as many as could be. The whole outdoor space gives the impression of a well-planned garden that hasn’t had any upkeep in a month or so.\nStill, you look around for the wildflowers you saw in the garland. They shouldn’t be affected by the lack of care needed by the cultivated plants. Sadly, you can find no sign of the flowers. You do find something much more interesting.\nThere is a patch of odd soil near the wall of the house, presumably under Maybelline’s window. Unlike the rest of the garden, this soil is the same black color as what you saw in the cemetery. This patch is too small to be a grave, but something could certainly be buried there.\nAs you crouch down and start digging, Roi breaks off his search to join you. He waits beside you in anxious silence as you scoop away the eerily dark earth.\nAfter a few minutes, you reveal that something was indeed buried there. You find a piece of parchment, stained a dark brown by the earth and completely covered with a jagged, otherworldly script. There is a braided lock of hair strung through the strange message.\n“That looks like Abyssal to me,” Roi said. “Can you read it? I certainly can’t.”\nIf you can speak or read Abyssal either through a language proficiency or some other spell or ability, go to 371. If you cannot, go to 385.",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "You can read Abyssal",
+              "nextFragmentId": "371"
+            },
+            {
+              "label": "You cannot read Abyssal",
+              "nextFragmentId": "385"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "393",
+      "src": null,
+      "text": "You recognize these herbs, but only by reputation. You’ve never actually seen them with your own eyes. These are plants that only grow on unhallowed ground and are used as part of rituals to commune with the lower planes.\nYou couldn’t guess whether these open communication with devils in the Nine Hells or demons in the Abyss, but it is unusual to have them anywhere in a home as they are also very toxic to mortals.\n“Aye, they are that,” Roi says. “Demons and devils are outside my realms of knowledge. But Solaine is an expert in the lower planes. She may have more insights.”\nAdd unhallowed herbs to your inventory.\n“I don’t think that these are enough to cause the disturbance I’m feeling here on this land,” Roi said. “It must be something else.”\nIf you haven’t done so, you can still examine Maybelline’s room (go to 381) or search the garden for the same flowers as the garland (go to 392). Or if you’re ready to speak to Solaine, you can return to town with Roi (go to 372).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Unhallowed Herbs",
+          "quantity": 1,
+          "description": "Herbs for diabolic or demonic communion, extremely toxic."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Examine Maybelline’s room",
+              "nextFragmentId": "381"
+            },
+            {
+              "label": "Search garden for garland flowers",
+              "nextFragmentId": "392"
+            },
+            {
+              "label": "Return to town to speak to Solaine",
+              "nextFragmentId": "372"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "394",
+      "src": null,
+      "text": "You feel the satisfying click of the lock springing open. With a smile, you quickly stow your tools and barge into the empty cottage to find the healing potions you need (go to 386).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "386"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "395",
+      "src": null,
+      "text": "“Not exactly what I would expect of a love spell,” Roi says. “I would have thought they would want to be paired. This smacks of dark magic, adventurer, but nothing I’ve ever heard of..”\nYou ask who in town might be able to offer more clarity.\n“Solaine is the only one I can think of. She has studied these dark forces for years. And I still sense something about the property.”\nAdd blackened garlands to your inventory.\nIf you haven’t done so yet, you can look for anything unusual in the kitchen (go to 374) or head outside to the garden to look for where the flowers might have come from (go to 392).\nAlternatively, if you are ready to go then you can say your goodbyes and return to Langston (go to 372).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Blackened Garlands",
+          "quantity": 1,
+          "description": "A pair of rotting, cursed wedding garlands."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Look for anything in kitchen",
+              "nextFragmentId": "374"
+            },
+            {
+              "label": "Check garden for the flowers",
+              "nextFragmentId": "392"
+            },
+            {
+              "label": "Return to Langston",
+              "nextFragmentId": "372"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "396",
+      "src": null,
+      "text": "Like the care he took with his garden, Tomlin was meticulous about organizing his ingredients and remedies. Everything is clearly labeled and in its place. It doesn’t take you long to find what you’re looking for.\nYour quick search turns up three bottles labeled as healing potions and a vial of antitoxin.\nAdd 3 potions of healing and 1 antitoxin to your inventory.\nAs you do one last check through the herbalist’s belongings, you come across a garland woven of brightly colored wildflowers. It looks like something one might wear in some kind of ceremony, so you assume it’s some part of the wedding that didn’t happen.\nInterestingly, all the flowers look and smell as if they were plucked from a meadow just minutes ago, though you don’t see how that could be possible. Examining the garland, it shimmers slightly as you turn it.\nThis could be helpful as well, and at the very least you should probably ask Roi about it. It’s clearly magical, but you haven’t the time to figure out what it does right now.\nAdd Tomlin’s garland to your inventory.\nOne last cursory check doesn’t reveal anything else that will be helpful. You rush out of Tomlin’s cottage toward The Pickled Hen, hoping it’s not too late (go to 391).",
+      "actions": {
+        "gainItem": {
+          "itemName": "Potion of Healing",
+          "quantity": 3,
+          "description": "Add 3 potions of healing to your inventory."
+        },
+        "gainItem2": {
+          "itemName": "Antitoxin",
+          "quantity": 1,
+          "description": "Add 1 vial of antitoxin to your inventory."
+        },
+        "gainItem3": {
+          "itemName": "Tomlin’s Garland",
+          "quantity": 1,
+          "description": "A magical wedding garland, always fresh."
+        },
+        "choice": {
+          "options": [
+            {
+              "label": "Return to The Pickled Hen",
+              "nextFragmentId": "391"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "397",
+      "src": null,
+      "text": "You batter yourself against the door but it doesn’t budge. This isn’t working, and there’s no more time to waste.\nIf you haven’t tried yet, you can pick the locks (go to 387) or break a window (go to 377).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Pick the lock",
+              "nextFragmentId": "387"
+            },
+            {
+              "label": "Break a window",
+              "nextFragmentId": "377"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "398",
+      "src": null,
+      "text": "“We’ll do that if there are no potions to be had,” Roi says. “We need to keep you in fighting shape, adventurer, especially now that I’m out. Save your spells. I’ve got her stable for now, but please hurry.”\nRoi turns his attention to the woman’s wounds as you hurry out the door (go to 380).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Head to Tomlin’s house",
+              "nextFragmentId": "380"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "399",
+      "src": null,
+      "text": "You thank Solaine for speaking with you and bid her goodbye. She looks at you down her nose.\n“I can’t tell if you are truly noble or just in it for your own personal gain,” she says to you. “But you’re not doing anything that I wouldn’t have done in your place.”\nYou open your mouth to thank her but she cuts you off with a smile that reminds you of her wolf fangs. You take a step back from the cell and bump into Roi.\n“But I will still get my revenge. Some day.”\n“Come on,” Roi says to you, tugging you toward the door. “It’s time to go.”\nOnce outside, you see tears shining on the dwarf’s cheeks and in his beard. He wipes his nose with a sleeve and huffs out a sigh.\n“Solaine was the best of us once,” he says. “A truly good person who did what was right. But now a broken shell and a lunatic. My friend is gone all thanks to some silly girl who couldn’t bear to hear no.”\nYou aren’t quite sure what to say, but the druid speaks first.\n“Come on, adventurer,” he says. “We both need some rest. It’s another night on patrol for the both of us.”\nRoi walks you back to The Pickled Hen but instead of leaving for the grove, you see him shift into his reddish wolf form before curling up on the floor next to the fire. He’s already begun to snore by the time you start climbing the stairs to your room (go to 389).",
+      "actions": {
+        "choice": {
+          "options": [
+            {
+              "label": "Continue",
+              "nextFragmentId": "389"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fragmentId": "400",
+      "chapterEnd": true,
+      "src": null,
+      "text": "You wake to the sound of a commotion downstairs in the tavern. It doesn’t sound like another injured patrol, but there’s a general din of voices in the common room. You ready yourself to go down and see what the fuss is all about.\nYou come down the stairs to a heated conversation between Mayor Anathram, Roi, and a tired-looking militia member.\n“There is a problem,” the mayor says.\n“Well, the problem is gone,” Roi says. “And that’s the problem.”\nSeeing your confusion, Roi gestures to the haggard militia member still catching his breath.\n“Please, don’t make me try to explain it,” he says. “Just come with me.”\nThe group of you make your way to the jail, the mayor is walking so briskly that Roi has to jog to keep up. When you arrive, it takes you a moment to understand what you’re seeing.\nWhat’s left of the cell door’s shattered lock is still glittering with an unnatural frost. A biting chill hangs in the air and you can see your breath. The cell itself is empty and you would guess it has been since sometime late last night.\n“Adventurer,” the mayor says. “What is this?”\nShe points to the floor where the frost forms a distinct pattern despite its jagged edges: a crescent moon. A new voice saves you from having to answer the mayor.\n“So what happened in this town of yours?” asks the newcomer. You, Roi, and Mayor Anathram turn to the door where a cleric in dusty white robes is peering into the jail cell.\nRoi walks up to the cleric - a young man with stooped shoulders and light brown hair - and claps the holy man on the back. “It’s a long story, lad, but we’ll have plenty of time as we get you settled into the temple. Let me show you the way.”\n“It seems your services are no longer required,” Mayor Anathram says to you as Roi leads the cleric out. “Thank you. Where will you go next?”\nYou look at the thick frost on the cell doors and floor then think back to your moonlit encounter the night before. You tell the mayor that you are not sure yet. But whatever adventure comes next, you will not do it alone.\nTHE END",
+      "actions": "gameOver"
+    }
+  ]
+}
