@@ -20,7 +20,7 @@ export const Sidebar = ({ isPro }: IEpic) => {
     },
     {
       icon: Plus,
-      href: "/companion/new",
+      href: "/character/new",
       label: "Character",
       pro: false,
     },

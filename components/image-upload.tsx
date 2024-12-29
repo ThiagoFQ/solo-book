@@ -8,9 +8,17 @@ interface ImageUploadProps {
   value: string;
   onChange: (src: string) => void;
   disabled?: boolean;
+  width?: string;
+  height?: string;
 }
 
-const ImageUpload = ({ value, onChange, disabled }: ImageUploadProps) => {
+const ImageUpload = ({
+  value,
+  onChange,
+  disabled,
+  width = "100%",
+  height = "250px",
+}: ImageUploadProps) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -39,11 +47,13 @@ const ImageUpload = ({ value, onChange, disabled }: ImageUploadProps) => {
             hover:opacity-75
             transition
             flex
-            flex-col
+            items-center
+            justify-center
             space-y-2
             "
+          style={{ width, height }}
         >
-          <div className="relative w-full h-60 md:h-48">
+          <div className="relative w-full h-full">
             <Image
               fill
               alt="Upload"

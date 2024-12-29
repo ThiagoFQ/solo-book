@@ -1,5 +1,6 @@
 import { Books } from "@/components/books";
 import { Categories } from "@/components/categories";
+import { Characters } from "@/components/characters/characters";
 import { SearchInput } from "@/components/search-input";
 import prismadb from "@/lib/prismadb";
 
@@ -31,13 +32,14 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
   });
 
   const categories = await prismadb.category.findMany();
+  const characters = await prismadb.character.findMany();
 
   return (
     <div className="h-full p-4 space-y-2">
       <SearchInput />
       <Categories data={categories} />
       <Books data={data} />
-      {/*<Companions data={data} />*/}
+      <Characters data={characters} />
     </div>
   );
 };

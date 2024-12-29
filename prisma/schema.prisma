@@ -19,7 +19,6 @@ model Category {
   key           String @unique
   name          String
   books         Book[]
-  characters    Character[]
 }
 
 model Book {
@@ -88,30 +87,30 @@ model Character {
   name        String    @db.Text
   species     String
   class       String
-  level       Int       @default(1)
+  src         String
+  level       String    
   background  String    @db.Text
   
-  initiative  Int
-  armorClass  Int
-  hitPoints   Int
-  speed       Int
+  initiative  String
+  armorClass  String
+  hitPoints   String
+  speed       String
   
-  strength     Int
-  dexterity    Int
-  constitution Int
-  intelligence Int
-  wisdom       Int
-  charisma     Int
+  strength     String
+  dexterity    String
+  constitution String
+  intelligence String
+  wisdom       String
+  charisma     String
 
-  skills      String[]
+  skills      String
   senses      String
-  languages   String[]
+  languages   String
   
-  traits      Json
-  actions     Json
+  traits      String
+  actions     String
   
-  category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
-  categoryId  String
+  categoryId  String    @default("characters")
 
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
