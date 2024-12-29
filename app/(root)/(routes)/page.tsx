@@ -32,14 +32,20 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
   });
 
   const categories = await prismadb.category.findMany();
-  const characters = await prismadb.character.findMany();
+  const characters =
+    searchParams.categoryId === "characters"
+      ? await prismadb.character.findMany()
+      : [];
 
   return (
     <div className="h-full p-4 space-y-2">
       <SearchInput />
       <Categories data={categories} />
-      <Books data={data} />
-      <Characters data={characters} />
+      {searchParams.categoryId === "characters" ? (
+        <Characters data={characters} />
+      ) : (
+        <Books data={data} />
+      )}
     </div>
   );
 };
